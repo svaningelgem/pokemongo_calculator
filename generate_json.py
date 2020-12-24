@@ -1,0 +1,119 @@
+import json
+import re
+from logging import getLogger
+from pathlib import Path
+from typing import Any
+
+__root = Path(__file__).parent
+
+logger = getLogger(__name__)
+
+
+class Integer:
+    def __set_name__(self, owner, name):
+        self.public_name = name
+        self.private_name = '_' + name
+
+    def __get__(self, obj, objtype=None):
+        return getattr(obj, self.private_name, 0)
+
+    def __set__(self, obj, value):
+        setattr(obj, self.private_name, value)
+
+
+class Pokemon:
+    id = Integer()
+    name: str = ''
+    nice_name: str = ''
+    at = Integer()
+    df = Integer()
+    st = Integer()
+
+    def __repr__(self):
+        return f'Pokemon({vars(self)})'
+
+    def __eq__(self, other):
+        print(vars(self))
+        print(vars(other))
+        return (
+            type(self) == type(other)
+            and vars(self) == vars(other)
+        )
+
+    def __hash__(self):
+        return hash('|'.join(f'{k}_{v}' for k, v in vars(self).items()))
+
+    def __json__(self):
+        return {
+            k[1:] if k.startswith('_') else k: v
+            for k, v in vars(self).items()
+            if not k.startswith('__')
+        }
+
+
+class PokemonEncoder(json.JSONEncoder):
+    def default(self, o: Any) -> Any:
+        if type(o) == Pokemon:
+            return o.__json__()
+
+        return super().default(o)
+
+
+class GenerateJSON:
+    GAMEMASTER_POKEMON = re.compile(r'^V(\d+)_POKEMON_(.*)$')
+    SKIP_THESE_FORMS = [
+        re.compile('_PURIFIED$'),
+        re.compile('_NORMAL$'),
+        re.compile('_SHADOW$'),
+        re.compile(r'_\d+$'),
+    ]
+
+    def __init__(self, gamemaster: Path, i18n: Path, output: Path):
+        self.gamemaster = json.loads(gamemaster.read_text())
+
+        i18n = json.loads(i18n.read_text())['data']
+        self.i18n = {k: v for k, v in zip(i18n[::2], i18n[1::2])}
+
+        self.output = output
+
+    def _get_all_info(self):
+        # Find all the pokemons:
+        pokemons = set()
+        for entry in self.gamemaster['template']:
+            match = self.GAMEMASTER_POKEMON.match(entry['templateId'])
+            if not match:
+                continue
+
+            pm = Pokemon()
+            pm.id = int(match.group(1))
+            pm.name = match.group(2)
+
+            if any(x.search(pm.name) for x in self.SKIP_THESE_FORMS):
+                logger.debug(f'Skip: {pm.name}')
+                continue
+
+            try:
+                pm.at = int(entry['data']['pokemon']['stats']['baseAttack'])
+                pm.df = int(entry['data']['pokemon']['stats']['baseDefense'])
+                pm.st = int(entry['data']['pokemon']['stats']['baseStamina'])
+            except KeyError:
+                logger.debug(f'key missing: {pm}')
+                continue
+
+            pm.nice_name = pm.name.title().replace('_', ' ')
+
+            pokemons.add(pm)
+
+        # Sort the result by id and name
+        return sorted(list(pokemons), key=lambda x: (x.id, x.name))
+
+    def run(self):
+        pokemons = self._get_all_info()
+        self.output.write_text(json.dumps(pokemons, indent=2, cls=PokemonEncoder))
+
+if __name__ == '__main__':
+    GenerateJSON(
+        __root / 'pokemongo-game-master/versions/latest/V2_GAME_MASTER.json',
+        __root / 'PogoAssets/static_assets/txt/i18n_english.json',
+        __root / 'pokemon_information.json',
+    ).run()
