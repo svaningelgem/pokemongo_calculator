@@ -1,6 +1,12 @@
 {
   "pms": [
     {
+      "evolutions": [
+        {
+          "evolution": "IVYSAUR",
+          "candyCost": 25
+        }
+      ],
       "id": 1,
       "name": "BULBASAUR",
       "at": 118,
@@ -9,6 +15,12 @@
       "nice_name": "Bulbasaur"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "VENUSAUR",
+          "candyCost": 100
+        }
+      ],
       "id": 2,
       "name": "IVYSAUR",
       "at": 151,
@@ -17,6 +29,7 @@
       "nice_name": "Ivysaur"
     },
     {
+      "evolutions": [],
       "id": 3,
       "name": "VENUSAUR",
       "at": 198,
@@ -25,6 +38,12 @@
       "nice_name": "Venusaur"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "CHARMELEON",
+          "candyCost": 25
+        }
+      ],
       "id": 4,
       "name": "CHARMANDER",
       "at": 116,
@@ -33,6 +52,12 @@
       "nice_name": "Charmander"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "CHARIZARD",
+          "candyCost": 100
+        }
+      ],
       "id": 5,
       "name": "CHARMELEON",
       "at": 158,
@@ -41,6 +66,7 @@
       "nice_name": "Charmeleon"
     },
     {
+      "evolutions": [],
       "id": 6,
       "name": "CHARIZARD",
       "at": 223,
@@ -49,6 +75,12 @@
       "nice_name": "Charizard"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "WARTORTLE",
+          "candyCost": 25
+        }
+      ],
       "id": 7,
       "name": "SQUIRTLE",
       "at": 94,
@@ -57,6 +89,12 @@
       "nice_name": "Squirtle"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "BLASTOISE",
+          "candyCost": 100
+        }
+      ],
       "id": 8,
       "name": "WARTORTLE",
       "at": 126,
@@ -65,6 +103,7 @@
       "nice_name": "Wartortle"
     },
     {
+      "evolutions": [],
       "id": 9,
       "name": "BLASTOISE",
       "at": 171,
@@ -73,6 +112,7 @@
       "nice_name": "Blastoise"
     },
     {
+      "evolutions": [],
       "id": 10,
       "name": "CATERPIE",
       "at": 55,
@@ -81,6 +121,7 @@
       "nice_name": "Caterpie"
     },
     {
+      "evolutions": [],
       "id": 11,
       "name": "METAPOD",
       "at": 45,
@@ -89,6 +130,7 @@
       "nice_name": "Metapod"
     },
     {
+      "evolutions": [],
       "id": 12,
       "name": "BUTTERFREE",
       "at": 167,
@@ -97,6 +139,12 @@
       "nice_name": "Butterfree"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "KAKUNA",
+          "candyCost": 12
+        }
+      ],
       "id": 13,
       "name": "WEEDLE",
       "at": 63,
@@ -105,6 +153,12 @@
       "nice_name": "Weedle"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "BEEDRILL",
+          "candyCost": 50
+        }
+      ],
       "id": 14,
       "name": "KAKUNA",
       "at": 46,
@@ -113,6 +167,7 @@
       "nice_name": "Kakuna"
     },
     {
+      "evolutions": [],
       "id": 15,
       "name": "BEEDRILL",
       "at": 169,
@@ -121,6 +176,7 @@
       "nice_name": "Beedrill"
     },
     {
+      "evolutions": [],
       "id": 16,
       "name": "PIDGEY",
       "at": 85,
@@ -129,6 +185,7 @@
       "nice_name": "Pidgey"
     },
     {
+      "evolutions": [],
       "id": 17,
       "name": "PIDGEOTTO",
       "at": 117,
@@ -137,6 +194,7 @@
       "nice_name": "Pidgeotto"
     },
     {
+      "evolutions": [],
       "id": 18,
       "name": "PIDGEOT",
       "at": 166,
@@ -145,6 +203,12 @@
       "nice_name": "Pidgeot"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "RATICATE",
+          "candyCost": 25
+        }
+      ],
       "id": 19,
       "name": "RATTATA",
       "at": 103,
@@ -153,6 +217,12 @@
       "nice_name": "Rattata"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "RATICATE",
+          "candyCost": 25
+        }
+      ],
       "id": 19,
       "name": "RATTATA_ALOLA",
       "at": 103,
@@ -161,6 +231,7 @@
       "nice_name": "Rattata Alola"
     },
     {
+      "evolutions": [],
       "id": 20,
       "name": "RATICATE",
       "at": 161,
@@ -169,6 +240,7 @@
       "nice_name": "Raticate"
     },
     {
+      "evolutions": [],
       "id": 20,
       "name": "RATICATE_ALOLA",
       "at": 135,
@@ -177,6 +249,7 @@
       "nice_name": "Raticate Alola"
     },
     {
+      "evolutions": [],
       "id": 21,
       "name": "SPEAROW",
       "at": 112,
@@ -185,6 +258,7 @@
       "nice_name": "Spearow"
     },
     {
+      "evolutions": [],
       "id": 22,
       "name": "FEAROW",
       "at": 182,
@@ -193,6 +267,12 @@
       "nice_name": "Fearow"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "ARBOK",
+          "candyCost": 50
+        }
+      ],
       "id": 23,
       "name": "EKANS",
       "at": 110,
@@ -201,6 +281,7 @@
       "nice_name": "Ekans"
     },
     {
+      "evolutions": [],
       "id": 24,
       "name": "ARBOK",
       "at": 167,
@@ -209,6 +290,7 @@
       "nice_name": "Arbok"
     },
     {
+      "evolutions": [],
       "id": 25,
       "name": "PIKACHU",
       "at": 112,
@@ -217,6 +299,7 @@
       "nice_name": "Pikachu"
     },
     {
+      "evolutions": [],
       "id": 26,
       "name": "RAICHU",
       "at": 193,
@@ -225,6 +308,7 @@
       "nice_name": "Raichu"
     },
     {
+      "evolutions": [],
       "id": 26,
       "name": "RAICHU_ALOLA",
       "at": 201,
@@ -233,6 +317,12 @@
       "nice_name": "Raichu Alola"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "SANDSLASH",
+          "candyCost": 50
+        }
+      ],
       "id": 27,
       "name": "SANDSHREW",
       "at": 126,
@@ -241,6 +331,12 @@
       "nice_name": "Sandshrew"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "SANDSLASH",
+          "candyCost": 50
+        }
+      ],
       "id": 27,
       "name": "SANDSHREW_ALOLA",
       "at": 125,
@@ -249,6 +345,7 @@
       "nice_name": "Sandshrew Alola"
     },
     {
+      "evolutions": [],
       "id": 28,
       "name": "SANDSLASH",
       "at": 182,
@@ -257,6 +354,7 @@
       "nice_name": "Sandslash"
     },
     {
+      "evolutions": [],
       "id": 28,
       "name": "SANDSLASH_ALOLA",
       "at": 177,
@@ -265,6 +363,12 @@
       "nice_name": "Sandslash Alola"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "NIDORINA",
+          "candyCost": 25
+        }
+      ],
       "id": 29,
       "name": "NIDORAN",
       "at": 86,
@@ -273,6 +377,12 @@
       "nice_name": "Nidoran"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "NIDOQUEEN",
+          "candyCost": 100
+        }
+      ],
       "id": 30,
       "name": "NIDORINA",
       "at": 117,
@@ -281,6 +391,7 @@
       "nice_name": "Nidorina"
     },
     {
+      "evolutions": [],
       "id": 31,
       "name": "NIDOQUEEN",
       "at": 180,
@@ -289,6 +400,12 @@
       "nice_name": "Nidoqueen"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "NIDORINO",
+          "candyCost": 25
+        }
+      ],
       "id": 32,
       "name": "NIDORAN",
       "at": 105,
@@ -297,6 +414,12 @@
       "nice_name": "Nidoran"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "NIDOKING",
+          "candyCost": 100
+        }
+      ],
       "id": 33,
       "name": "NIDORINO",
       "at": 137,
@@ -305,6 +428,7 @@
       "nice_name": "Nidorino"
     },
     {
+      "evolutions": [],
       "id": 34,
       "name": "NIDOKING",
       "at": 204,
@@ -313,6 +437,7 @@
       "nice_name": "Nidoking"
     },
     {
+      "evolutions": [],
       "id": 35,
       "name": "CLEFAIRY",
       "at": 107,
@@ -321,6 +446,7 @@
       "nice_name": "Clefairy"
     },
     {
+      "evolutions": [],
       "id": 36,
       "name": "CLEFABLE",
       "at": 178,
@@ -329,6 +455,12 @@
       "nice_name": "Clefable"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "NINETALES",
+          "candyCost": 50
+        }
+      ],
       "id": 37,
       "name": "VULPIX",
       "at": 96,
@@ -337,6 +469,12 @@
       "nice_name": "Vulpix"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "NINETALES",
+          "candyCost": 50
+        }
+      ],
       "id": 37,
       "name": "VULPIX_ALOLA",
       "at": 96,
@@ -345,6 +483,7 @@
       "nice_name": "Vulpix Alola"
     },
     {
+      "evolutions": [],
       "id": 38,
       "name": "NINETALES",
       "at": 169,
@@ -353,6 +492,7 @@
       "nice_name": "Ninetales"
     },
     {
+      "evolutions": [],
       "id": 38,
       "name": "NINETALES_ALOLA",
       "at": 170,
@@ -361,6 +501,7 @@
       "nice_name": "Ninetales Alola"
     },
     {
+      "evolutions": [],
       "id": 39,
       "name": "JIGGLYPUFF",
       "at": 80,
@@ -369,6 +510,7 @@
       "nice_name": "Jigglypuff"
     },
     {
+      "evolutions": [],
       "id": 40,
       "name": "WIGGLYTUFF",
       "at": 156,
@@ -377,6 +519,12 @@
       "nice_name": "Wigglytuff"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "GOLBAT",
+          "candyCost": 25
+        }
+      ],
       "id": 41,
       "name": "ZUBAT",
       "at": 83,
@@ -385,6 +533,12 @@
       "nice_name": "Zubat"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "CROBAT",
+          "candyCost": 100
+        }
+      ],
       "id": 42,
       "name": "GOLBAT",
       "at": 161,
@@ -393,6 +547,12 @@
       "nice_name": "Golbat"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "GLOOM",
+          "candyCost": 25
+        }
+      ],
       "id": 43,
       "name": "ODDISH",
       "at": 131,
@@ -401,6 +561,17 @@
       "nice_name": "Oddish"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "VILEPLUME",
+          "candyCost": 100
+        },
+        {
+          "evolution": "BELLOSSOM",
+          "evolutionItemRequirement": "ITEM_SUN_STONE",
+          "candyCost": 100
+        }
+      ],
       "id": 44,
       "name": "GLOOM",
       "at": 153,
@@ -409,6 +580,7 @@
       "nice_name": "Gloom"
     },
     {
+      "evolutions": [],
       "id": 45,
       "name": "VILEPLUME",
       "at": 202,
@@ -417,6 +589,7 @@
       "nice_name": "Vileplume"
     },
     {
+      "evolutions": [],
       "id": 46,
       "name": "PARAS",
       "at": 121,
@@ -425,6 +598,7 @@
       "nice_name": "Paras"
     },
     {
+      "evolutions": [],
       "id": 47,
       "name": "PARASECT",
       "at": 165,
@@ -433,6 +607,12 @@
       "nice_name": "Parasect"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "VENOMOTH",
+          "candyCost": 50
+        }
+      ],
       "id": 48,
       "name": "VENONAT",
       "at": 100,
@@ -441,6 +621,7 @@
       "nice_name": "Venonat"
     },
     {
+      "evolutions": [],
       "id": 49,
       "name": "VENOMOTH",
       "at": 179,
@@ -449,6 +630,12 @@
       "nice_name": "Venomoth"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "DUGTRIO",
+          "candyCost": 50
+        }
+      ],
       "id": 50,
       "name": "DIGLETT",
       "at": 109,
@@ -457,6 +644,12 @@
       "nice_name": "Diglett"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "DUGTRIO",
+          "candyCost": 50
+        }
+      ],
       "id": 50,
       "name": "DIGLETT_ALOLA",
       "at": 108,
@@ -465,6 +658,7 @@
       "nice_name": "Diglett Alola"
     },
     {
+      "evolutions": [],
       "id": 51,
       "name": "DUGTRIO",
       "at": 167,
@@ -473,6 +667,7 @@
       "nice_name": "Dugtrio"
     },
     {
+      "evolutions": [],
       "id": 51,
       "name": "DUGTRIO_ALOLA",
       "at": 201,
@@ -481,6 +676,12 @@
       "nice_name": "Dugtrio Alola"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "PERSIAN",
+          "candyCost": 50
+        }
+      ],
       "id": 52,
       "name": "MEOWTH",
       "at": 92,
@@ -489,6 +690,12 @@
       "nice_name": "Meowth"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "PERSIAN",
+          "candyCost": 50
+        }
+      ],
       "id": 52,
       "name": "MEOWTH_ALOLA",
       "at": 99,
@@ -497,6 +704,12 @@
       "nice_name": "Meowth Alola"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "PERRSERKER",
+          "candyCost": 50
+        }
+      ],
       "id": 52,
       "name": "MEOWTH_GALARIAN",
       "at": 115,
@@ -505,6 +718,7 @@
       "nice_name": "Meowth Galarian"
     },
     {
+      "evolutions": [],
       "id": 53,
       "name": "PERSIAN",
       "at": 150,
@@ -513,6 +727,7 @@
       "nice_name": "Persian"
     },
     {
+      "evolutions": [],
       "id": 53,
       "name": "PERSIAN_ALOLA",
       "at": 158,
@@ -521,6 +736,12 @@
       "nice_name": "Persian Alola"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "GOLDUCK",
+          "candyCost": 50
+        }
+      ],
       "id": 54,
       "name": "PSYDUCK",
       "at": 122,
@@ -529,6 +750,7 @@
       "nice_name": "Psyduck"
     },
     {
+      "evolutions": [],
       "id": 55,
       "name": "GOLDUCK",
       "at": 191,
@@ -537,6 +759,7 @@
       "nice_name": "Golduck"
     },
     {
+      "evolutions": [],
       "id": 56,
       "name": "MANKEY",
       "at": 148,
@@ -545,6 +768,7 @@
       "nice_name": "Mankey"
     },
     {
+      "evolutions": [],
       "id": 57,
       "name": "PRIMEAPE",
       "at": 207,
@@ -553,6 +777,12 @@
       "nice_name": "Primeape"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "ARCANINE",
+          "candyCost": 50
+        }
+      ],
       "id": 58,
       "name": "GROWLITHE",
       "at": 136,
@@ -561,6 +791,7 @@
       "nice_name": "Growlithe"
     },
     {
+      "evolutions": [],
       "id": 59,
       "name": "ARCANINE",
       "at": 227,
@@ -569,6 +800,12 @@
       "nice_name": "Arcanine"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "POLIWHIRL",
+          "candyCost": 25
+        }
+      ],
       "id": 60,
       "name": "POLIWAG",
       "at": 101,
@@ -577,6 +814,17 @@
       "nice_name": "Poliwag"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "POLIWRATH",
+          "candyCost": 100
+        },
+        {
+          "evolution": "POLITOED",
+          "evolutionItemRequirement": "ITEM_KINGS_ROCK",
+          "candyCost": 100
+        }
+      ],
       "id": 61,
       "name": "POLIWHIRL",
       "at": 130,
@@ -585,6 +833,7 @@
       "nice_name": "Poliwhirl"
     },
     {
+      "evolutions": [],
       "id": 62,
       "name": "POLIWRATH",
       "at": 182,
@@ -593,6 +842,12 @@
       "nice_name": "Poliwrath"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "KADABRA",
+          "candyCost": 25
+        }
+      ],
       "id": 63,
       "name": "ABRA",
       "at": 195,
@@ -601,6 +856,13 @@
       "nice_name": "Abra"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "ALAKAZAM",
+          "candyCost": 100,
+          "noCandyCostViaTrade": true
+        }
+      ],
       "id": 64,
       "name": "KADABRA",
       "at": 232,
@@ -609,6 +871,7 @@
       "nice_name": "Kadabra"
     },
     {
+      "evolutions": [],
       "id": 65,
       "name": "ALAKAZAM",
       "at": 271,
@@ -617,6 +880,12 @@
       "nice_name": "Alakazam"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "MACHOKE",
+          "candyCost": 25
+        }
+      ],
       "id": 66,
       "name": "MACHOP",
       "at": 137,
@@ -625,6 +894,13 @@
       "nice_name": "Machop"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "MACHAMP",
+          "candyCost": 100,
+          "noCandyCostViaTrade": true
+        }
+      ],
       "id": 67,
       "name": "MACHOKE",
       "at": 177,
@@ -633,6 +909,7 @@
       "nice_name": "Machoke"
     },
     {
+      "evolutions": [],
       "id": 68,
       "name": "MACHAMP",
       "at": 234,
@@ -641,6 +918,12 @@
       "nice_name": "Machamp"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "WEEPINBELL",
+          "candyCost": 25
+        }
+      ],
       "id": 69,
       "name": "BELLSPROUT",
       "at": 139,
@@ -649,6 +932,12 @@
       "nice_name": "Bellsprout"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "VICTREEBEL",
+          "candyCost": 100
+        }
+      ],
       "id": 70,
       "name": "WEEPINBELL",
       "at": 172,
@@ -657,6 +946,7 @@
       "nice_name": "Weepinbell"
     },
     {
+      "evolutions": [],
       "id": 71,
       "name": "VICTREEBEL",
       "at": 207,
@@ -665,6 +955,7 @@
       "nice_name": "Victreebel"
     },
     {
+      "evolutions": [],
       "id": 72,
       "name": "TENTACOOL",
       "at": 97,
@@ -673,6 +964,7 @@
       "nice_name": "Tentacool"
     },
     {
+      "evolutions": [],
       "id": 73,
       "name": "TENTACRUEL",
       "at": 166,
@@ -681,6 +973,12 @@
       "nice_name": "Tentacruel"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "GRAVELER",
+          "candyCost": 25
+        }
+      ],
       "id": 74,
       "name": "GEODUDE",
       "at": 132,
@@ -689,6 +987,12 @@
       "nice_name": "Geodude"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "GRAVELER",
+          "candyCost": 25
+        }
+      ],
       "id": 74,
       "name": "GEODUDE_ALOLA",
       "at": 132,
@@ -697,6 +1001,13 @@
       "nice_name": "Geodude Alola"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "GOLEM",
+          "candyCost": 100,
+          "noCandyCostViaTrade": true
+        }
+      ],
       "id": 75,
       "name": "GRAVELER",
       "at": 164,
@@ -705,6 +1016,13 @@
       "nice_name": "Graveler"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "GOLEM",
+          "candyCost": 100,
+          "noCandyCostViaTrade": true
+        }
+      ],
       "id": 75,
       "name": "GRAVELER_ALOLA",
       "at": 164,
@@ -713,6 +1031,7 @@
       "nice_name": "Graveler Alola"
     },
     {
+      "evolutions": [],
       "id": 76,
       "name": "GOLEM",
       "at": 211,
@@ -721,6 +1040,7 @@
       "nice_name": "Golem"
     },
     {
+      "evolutions": [],
       "id": 76,
       "name": "GOLEM_ALOLA",
       "at": 211,
@@ -729,6 +1049,12 @@
       "nice_name": "Golem Alola"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "RAPIDASH",
+          "candyCost": 50
+        }
+      ],
       "id": 77,
       "name": "PONYTA",
       "at": 170,
@@ -737,6 +1063,12 @@
       "nice_name": "Ponyta"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "RAPIDASH",
+          "candyCost": 50
+        }
+      ],
       "id": 77,
       "name": "PONYTA_GALARIAN",
       "at": 170,
@@ -745,6 +1077,7 @@
       "nice_name": "Ponyta Galarian"
     },
     {
+      "evolutions": [],
       "id": 78,
       "name": "RAPIDASH",
       "at": 207,
@@ -753,6 +1086,7 @@
       "nice_name": "Rapidash"
     },
     {
+      "evolutions": [],
       "id": 78,
       "name": "RAPIDASH_GALARIAN",
       "at": 207,
@@ -761,6 +1095,17 @@
       "nice_name": "Rapidash Galarian"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "SLOWBRO",
+          "candyCost": 50
+        },
+        {
+          "evolution": "SLOWKING",
+          "evolutionItemRequirement": "ITEM_KINGS_ROCK",
+          "candyCost": 50
+        }
+      ],
       "id": 79,
       "name": "SLOWPOKE",
       "at": 109,
@@ -769,6 +1114,7 @@
       "nice_name": "Slowpoke"
     },
     {
+      "evolutions": [],
       "id": 80,
       "name": "SLOWBRO",
       "at": 177,
@@ -777,6 +1123,12 @@
       "nice_name": "Slowbro"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "MAGNETON",
+          "candyCost": 25
+        }
+      ],
       "id": 81,
       "name": "MAGNEMITE",
       "at": 165,
@@ -785,6 +1137,7 @@
       "nice_name": "Magnemite"
     },
     {
+      "evolutions": [],
       "id": 82,
       "name": "MAGNETON",
       "at": 223,
@@ -793,6 +1146,7 @@
       "nice_name": "Magneton"
     },
     {
+      "evolutions": [],
       "id": 83,
       "name": "FARFETCHD",
       "at": 124,
@@ -801,6 +1155,17 @@
       "nice_name": "Farfetchd"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "SIRFETCHD",
+          "candyCost": 50,
+          "questDisplay": [
+            {
+              "questRequirementTemplateId": "SIRFETCHD_EVOLUTION_QUEST"
+            }
+          ]
+        }
+      ],
       "id": 83,
       "name": "FARFETCHD_GALARIAN",
       "at": 174,
@@ -809,6 +1174,7 @@
       "nice_name": "Farfetchd Galarian"
     },
     {
+      "evolutions": [],
       "id": 84,
       "name": "DODUO",
       "at": 158,
@@ -817,6 +1183,7 @@
       "nice_name": "Doduo"
     },
     {
+      "evolutions": [],
       "id": 85,
       "name": "DODRIO",
       "at": 218,
@@ -825,6 +1192,7 @@
       "nice_name": "Dodrio"
     },
     {
+      "evolutions": [],
       "id": 86,
       "name": "SEEL",
       "at": 85,
@@ -833,6 +1201,7 @@
       "nice_name": "Seel"
     },
     {
+      "evolutions": [],
       "id": 87,
       "name": "DEWGONG",
       "at": 139,
@@ -841,6 +1210,12 @@
       "nice_name": "Dewgong"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "MUK",
+          "candyCost": 50
+        }
+      ],
       "id": 88,
       "name": "GRIMER",
       "at": 135,
@@ -849,6 +1224,12 @@
       "nice_name": "Grimer"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "MUK",
+          "candyCost": 50
+        }
+      ],
       "id": 88,
       "name": "GRIMER_ALOLA",
       "at": 135,
@@ -857,6 +1238,7 @@
       "nice_name": "Grimer Alola"
     },
     {
+      "evolutions": [],
       "id": 89,
       "name": "MUK",
       "at": 190,
@@ -865,6 +1247,7 @@
       "nice_name": "Muk"
     },
     {
+      "evolutions": [],
       "id": 89,
       "name": "MUK_ALOLA",
       "at": 190,
@@ -873,6 +1256,12 @@
       "nice_name": "Muk Alola"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "CLOYSTER",
+          "candyCost": 50
+        }
+      ],
       "id": 90,
       "name": "SHELLDER",
       "at": 116,
@@ -881,6 +1270,7 @@
       "nice_name": "Shellder"
     },
     {
+      "evolutions": [],
       "id": 91,
       "name": "CLOYSTER",
       "at": 186,
@@ -889,6 +1279,7 @@
       "nice_name": "Cloyster"
     },
     {
+      "evolutions": [],
       "id": 92,
       "name": "GASTLY",
       "at": 186,
@@ -897,6 +1288,7 @@
       "nice_name": "Gastly"
     },
     {
+      "evolutions": [],
       "id": 93,
       "name": "HAUNTER",
       "at": 223,
@@ -905,6 +1297,7 @@
       "nice_name": "Haunter"
     },
     {
+      "evolutions": [],
       "id": 94,
       "name": "GENGAR",
       "at": 261,
@@ -913,6 +1306,13 @@
       "nice_name": "Gengar"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "STEELIX",
+          "evolutionItemRequirement": "ITEM_METAL_COAT",
+          "candyCost": 50
+        }
+      ],
       "id": 95,
       "name": "ONIX",
       "at": 85,
@@ -921,6 +1321,12 @@
       "nice_name": "Onix"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "HYPNO",
+          "candyCost": 50
+        }
+      ],
       "id": 96,
       "name": "DROWZEE",
       "at": 89,
@@ -929,6 +1335,7 @@
       "nice_name": "Drowzee"
     },
     {
+      "evolutions": [],
       "id": 97,
       "name": "HYPNO",
       "at": 144,
@@ -937,6 +1344,12 @@
       "nice_name": "Hypno"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "KINGLER",
+          "candyCost": 50
+        }
+      ],
       "id": 98,
       "name": "KRABBY",
       "at": 181,
@@ -945,6 +1358,7 @@
       "nice_name": "Krabby"
     },
     {
+      "evolutions": [],
       "id": 99,
       "name": "KINGLER",
       "at": 240,
@@ -953,6 +1367,7 @@
       "nice_name": "Kingler"
     },
     {
+      "evolutions": [],
       "id": 100,
       "name": "VOLTORB",
       "at": 109,
@@ -961,6 +1376,7 @@
       "nice_name": "Voltorb"
     },
     {
+      "evolutions": [],
       "id": 101,
       "name": "ELECTRODE",
       "at": 173,
@@ -969,6 +1385,12 @@
       "nice_name": "Electrode"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "EXEGGUTOR",
+          "candyCost": 50
+        }
+      ],
       "id": 102,
       "name": "EXEGGCUTE",
       "at": 107,
@@ -977,6 +1399,7 @@
       "nice_name": "Exeggcute"
     },
     {
+      "evolutions": [],
       "id": 103,
       "name": "EXEGGUTOR",
       "at": 233,
@@ -985,6 +1408,7 @@
       "nice_name": "Exeggutor"
     },
     {
+      "evolutions": [],
       "id": 103,
       "name": "EXEGGUTOR_ALOLA",
       "at": 230,
@@ -993,6 +1417,12 @@
       "nice_name": "Exeggutor Alola"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "MAROWAK",
+          "candyCost": 50
+        }
+      ],
       "id": 104,
       "name": "CUBONE",
       "at": 90,
@@ -1001,6 +1431,7 @@
       "nice_name": "Cubone"
     },
     {
+      "evolutions": [],
       "id": 105,
       "name": "MAROWAK",
       "at": 144,
@@ -1009,6 +1440,7 @@
       "nice_name": "Marowak"
     },
     {
+      "evolutions": [],
       "id": 105,
       "name": "MAROWAK_ALOLA",
       "at": 144,
@@ -1017,6 +1449,7 @@
       "nice_name": "Marowak Alola"
     },
     {
+      "evolutions": [],
       "id": 106,
       "name": "HITMONLEE",
       "at": 224,
@@ -1025,6 +1458,7 @@
       "nice_name": "Hitmonlee"
     },
     {
+      "evolutions": [],
       "id": 107,
       "name": "HITMONCHAN",
       "at": 193,
@@ -1033,6 +1467,7 @@
       "nice_name": "Hitmonchan"
     },
     {
+      "evolutions": [],
       "id": 108,
       "name": "LICKITUNG",
       "at": 108,
@@ -1041,6 +1476,12 @@
       "nice_name": "Lickitung"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "WEEZING",
+          "candyCost": 50
+        }
+      ],
       "id": 109,
       "name": "KOFFING",
       "at": 119,
@@ -1049,6 +1490,7 @@
       "nice_name": "Koffing"
     },
     {
+      "evolutions": [],
       "id": 110,
       "name": "WEEZING",
       "at": 174,
@@ -1057,6 +1499,7 @@
       "nice_name": "Weezing"
     },
     {
+      "evolutions": [],
       "id": 110,
       "name": "WEEZING_GALARIAN",
       "at": 174,
@@ -1065,6 +1508,12 @@
       "nice_name": "Weezing Galarian"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "RHYDON",
+          "candyCost": 25
+        }
+      ],
       "id": 111,
       "name": "RHYHORN",
       "at": 140,
@@ -1073,6 +1522,13 @@
       "nice_name": "Rhyhorn"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "RHYPERIOR",
+          "evolutionItemRequirement": "ITEM_GEN4_EVOLUTION_STONE",
+          "candyCost": 100
+        }
+      ],
       "id": 112,
       "name": "RHYDON",
       "at": 222,
@@ -1081,6 +1537,7 @@
       "nice_name": "Rhydon"
     },
     {
+      "evolutions": [],
       "id": 113,
       "name": "CHANSEY",
       "at": 60,
@@ -1089,6 +1546,7 @@
       "nice_name": "Chansey"
     },
     {
+      "evolutions": [],
       "id": 114,
       "name": "TANGELA",
       "at": 183,
@@ -1097,6 +1555,7 @@
       "nice_name": "Tangela"
     },
     {
+      "evolutions": [],
       "id": 115,
       "name": "KANGASKHAN",
       "at": 181,
@@ -1105,6 +1564,7 @@
       "nice_name": "Kangaskhan"
     },
     {
+      "evolutions": [],
       "id": 116,
       "name": "HORSEA",
       "at": 129,
@@ -1113,6 +1573,7 @@
       "nice_name": "Horsea"
     },
     {
+      "evolutions": [],
       "id": 117,
       "name": "SEADRA",
       "at": 187,
@@ -1121,6 +1582,7 @@
       "nice_name": "Seadra"
     },
     {
+      "evolutions": [],
       "id": 118,
       "name": "GOLDEEN",
       "at": 123,
@@ -1129,6 +1591,7 @@
       "nice_name": "Goldeen"
     },
     {
+      "evolutions": [],
       "id": 119,
       "name": "SEAKING",
       "at": 175,
@@ -1137,6 +1600,7 @@
       "nice_name": "Seaking"
     },
     {
+      "evolutions": [],
       "id": 120,
       "name": "STARYU",
       "at": 137,
@@ -1145,6 +1609,7 @@
       "nice_name": "Staryu"
     },
     {
+      "evolutions": [],
       "id": 121,
       "name": "STARMIE",
       "at": 210,
@@ -1153,6 +1618,7 @@
       "nice_name": "Starmie"
     },
     {
+      "evolutions": [],
       "id": 122,
       "name": "MR_MIME",
       "at": 192,
@@ -1161,6 +1627,12 @@
       "nice_name": "Mr Mime"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "MR_RIME",
+          "candyCost": 50
+        }
+      ],
       "id": 122,
       "name": "MR_MIME_GALARIAN",
       "at": 183,
@@ -1169,6 +1641,13 @@
       "nice_name": "Mr Mime Galarian"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "SCIZOR",
+          "evolutionItemRequirement": "ITEM_METAL_COAT",
+          "candyCost": 50
+        }
+      ],
       "id": 123,
       "name": "SCYTHER",
       "at": 218,
@@ -1177,6 +1656,7 @@
       "nice_name": "Scyther"
     },
     {
+      "evolutions": [],
       "id": 124,
       "name": "JYNX",
       "at": 223,
@@ -1185,6 +1665,13 @@
       "nice_name": "Jynx"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "ELECTIVIRE",
+          "evolutionItemRequirement": "ITEM_GEN4_EVOLUTION_STONE",
+          "candyCost": 100
+        }
+      ],
       "id": 125,
       "name": "ELECTABUZZ",
       "at": 198,
@@ -1193,6 +1680,13 @@
       "nice_name": "Electabuzz"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "MAGMORTAR",
+          "evolutionItemRequirement": "ITEM_GEN4_EVOLUTION_STONE",
+          "candyCost": 100
+        }
+      ],
       "id": 126,
       "name": "MAGMAR",
       "at": 206,
@@ -1201,6 +1695,7 @@
       "nice_name": "Magmar"
     },
     {
+      "evolutions": [],
       "id": 127,
       "name": "PINSIR",
       "at": 238,
@@ -1209,6 +1704,7 @@
       "nice_name": "Pinsir"
     },
     {
+      "evolutions": [],
       "id": 128,
       "name": "TAUROS",
       "at": 198,
@@ -1217,6 +1713,12 @@
       "nice_name": "Tauros"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "GYARADOS",
+          "candyCost": 400
+        }
+      ],
       "id": 129,
       "name": "MAGIKARP",
       "at": 29,
@@ -1225,6 +1727,7 @@
       "nice_name": "Magikarp"
     },
     {
+      "evolutions": [],
       "id": 130,
       "name": "GYARADOS",
       "at": 237,
@@ -1233,6 +1736,7 @@
       "nice_name": "Gyarados"
     },
     {
+      "evolutions": [],
       "id": 131,
       "name": "LAPRAS",
       "at": 165,
@@ -1241,6 +1745,7 @@
       "nice_name": "Lapras"
     },
     {
+      "evolutions": [],
       "id": 132,
       "name": "DITTO",
       "at": 91,
@@ -1249,6 +1754,7 @@
       "nice_name": "Ditto"
     },
     {
+      "evolutions": [],
       "id": 133,
       "name": "EEVEE",
       "at": 104,
@@ -1257,6 +1763,7 @@
       "nice_name": "Eevee"
     },
     {
+      "evolutions": [],
       "id": 134,
       "name": "VAPOREON",
       "at": 205,
@@ -1265,6 +1772,7 @@
       "nice_name": "Vaporeon"
     },
     {
+      "evolutions": [],
       "id": 135,
       "name": "JOLTEON",
       "at": 232,
@@ -1273,6 +1781,7 @@
       "nice_name": "Jolteon"
     },
     {
+      "evolutions": [],
       "id": 136,
       "name": "FLAREON",
       "at": 246,
@@ -1281,6 +1790,13 @@
       "nice_name": "Flareon"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "PORYGON2",
+          "evolutionItemRequirement": "ITEM_UP_GRADE",
+          "candyCost": 25
+        }
+      ],
       "id": 137,
       "name": "PORYGON",
       "at": 153,
@@ -1289,6 +1805,12 @@
       "nice_name": "Porygon"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "OMASTAR",
+          "candyCost": 50
+        }
+      ],
       "id": 138,
       "name": "OMANYTE",
       "at": 155,
@@ -1297,6 +1819,7 @@
       "nice_name": "Omanyte"
     },
     {
+      "evolutions": [],
       "id": 139,
       "name": "OMASTAR",
       "at": 207,
@@ -1305,6 +1828,12 @@
       "nice_name": "Omastar"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "KABUTOPS",
+          "candyCost": 50
+        }
+      ],
       "id": 140,
       "name": "KABUTO",
       "at": 148,
@@ -1313,6 +1842,7 @@
       "nice_name": "Kabuto"
     },
     {
+      "evolutions": [],
       "id": 141,
       "name": "KABUTOPS",
       "at": 220,
@@ -1321,6 +1851,7 @@
       "nice_name": "Kabutops"
     },
     {
+      "evolutions": [],
       "id": 142,
       "name": "AERODACTYL",
       "at": 221,
@@ -1329,6 +1860,7 @@
       "nice_name": "Aerodactyl"
     },
     {
+      "evolutions": [],
       "id": 143,
       "name": "SNORLAX",
       "at": 190,
@@ -1337,6 +1869,7 @@
       "nice_name": "Snorlax"
     },
     {
+      "evolutions": [],
       "id": 144,
       "name": "ARTICUNO",
       "at": 192,
@@ -1345,6 +1878,7 @@
       "nice_name": "Articuno"
     },
     {
+      "evolutions": [],
       "id": 145,
       "name": "ZAPDOS",
       "at": 253,
@@ -1353,6 +1887,7 @@
       "nice_name": "Zapdos"
     },
     {
+      "evolutions": [],
       "id": 146,
       "name": "MOLTRES",
       "at": 251,
@@ -1361,6 +1896,12 @@
       "nice_name": "Moltres"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "DRAGONAIR",
+          "candyCost": 25
+        }
+      ],
       "id": 147,
       "name": "DRATINI",
       "at": 119,
@@ -1369,6 +1910,12 @@
       "nice_name": "Dratini"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "DRAGONITE",
+          "candyCost": 100
+        }
+      ],
       "id": 148,
       "name": "DRAGONAIR",
       "at": 163,
@@ -1377,6 +1924,7 @@
       "nice_name": "Dragonair"
     },
     {
+      "evolutions": [],
       "id": 149,
       "name": "DRAGONITE",
       "at": 263,
@@ -1385,6 +1933,7 @@
       "nice_name": "Dragonite"
     },
     {
+      "evolutions": [],
       "id": 150,
       "name": "MEWTWO",
       "at": 300,
@@ -1393,6 +1942,7 @@
       "nice_name": "Mewtwo"
     },
     {
+      "evolutions": [],
       "id": 150,
       "name": "MEWTWO_A",
       "at": 182,
@@ -1401,6 +1951,7 @@
       "nice_name": "Mewtwo A"
     },
     {
+      "evolutions": [],
       "id": 151,
       "name": "MEW",
       "at": 210,
@@ -1409,6 +1960,7 @@
       "nice_name": "Mew"
     },
     {
+      "evolutions": [],
       "id": 152,
       "name": "CHIKORITA",
       "at": 92,
@@ -1417,6 +1969,7 @@
       "nice_name": "Chikorita"
     },
     {
+      "evolutions": [],
       "id": 153,
       "name": "BAYLEEF",
       "at": 122,
@@ -1425,6 +1978,7 @@
       "nice_name": "Bayleef"
     },
     {
+      "evolutions": [],
       "id": 154,
       "name": "MEGANIUM",
       "at": 168,
@@ -1433,6 +1987,7 @@
       "nice_name": "Meganium"
     },
     {
+      "evolutions": [],
       "id": 155,
       "name": "CYNDAQUIL",
       "at": 116,
@@ -1441,6 +1996,7 @@
       "nice_name": "Cyndaquil"
     },
     {
+      "evolutions": [],
       "id": 156,
       "name": "QUILAVA",
       "at": 158,
@@ -1449,6 +2005,7 @@
       "nice_name": "Quilava"
     },
     {
+      "evolutions": [],
       "id": 157,
       "name": "TYPHLOSION",
       "at": 223,
@@ -1457,6 +2014,7 @@
       "nice_name": "Typhlosion"
     },
     {
+      "evolutions": [],
       "id": 158,
       "name": "TOTODILE",
       "at": 117,
@@ -1465,6 +2023,7 @@
       "nice_name": "Totodile"
     },
     {
+      "evolutions": [],
       "id": 159,
       "name": "CROCONAW",
       "at": 150,
@@ -1473,6 +2032,7 @@
       "nice_name": "Croconaw"
     },
     {
+      "evolutions": [],
       "id": 160,
       "name": "FERALIGATR",
       "at": 205,
@@ -1481,6 +2041,7 @@
       "nice_name": "Feraligatr"
     },
     {
+      "evolutions": [],
       "id": 161,
       "name": "SENTRET",
       "at": 79,
@@ -1489,6 +2050,7 @@
       "nice_name": "Sentret"
     },
     {
+      "evolutions": [],
       "id": 162,
       "name": "FURRET",
       "at": 148,
@@ -1497,6 +2059,7 @@
       "nice_name": "Furret"
     },
     {
+      "evolutions": [],
       "id": 163,
       "name": "HOOTHOOT",
       "at": 67,
@@ -1505,6 +2068,7 @@
       "nice_name": "Hoothoot"
     },
     {
+      "evolutions": [],
       "id": 164,
       "name": "NOCTOWL",
       "at": 145,
@@ -1513,6 +2077,7 @@
       "nice_name": "Noctowl"
     },
     {
+      "evolutions": [],
       "id": 165,
       "name": "LEDYBA",
       "at": 72,
@@ -1521,6 +2086,7 @@
       "nice_name": "Ledyba"
     },
     {
+      "evolutions": [],
       "id": 166,
       "name": "LEDIAN",
       "at": 107,
@@ -1529,6 +2095,7 @@
       "nice_name": "Ledian"
     },
     {
+      "evolutions": [],
       "id": 167,
       "name": "SPINARAK",
       "at": 105,
@@ -1537,6 +2104,7 @@
       "nice_name": "Spinarak"
     },
     {
+      "evolutions": [],
       "id": 168,
       "name": "ARIADOS",
       "at": 161,
@@ -1545,6 +2113,7 @@
       "nice_name": "Ariados"
     },
     {
+      "evolutions": [],
       "id": 169,
       "name": "CROBAT",
       "at": 194,
@@ -1553,6 +2122,7 @@
       "nice_name": "Crobat"
     },
     {
+      "evolutions": [],
       "id": 170,
       "name": "CHINCHOU",
       "at": 106,
@@ -1561,6 +2131,7 @@
       "nice_name": "Chinchou"
     },
     {
+      "evolutions": [],
       "id": 171,
       "name": "LANTURN",
       "at": 146,
@@ -1569,6 +2140,7 @@
       "nice_name": "Lanturn"
     },
     {
+      "evolutions": [],
       "id": 172,
       "name": "PICHU",
       "at": 77,
@@ -1577,6 +2149,7 @@
       "nice_name": "Pichu"
     },
     {
+      "evolutions": [],
       "id": 173,
       "name": "CLEFFA",
       "at": 75,
@@ -1585,6 +2158,7 @@
       "nice_name": "Cleffa"
     },
     {
+      "evolutions": [],
       "id": 174,
       "name": "IGGLYBUFF",
       "at": 69,
@@ -1593,6 +2167,7 @@
       "nice_name": "Igglybuff"
     },
     {
+      "evolutions": [],
       "id": 175,
       "name": "TOGEPI",
       "at": 67,
@@ -1601,6 +2176,7 @@
       "nice_name": "Togepi"
     },
     {
+      "evolutions": [],
       "id": 176,
       "name": "TOGETIC",
       "at": 139,
@@ -1609,6 +2185,7 @@
       "nice_name": "Togetic"
     },
     {
+      "evolutions": [],
       "id": 177,
       "name": "NATU",
       "at": 134,
@@ -1617,6 +2194,7 @@
       "nice_name": "Natu"
     },
     {
+      "evolutions": [],
       "id": 178,
       "name": "XATU",
       "at": 192,
@@ -1625,6 +2203,12 @@
       "nice_name": "Xatu"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "FLAAFFY",
+          "candyCost": 25
+        }
+      ],
       "id": 179,
       "name": "MAREEP",
       "at": 114,
@@ -1633,6 +2217,12 @@
       "nice_name": "Mareep"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "AMPHAROS",
+          "candyCost": 100
+        }
+      ],
       "id": 180,
       "name": "FLAAFFY",
       "at": 145,
@@ -1641,6 +2231,7 @@
       "nice_name": "Flaaffy"
     },
     {
+      "evolutions": [],
       "id": 181,
       "name": "AMPHAROS",
       "at": 211,
@@ -1649,6 +2240,7 @@
       "nice_name": "Ampharos"
     },
     {
+      "evolutions": [],
       "id": 182,
       "name": "BELLOSSOM",
       "at": 169,
@@ -1657,6 +2249,7 @@
       "nice_name": "Bellossom"
     },
     {
+      "evolutions": [],
       "id": 183,
       "name": "MARILL",
       "at": 37,
@@ -1665,6 +2258,7 @@
       "nice_name": "Marill"
     },
     {
+      "evolutions": [],
       "id": 184,
       "name": "AZUMARILL",
       "at": 112,
@@ -1673,6 +2267,7 @@
       "nice_name": "Azumarill"
     },
     {
+      "evolutions": [],
       "id": 185,
       "name": "SUDOWOODO",
       "at": 167,
@@ -1681,6 +2276,7 @@
       "nice_name": "Sudowoodo"
     },
     {
+      "evolutions": [],
       "id": 186,
       "name": "POLITOED",
       "at": 174,
@@ -1689,6 +2285,12 @@
       "nice_name": "Politoed"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "SKIPLOOM",
+          "candyCost": 25
+        }
+      ],
       "id": 187,
       "name": "HOPPIP",
       "at": 67,
@@ -1697,6 +2299,12 @@
       "nice_name": "Hoppip"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "JUMPLUFF",
+          "candyCost": 100
+        }
+      ],
       "id": 188,
       "name": "SKIPLOOM",
       "at": 91,
@@ -1705,6 +2313,7 @@
       "nice_name": "Skiploom"
     },
     {
+      "evolutions": [],
       "id": 189,
       "name": "JUMPLUFF",
       "at": 118,
@@ -1713,6 +2322,13 @@
       "nice_name": "Jumpluff"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "AMBIPOM",
+          "evolutionItemRequirement": "ITEM_GEN4_EVOLUTION_STONE",
+          "candyCost": 100
+        }
+      ],
       "id": 190,
       "name": "AIPOM",
       "at": 136,
@@ -1721,6 +2337,7 @@
       "nice_name": "Aipom"
     },
     {
+      "evolutions": [],
       "id": 191,
       "name": "SUNKERN",
       "at": 55,
@@ -1729,6 +2346,7 @@
       "nice_name": "Sunkern"
     },
     {
+      "evolutions": [],
       "id": 192,
       "name": "SUNFLORA",
       "at": 185,
@@ -1737,6 +2355,7 @@
       "nice_name": "Sunflora"
     },
     {
+      "evolutions": [],
       "id": 193,
       "name": "YANMA",
       "at": 154,
@@ -1745,6 +2364,12 @@
       "nice_name": "Yanma"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "QUAGSIRE",
+          "candyCost": 50
+        }
+      ],
       "id": 194,
       "name": "WOOPER",
       "at": 75,
@@ -1753,6 +2378,7 @@
       "nice_name": "Wooper"
     },
     {
+      "evolutions": [],
       "id": 195,
       "name": "QUAGSIRE",
       "at": 152,
@@ -1761,6 +2387,7 @@
       "nice_name": "Quagsire"
     },
     {
+      "evolutions": [],
       "id": 196,
       "name": "ESPEON",
       "at": 261,
@@ -1769,6 +2396,7 @@
       "nice_name": "Espeon"
     },
     {
+      "evolutions": [],
       "id": 197,
       "name": "UMBREON",
       "at": 126,
@@ -1777,6 +2405,13 @@
       "nice_name": "Umbreon"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "HONCHKROW",
+          "evolutionItemRequirement": "ITEM_GEN4_EVOLUTION_STONE",
+          "candyCost": 100
+        }
+      ],
       "id": 198,
       "name": "MURKROW",
       "at": 175,
@@ -1785,6 +2420,7 @@
       "nice_name": "Murkrow"
     },
     {
+      "evolutions": [],
       "id": 199,
       "name": "SLOWKING",
       "at": 177,
@@ -1793,6 +2429,7 @@
       "nice_name": "Slowking"
     },
     {
+      "evolutions": [],
       "id": 200,
       "name": "MISDREAVUS",
       "at": 167,
@@ -1801,6 +2438,7 @@
       "nice_name": "Misdreavus"
     },
     {
+      "evolutions": [],
       "id": 201,
       "name": "UNOWN",
       "at": 136,
@@ -1809,6 +2447,7 @@
       "nice_name": "Unown"
     },
     {
+      "evolutions": [],
       "id": 202,
       "name": "WOBBUFFET",
       "at": 60,
@@ -1817,6 +2456,7 @@
       "nice_name": "Wobbuffet"
     },
     {
+      "evolutions": [],
       "id": 203,
       "name": "GIRAFARIG",
       "at": 182,
@@ -1825,6 +2465,12 @@
       "nice_name": "Girafarig"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "FORRETRESS",
+          "candyCost": 50
+        }
+      ],
       "id": 204,
       "name": "PINECO",
       "at": 108,
@@ -1833,6 +2479,7 @@
       "nice_name": "Pineco"
     },
     {
+      "evolutions": [],
       "id": 205,
       "name": "FORRETRESS",
       "at": 161,
@@ -1841,6 +2488,7 @@
       "nice_name": "Forretress"
     },
     {
+      "evolutions": [],
       "id": 206,
       "name": "DUNSPARCE",
       "at": 131,
@@ -1849,6 +2497,13 @@
       "nice_name": "Dunsparce"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "GLISCOR",
+          "evolutionItemRequirement": "ITEM_GEN4_EVOLUTION_STONE",
+          "candyCost": 100
+        }
+      ],
       "id": 207,
       "name": "GLIGAR",
       "at": 143,
@@ -1857,6 +2512,7 @@
       "nice_name": "Gligar"
     },
     {
+      "evolutions": [],
       "id": 208,
       "name": "STEELIX",
       "at": 148,
@@ -1865,6 +2521,7 @@
       "nice_name": "Steelix"
     },
     {
+      "evolutions": [],
       "id": 209,
       "name": "SNUBBULL",
       "at": 137,
@@ -1873,6 +2530,7 @@
       "nice_name": "Snubbull"
     },
     {
+      "evolutions": [],
       "id": 210,
       "name": "GRANBULL",
       "at": 212,
@@ -1881,6 +2539,7 @@
       "nice_name": "Granbull"
     },
     {
+      "evolutions": [],
       "id": 211,
       "name": "QWILFISH",
       "at": 184,
@@ -1889,6 +2548,7 @@
       "nice_name": "Qwilfish"
     },
     {
+      "evolutions": [],
       "id": 212,
       "name": "SCIZOR",
       "at": 236,
@@ -1897,6 +2557,7 @@
       "nice_name": "Scizor"
     },
     {
+      "evolutions": [],
       "id": 213,
       "name": "SHUCKLE",
       "at": 17,
@@ -1905,6 +2566,7 @@
       "nice_name": "Shuckle"
     },
     {
+      "evolutions": [],
       "id": 214,
       "name": "HERACROSS",
       "at": 234,
@@ -1913,6 +2575,13 @@
       "nice_name": "Heracross"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "WEAVILE",
+          "evolutionItemRequirement": "ITEM_GEN4_EVOLUTION_STONE",
+          "candyCost": 100
+        }
+      ],
       "id": 215,
       "name": "SNEASEL",
       "at": 189,
@@ -1921,6 +2590,12 @@
       "nice_name": "Sneasel"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "URSARING",
+          "candyCost": 50
+        }
+      ],
       "id": 216,
       "name": "TEDDIURSA",
       "at": 142,
@@ -1929,6 +2604,7 @@
       "nice_name": "Teddiursa"
     },
     {
+      "evolutions": [],
       "id": 217,
       "name": "URSARING",
       "at": 236,
@@ -1937,6 +2613,7 @@
       "nice_name": "Ursaring"
     },
     {
+      "evolutions": [],
       "id": 218,
       "name": "SLUGMA",
       "at": 118,
@@ -1945,6 +2622,7 @@
       "nice_name": "Slugma"
     },
     {
+      "evolutions": [],
       "id": 219,
       "name": "MAGCARGO",
       "at": 139,
@@ -1953,6 +2631,7 @@
       "nice_name": "Magcargo"
     },
     {
+      "evolutions": [],
       "id": 220,
       "name": "SWINUB",
       "at": 90,
@@ -1961,6 +2640,7 @@
       "nice_name": "Swinub"
     },
     {
+      "evolutions": [],
       "id": 221,
       "name": "PILOSWINE",
       "at": 181,
@@ -1969,6 +2649,7 @@
       "nice_name": "Piloswine"
     },
     {
+      "evolutions": [],
       "id": 222,
       "name": "CORSOLA",
       "at": 118,
@@ -1977,6 +2658,7 @@
       "nice_name": "Corsola"
     },
     {
+      "evolutions": [],
       "id": 223,
       "name": "REMORAID",
       "at": 127,
@@ -1985,6 +2667,7 @@
       "nice_name": "Remoraid"
     },
     {
+      "evolutions": [],
       "id": 224,
       "name": "OCTILLERY",
       "at": 197,
@@ -1993,6 +2676,7 @@
       "nice_name": "Octillery"
     },
     {
+      "evolutions": [],
       "id": 225,
       "name": "DELIBIRD",
       "at": 128,
@@ -2001,6 +2685,7 @@
       "nice_name": "Delibird"
     },
     {
+      "evolutions": [],
       "id": 226,
       "name": "MANTINE",
       "at": 148,
@@ -2009,6 +2694,7 @@
       "nice_name": "Mantine"
     },
     {
+      "evolutions": [],
       "id": 227,
       "name": "SKARMORY",
       "at": 148,
@@ -2017,6 +2703,12 @@
       "nice_name": "Skarmory"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "HOUNDOOM",
+          "candyCost": 50
+        }
+      ],
       "id": 228,
       "name": "HOUNDOUR",
       "at": 152,
@@ -2025,6 +2717,7 @@
       "nice_name": "Houndour"
     },
     {
+      "evolutions": [],
       "id": 229,
       "name": "HOUNDOOM",
       "at": 224,
@@ -2033,6 +2726,7 @@
       "nice_name": "Houndoom"
     },
     {
+      "evolutions": [],
       "id": 230,
       "name": "KINGDRA",
       "at": 194,
@@ -2041,6 +2735,7 @@
       "nice_name": "Kingdra"
     },
     {
+      "evolutions": [],
       "id": 231,
       "name": "PHANPY",
       "at": 107,
@@ -2049,6 +2744,7 @@
       "nice_name": "Phanpy"
     },
     {
+      "evolutions": [],
       "id": 232,
       "name": "DONPHAN",
       "at": 214,
@@ -2057,6 +2753,13 @@
       "nice_name": "Donphan"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "PORYGON_Z",
+          "evolutionItemRequirement": "ITEM_GEN4_EVOLUTION_STONE",
+          "candyCost": 100
+        }
+      ],
       "id": 233,
       "name": "PORYGON2",
       "at": 198,
@@ -2065,6 +2768,7 @@
       "nice_name": "Porygon2"
     },
     {
+      "evolutions": [],
       "id": 234,
       "name": "STANTLER",
       "at": 192,
@@ -2073,6 +2777,7 @@
       "nice_name": "Stantler"
     },
     {
+      "evolutions": [],
       "id": 235,
       "name": "SMEARGLE",
       "at": 40,
@@ -2081,6 +2786,7 @@
       "nice_name": "Smeargle"
     },
     {
+      "evolutions": [],
       "id": 236,
       "name": "TYROGUE",
       "at": 64,
@@ -2089,6 +2795,7 @@
       "nice_name": "Tyrogue"
     },
     {
+      "evolutions": [],
       "id": 237,
       "name": "HITMONTOP",
       "at": 173,
@@ -2097,6 +2804,7 @@
       "nice_name": "Hitmontop"
     },
     {
+      "evolutions": [],
       "id": 238,
       "name": "SMOOCHUM",
       "at": 153,
@@ -2105,6 +2813,7 @@
       "nice_name": "Smoochum"
     },
     {
+      "evolutions": [],
       "id": 239,
       "name": "ELEKID",
       "at": 135,
@@ -2113,6 +2822,7 @@
       "nice_name": "Elekid"
     },
     {
+      "evolutions": [],
       "id": 240,
       "name": "MAGBY",
       "at": 151,
@@ -2121,6 +2831,7 @@
       "nice_name": "Magby"
     },
     {
+      "evolutions": [],
       "id": 241,
       "name": "MILTANK",
       "at": 157,
@@ -2129,6 +2840,7 @@
       "nice_name": "Miltank"
     },
     {
+      "evolutions": [],
       "id": 242,
       "name": "BLISSEY",
       "at": 129,
@@ -2137,6 +2849,7 @@
       "nice_name": "Blissey"
     },
     {
+      "evolutions": [],
       "id": 243,
       "name": "RAIKOU",
       "at": 241,
@@ -2145,6 +2858,7 @@
       "nice_name": "Raikou"
     },
     {
+      "evolutions": [],
       "id": 244,
       "name": "ENTEI",
       "at": 235,
@@ -2153,6 +2867,7 @@
       "nice_name": "Entei"
     },
     {
+      "evolutions": [],
       "id": 245,
       "name": "SUICUNE",
       "at": 180,
@@ -2161,6 +2876,12 @@
       "nice_name": "Suicune"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "PUPITAR",
+          "candyCost": 25
+        }
+      ],
       "id": 246,
       "name": "LARVITAR",
       "at": 115,
@@ -2169,6 +2890,12 @@
       "nice_name": "Larvitar"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "TYRANITAR",
+          "candyCost": 100
+        }
+      ],
       "id": 247,
       "name": "PUPITAR",
       "at": 155,
@@ -2177,6 +2904,7 @@
       "nice_name": "Pupitar"
     },
     {
+      "evolutions": [],
       "id": 248,
       "name": "TYRANITAR",
       "at": 251,
@@ -2185,6 +2913,7 @@
       "nice_name": "Tyranitar"
     },
     {
+      "evolutions": [],
       "id": 249,
       "name": "LUGIA",
       "at": 193,
@@ -2193,6 +2922,7 @@
       "nice_name": "Lugia"
     },
     {
+      "evolutions": [],
       "id": 250,
       "name": "HO_OH",
       "at": 239,
@@ -2201,6 +2931,7 @@
       "nice_name": "Ho Oh"
     },
     {
+      "evolutions": [],
       "id": 251,
       "name": "CELEBI",
       "at": 210,
@@ -2209,6 +2940,7 @@
       "nice_name": "Celebi"
     },
     {
+      "evolutions": [],
       "id": 252,
       "name": "TREECKO",
       "at": 124,
@@ -2217,6 +2949,7 @@
       "nice_name": "Treecko"
     },
     {
+      "evolutions": [],
       "id": 253,
       "name": "GROVYLE",
       "at": 172,
@@ -2225,6 +2958,7 @@
       "nice_name": "Grovyle"
     },
     {
+      "evolutions": [],
       "id": 254,
       "name": "SCEPTILE",
       "at": 223,
@@ -2233,6 +2967,7 @@
       "nice_name": "Sceptile"
     },
     {
+      "evolutions": [],
       "id": 255,
       "name": "TORCHIC",
       "at": 130,
@@ -2241,6 +2976,7 @@
       "nice_name": "Torchic"
     },
     {
+      "evolutions": [],
       "id": 256,
       "name": "COMBUSKEN",
       "at": 163,
@@ -2249,6 +2985,7 @@
       "nice_name": "Combusken"
     },
     {
+      "evolutions": [],
       "id": 257,
       "name": "BLAZIKEN",
       "at": 240,
@@ -2257,6 +2994,12 @@
       "nice_name": "Blaziken"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "MARSHTOMP",
+          "candyCost": 25
+        }
+      ],
       "id": 258,
       "name": "MUDKIP",
       "at": 126,
@@ -2265,6 +3008,12 @@
       "nice_name": "Mudkip"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "SWAMPERT",
+          "candyCost": 100
+        }
+      ],
       "id": 259,
       "name": "MARSHTOMP",
       "at": 156,
@@ -2273,6 +3022,7 @@
       "nice_name": "Marshtomp"
     },
     {
+      "evolutions": [],
       "id": 260,
       "name": "SWAMPERT",
       "at": 208,
@@ -2281,6 +3031,7 @@
       "nice_name": "Swampert"
     },
     {
+      "evolutions": [],
       "id": 261,
       "name": "POOCHYENA",
       "at": 96,
@@ -2289,6 +3040,7 @@
       "nice_name": "Poochyena"
     },
     {
+      "evolutions": [],
       "id": 262,
       "name": "MIGHTYENA",
       "at": 171,
@@ -2297,6 +3049,12 @@
       "nice_name": "Mightyena"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "LINOONE",
+          "candyCost": 50
+        }
+      ],
       "id": 263,
       "name": "ZIGZAGOON",
       "at": 58,
@@ -2305,6 +3063,12 @@
       "nice_name": "Zigzagoon"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "LINOONE",
+          "candyCost": 25
+        }
+      ],
       "id": 263,
       "name": "ZIGZAGOON_GALARIAN",
       "at": 58,
@@ -2313,6 +3077,7 @@
       "nice_name": "Zigzagoon Galarian"
     },
     {
+      "evolutions": [],
       "id": 264,
       "name": "LINOONE",
       "at": 142,
@@ -2321,6 +3086,12 @@
       "nice_name": "Linoone"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "OBSTAGOON",
+          "candyCost": 100
+        }
+      ],
       "id": 264,
       "name": "LINOONE_GALARIAN",
       "at": 142,
@@ -2329,6 +3100,7 @@
       "nice_name": "Linoone Galarian"
     },
     {
+      "evolutions": [],
       "id": 265,
       "name": "WURMPLE",
       "at": 75,
@@ -2337,6 +3109,7 @@
       "nice_name": "Wurmple"
     },
     {
+      "evolutions": [],
       "id": 266,
       "name": "SILCOON",
       "at": 60,
@@ -2345,6 +3118,7 @@
       "nice_name": "Silcoon"
     },
     {
+      "evolutions": [],
       "id": 267,
       "name": "BEAUTIFLY",
       "at": 189,
@@ -2353,6 +3127,7 @@
       "nice_name": "Beautifly"
     },
     {
+      "evolutions": [],
       "id": 268,
       "name": "CASCOON",
       "at": 60,
@@ -2361,6 +3136,7 @@
       "nice_name": "Cascoon"
     },
     {
+      "evolutions": [],
       "id": 269,
       "name": "DUSTOX",
       "at": 98,
@@ -2369,6 +3145,7 @@
       "nice_name": "Dustox"
     },
     {
+      "evolutions": [],
       "id": 270,
       "name": "LOTAD",
       "at": 71,
@@ -2377,6 +3154,7 @@
       "nice_name": "Lotad"
     },
     {
+      "evolutions": [],
       "id": 271,
       "name": "LOMBRE",
       "at": 112,
@@ -2385,6 +3163,7 @@
       "nice_name": "Lombre"
     },
     {
+      "evolutions": [],
       "id": 272,
       "name": "LUDICOLO",
       "at": 173,
@@ -2393,6 +3172,12 @@
       "nice_name": "Ludicolo"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "NUZLEAF",
+          "candyCost": 25
+        }
+      ],
       "id": 273,
       "name": "SEEDOT",
       "at": 71,
@@ -2401,6 +3186,12 @@
       "nice_name": "Seedot"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "SHIFTRY",
+          "candyCost": 100
+        }
+      ],
       "id": 274,
       "name": "NUZLEAF",
       "at": 134,
@@ -2409,6 +3200,7 @@
       "nice_name": "Nuzleaf"
     },
     {
+      "evolutions": [],
       "id": 275,
       "name": "SHIFTRY",
       "at": 200,
@@ -2417,6 +3209,7 @@
       "nice_name": "Shiftry"
     },
     {
+      "evolutions": [],
       "id": 276,
       "name": "TAILLOW",
       "at": 106,
@@ -2425,6 +3218,7 @@
       "nice_name": "Taillow"
     },
     {
+      "evolutions": [],
       "id": 277,
       "name": "SWELLOW",
       "at": 185,
@@ -2433,6 +3227,7 @@
       "nice_name": "Swellow"
     },
     {
+      "evolutions": [],
       "id": 278,
       "name": "WINGULL",
       "at": 106,
@@ -2441,6 +3236,7 @@
       "nice_name": "Wingull"
     },
     {
+      "evolutions": [],
       "id": 279,
       "name": "PELIPPER",
       "at": 175,
@@ -2449,6 +3245,12 @@
       "nice_name": "Pelipper"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "KIRLIA",
+          "candyCost": 25
+        }
+      ],
       "id": 280,
       "name": "RALTS",
       "at": 79,
@@ -2457,6 +3259,18 @@
       "nice_name": "Ralts"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "GALLADE",
+          "evolutionItemRequirement": "ITEM_GEN4_EVOLUTION_STONE",
+          "candyCost": 100,
+          "genderRequirement": "MALE"
+        },
+        {
+          "evolution": "GARDEVOIR",
+          "candyCost": 100
+        }
+      ],
       "id": 281,
       "name": "KIRLIA",
       "at": 117,
@@ -2465,6 +3279,7 @@
       "nice_name": "Kirlia"
     },
     {
+      "evolutions": [],
       "id": 282,
       "name": "GARDEVOIR",
       "at": 237,
@@ -2473,6 +3288,7 @@
       "nice_name": "Gardevoir"
     },
     {
+      "evolutions": [],
       "id": 283,
       "name": "SURSKIT",
       "at": 93,
@@ -2481,6 +3297,7 @@
       "nice_name": "Surskit"
     },
     {
+      "evolutions": [],
       "id": 284,
       "name": "MASQUERAIN",
       "at": 192,
@@ -2489,6 +3306,7 @@
       "nice_name": "Masquerain"
     },
     {
+      "evolutions": [],
       "id": 285,
       "name": "SHROOMISH",
       "at": 74,
@@ -2497,6 +3315,7 @@
       "nice_name": "Shroomish"
     },
     {
+      "evolutions": [],
       "id": 286,
       "name": "BRELOOM",
       "at": 241,
@@ -2505,6 +3324,7 @@
       "nice_name": "Breloom"
     },
     {
+      "evolutions": [],
       "id": 287,
       "name": "SLAKOTH",
       "at": 104,
@@ -2513,6 +3333,7 @@
       "nice_name": "Slakoth"
     },
     {
+      "evolutions": [],
       "id": 288,
       "name": "VIGOROTH",
       "at": 159,
@@ -2521,6 +3342,7 @@
       "nice_name": "Vigoroth"
     },
     {
+      "evolutions": [],
       "id": 289,
       "name": "SLAKING",
       "at": 290,
@@ -2529,6 +3351,7 @@
       "nice_name": "Slaking"
     },
     {
+      "evolutions": [],
       "id": 290,
       "name": "NINCADA",
       "at": 80,
@@ -2537,6 +3360,7 @@
       "nice_name": "Nincada"
     },
     {
+      "evolutions": [],
       "id": 291,
       "name": "NINJASK",
       "at": 199,
@@ -2545,6 +3369,7 @@
       "nice_name": "Ninjask"
     },
     {
+      "evolutions": [],
       "id": 292,
       "name": "SHEDINJA",
       "at": 153,
@@ -2553,6 +3378,7 @@
       "nice_name": "Shedinja"
     },
     {
+      "evolutions": [],
       "id": 293,
       "name": "WHISMUR",
       "at": 92,
@@ -2561,6 +3387,7 @@
       "nice_name": "Whismur"
     },
     {
+      "evolutions": [],
       "id": 294,
       "name": "LOUDRED",
       "at": 134,
@@ -2569,6 +3396,7 @@
       "nice_name": "Loudred"
     },
     {
+      "evolutions": [],
       "id": 295,
       "name": "EXPLOUD",
       "at": 179,
@@ -2577,6 +3405,7 @@
       "nice_name": "Exploud"
     },
     {
+      "evolutions": [],
       "id": 296,
       "name": "MAKUHITA",
       "at": 99,
@@ -2585,6 +3414,7 @@
       "nice_name": "Makuhita"
     },
     {
+      "evolutions": [],
       "id": 297,
       "name": "HARIYAMA",
       "at": 209,
@@ -2593,6 +3423,7 @@
       "nice_name": "Hariyama"
     },
     {
+      "evolutions": [],
       "id": 298,
       "name": "AZURILL",
       "at": 36,
@@ -2601,6 +3432,7 @@
       "nice_name": "Azurill"
     },
     {
+      "evolutions": [],
       "id": 299,
       "name": "NOSEPASS",
       "at": 82,
@@ -2609,6 +3441,7 @@
       "nice_name": "Nosepass"
     },
     {
+      "evolutions": [],
       "id": 300,
       "name": "SKITTY",
       "at": 84,
@@ -2617,6 +3450,7 @@
       "nice_name": "Skitty"
     },
     {
+      "evolutions": [],
       "id": 301,
       "name": "DELCATTY",
       "at": 132,
@@ -2625,6 +3459,7 @@
       "nice_name": "Delcatty"
     },
     {
+      "evolutions": [],
       "id": 302,
       "name": "SABLEYE",
       "at": 141,
@@ -2633,6 +3468,7 @@
       "nice_name": "Sableye"
     },
     {
+      "evolutions": [],
       "id": 303,
       "name": "MAWILE",
       "at": 155,
@@ -2641,6 +3477,7 @@
       "nice_name": "Mawile"
     },
     {
+      "evolutions": [],
       "id": 304,
       "name": "ARON",
       "at": 121,
@@ -2649,6 +3486,7 @@
       "nice_name": "Aron"
     },
     {
+      "evolutions": [],
       "id": 305,
       "name": "LAIRON",
       "at": 158,
@@ -2657,6 +3495,7 @@
       "nice_name": "Lairon"
     },
     {
+      "evolutions": [],
       "id": 306,
       "name": "AGGRON",
       "at": 198,
@@ -2665,6 +3504,7 @@
       "nice_name": "Aggron"
     },
     {
+      "evolutions": [],
       "id": 307,
       "name": "MEDITITE",
       "at": 78,
@@ -2673,6 +3513,7 @@
       "nice_name": "Meditite"
     },
     {
+      "evolutions": [],
       "id": 308,
       "name": "MEDICHAM",
       "at": 121,
@@ -2681,6 +3522,7 @@
       "nice_name": "Medicham"
     },
     {
+      "evolutions": [],
       "id": 309,
       "name": "ELECTRIKE",
       "at": 123,
@@ -2689,6 +3531,7 @@
       "nice_name": "Electrike"
     },
     {
+      "evolutions": [],
       "id": 310,
       "name": "MANECTRIC",
       "at": 215,
@@ -2697,6 +3540,7 @@
       "nice_name": "Manectric"
     },
     {
+      "evolutions": [],
       "id": 311,
       "name": "PLUSLE",
       "at": 167,
@@ -2705,6 +3549,7 @@
       "nice_name": "Plusle"
     },
     {
+      "evolutions": [],
       "id": 312,
       "name": "MINUN",
       "at": 147,
@@ -2713,6 +3558,7 @@
       "nice_name": "Minun"
     },
     {
+      "evolutions": [],
       "id": 313,
       "name": "VOLBEAT",
       "at": 143,
@@ -2721,6 +3567,7 @@
       "nice_name": "Volbeat"
     },
     {
+      "evolutions": [],
       "id": 314,
       "name": "ILLUMISE",
       "at": 143,
@@ -2729,6 +3576,7 @@
       "nice_name": "Illumise"
     },
     {
+      "evolutions": [],
       "id": 315,
       "name": "ROSELIA",
       "at": 186,
@@ -2737,6 +3585,7 @@
       "nice_name": "Roselia"
     },
     {
+      "evolutions": [],
       "id": 316,
       "name": "GULPIN",
       "at": 80,
@@ -2745,6 +3594,7 @@
       "nice_name": "Gulpin"
     },
     {
+      "evolutions": [],
       "id": 317,
       "name": "SWALOT",
       "at": 140,
@@ -2753,6 +3603,12 @@
       "nice_name": "Swalot"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "SHARPEDO",
+          "candyCost": 50
+        }
+      ],
       "id": 318,
       "name": "CARVANHA",
       "at": 171,
@@ -2761,6 +3617,7 @@
       "nice_name": "Carvanha"
     },
     {
+      "evolutions": [],
       "id": 319,
       "name": "SHARPEDO",
       "at": 243,
@@ -2769,6 +3626,7 @@
       "nice_name": "Sharpedo"
     },
     {
+      "evolutions": [],
       "id": 320,
       "name": "WAILMER",
       "at": 136,
@@ -2777,6 +3635,7 @@
       "nice_name": "Wailmer"
     },
     {
+      "evolutions": [],
       "id": 321,
       "name": "WAILORD",
       "at": 175,
@@ -2785,6 +3644,7 @@
       "nice_name": "Wailord"
     },
     {
+      "evolutions": [],
       "id": 322,
       "name": "NUMEL",
       "at": 119,
@@ -2793,6 +3653,7 @@
       "nice_name": "Numel"
     },
     {
+      "evolutions": [],
       "id": 323,
       "name": "CAMERUPT",
       "at": 194,
@@ -2801,6 +3662,7 @@
       "nice_name": "Camerupt"
     },
     {
+      "evolutions": [],
       "id": 324,
       "name": "TORKOAL",
       "at": 151,
@@ -2809,6 +3671,7 @@
       "nice_name": "Torkoal"
     },
     {
+      "evolutions": [],
       "id": 325,
       "name": "SPOINK",
       "at": 125,
@@ -2817,6 +3680,7 @@
       "nice_name": "Spoink"
     },
     {
+      "evolutions": [],
       "id": 326,
       "name": "GRUMPIG",
       "at": 171,
@@ -2825,6 +3689,7 @@
       "nice_name": "Grumpig"
     },
     {
+      "evolutions": [],
       "id": 327,
       "name": "SPINDA",
       "at": 116,
@@ -2833,6 +3698,12 @@
       "nice_name": "Spinda"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "VIBRAVA",
+          "candyCost": 25
+        }
+      ],
       "id": 328,
       "name": "TRAPINCH",
       "at": 162,
@@ -2841,6 +3712,12 @@
       "nice_name": "Trapinch"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "FLYGON",
+          "candyCost": 100
+        }
+      ],
       "id": 329,
       "name": "VIBRAVA",
       "at": 134,
@@ -2849,6 +3726,7 @@
       "nice_name": "Vibrava"
     },
     {
+      "evolutions": [],
       "id": 330,
       "name": "FLYGON",
       "at": 205,
@@ -2857,6 +3735,12 @@
       "nice_name": "Flygon"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "CACTURNE",
+          "candyCost": 50
+        }
+      ],
       "id": 331,
       "name": "CACNEA",
       "at": 156,
@@ -2865,6 +3749,7 @@
       "nice_name": "Cacnea"
     },
     {
+      "evolutions": [],
       "id": 332,
       "name": "CACTURNE",
       "at": 221,
@@ -2873,6 +3758,7 @@
       "nice_name": "Cacturne"
     },
     {
+      "evolutions": [],
       "id": 333,
       "name": "SWABLU",
       "at": 76,
@@ -2881,6 +3767,7 @@
       "nice_name": "Swablu"
     },
     {
+      "evolutions": [],
       "id": 334,
       "name": "ALTARIA",
       "at": 141,
@@ -2889,6 +3776,7 @@
       "nice_name": "Altaria"
     },
     {
+      "evolutions": [],
       "id": 335,
       "name": "ZANGOOSE",
       "at": 222,
@@ -2897,6 +3785,7 @@
       "nice_name": "Zangoose"
     },
     {
+      "evolutions": [],
       "id": 336,
       "name": "SEVIPER",
       "at": 196,
@@ -2905,6 +3794,7 @@
       "nice_name": "Seviper"
     },
     {
+      "evolutions": [],
       "id": 337,
       "name": "LUNATONE",
       "at": 178,
@@ -2913,6 +3803,7 @@
       "nice_name": "Lunatone"
     },
     {
+      "evolutions": [],
       "id": 338,
       "name": "SOLROCK",
       "at": 178,
@@ -2921,6 +3812,7 @@
       "nice_name": "Solrock"
     },
     {
+      "evolutions": [],
       "id": 339,
       "name": "BARBOACH",
       "at": 93,
@@ -2929,6 +3821,7 @@
       "nice_name": "Barboach"
     },
     {
+      "evolutions": [],
       "id": 340,
       "name": "WHISCASH",
       "at": 151,
@@ -2937,6 +3830,7 @@
       "nice_name": "Whiscash"
     },
     {
+      "evolutions": [],
       "id": 341,
       "name": "CORPHISH",
       "at": 141,
@@ -2945,6 +3839,7 @@
       "nice_name": "Corphish"
     },
     {
+      "evolutions": [],
       "id": 342,
       "name": "CRAWDAUNT",
       "at": 224,
@@ -2953,6 +3848,7 @@
       "nice_name": "Crawdaunt"
     },
     {
+      "evolutions": [],
       "id": 343,
       "name": "BALTOY",
       "at": 77,
@@ -2961,6 +3857,7 @@
       "nice_name": "Baltoy"
     },
     {
+      "evolutions": [],
       "id": 344,
       "name": "CLAYDOL",
       "at": 140,
@@ -2969,6 +3866,7 @@
       "nice_name": "Claydol"
     },
     {
+      "evolutions": [],
       "id": 345,
       "name": "LILEEP",
       "at": 105,
@@ -2977,6 +3875,7 @@
       "nice_name": "Lileep"
     },
     {
+      "evolutions": [],
       "id": 346,
       "name": "CRADILY",
       "at": 152,
@@ -2985,6 +3884,7 @@
       "nice_name": "Cradily"
     },
     {
+      "evolutions": [],
       "id": 347,
       "name": "ANORITH",
       "at": 176,
@@ -2993,6 +3893,7 @@
       "nice_name": "Anorith"
     },
     {
+      "evolutions": [],
       "id": 348,
       "name": "ARMALDO",
       "at": 222,
@@ -3001,6 +3902,7 @@
       "nice_name": "Armaldo"
     },
     {
+      "evolutions": [],
       "id": 349,
       "name": "FEEBAS",
       "at": 29,
@@ -3009,6 +3911,7 @@
       "nice_name": "Feebas"
     },
     {
+      "evolutions": [],
       "id": 350,
       "name": "MILOTIC",
       "at": 192,
@@ -3017,6 +3920,7 @@
       "nice_name": "Milotic"
     },
     {
+      "evolutions": [],
       "id": 351,
       "name": "CASTFORM",
       "at": 139,
@@ -3025,6 +3929,7 @@
       "nice_name": "Castform"
     },
     {
+      "evolutions": [],
       "id": 351,
       "name": "CASTFORM_RAINY",
       "at": 139,
@@ -3033,6 +3938,7 @@
       "nice_name": "Castform Rainy"
     },
     {
+      "evolutions": [],
       "id": 351,
       "name": "CASTFORM_SNOWY",
       "at": 139,
@@ -3041,6 +3947,7 @@
       "nice_name": "Castform Snowy"
     },
     {
+      "evolutions": [],
       "id": 351,
       "name": "CASTFORM_SUNNY",
       "at": 139,
@@ -3049,6 +3956,7 @@
       "nice_name": "Castform Sunny"
     },
     {
+      "evolutions": [],
       "id": 352,
       "name": "KECLEON",
       "at": 161,
@@ -3057,6 +3965,12 @@
       "nice_name": "Kecleon"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "BANETTE",
+          "candyCost": 50
+        }
+      ],
       "id": 353,
       "name": "SHUPPET",
       "at": 138,
@@ -3065,6 +3979,7 @@
       "nice_name": "Shuppet"
     },
     {
+      "evolutions": [],
       "id": 354,
       "name": "BANETTE",
       "at": 218,
@@ -3073,6 +3988,12 @@
       "nice_name": "Banette"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "DUSCLOPS",
+          "candyCost": 25
+        }
+      ],
       "id": 355,
       "name": "DUSKULL",
       "at": 70,
@@ -3081,6 +4002,13 @@
       "nice_name": "Duskull"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "DUSKNOIR",
+          "evolutionItemRequirement": "ITEM_GEN4_EVOLUTION_STONE",
+          "candyCost": 100
+        }
+      ],
       "id": 356,
       "name": "DUSCLOPS",
       "at": 124,
@@ -3089,6 +4017,7 @@
       "nice_name": "Dusclops"
     },
     {
+      "evolutions": [],
       "id": 357,
       "name": "TROPIUS",
       "at": 136,
@@ -3097,6 +4026,7 @@
       "nice_name": "Tropius"
     },
     {
+      "evolutions": [],
       "id": 358,
       "name": "CHIMECHO",
       "at": 175,
@@ -3105,6 +4035,7 @@
       "nice_name": "Chimecho"
     },
     {
+      "evolutions": [],
       "id": 359,
       "name": "ABSOL",
       "at": 246,
@@ -3113,6 +4044,7 @@
       "nice_name": "Absol"
     },
     {
+      "evolutions": [],
       "id": 360,
       "name": "WYNAUT",
       "at": 41,
@@ -3121,6 +4053,7 @@
       "nice_name": "Wynaut"
     },
     {
+      "evolutions": [],
       "id": 361,
       "name": "SNORUNT",
       "at": 95,
@@ -3129,6 +4062,7 @@
       "nice_name": "Snorunt"
     },
     {
+      "evolutions": [],
       "id": 362,
       "name": "GLALIE",
       "at": 162,
@@ -3137,6 +4071,7 @@
       "nice_name": "Glalie"
     },
     {
+      "evolutions": [],
       "id": 363,
       "name": "SPHEAL",
       "at": 95,
@@ -3145,6 +4080,7 @@
       "nice_name": "Spheal"
     },
     {
+      "evolutions": [],
       "id": 364,
       "name": "SEALEO",
       "at": 137,
@@ -3153,6 +4089,7 @@
       "nice_name": "Sealeo"
     },
     {
+      "evolutions": [],
       "id": 365,
       "name": "WALREIN",
       "at": 182,
@@ -3161,6 +4098,7 @@
       "nice_name": "Walrein"
     },
     {
+      "evolutions": [],
       "id": 366,
       "name": "CLAMPERL",
       "at": 133,
@@ -3169,6 +4107,7 @@
       "nice_name": "Clamperl"
     },
     {
+      "evolutions": [],
       "id": 367,
       "name": "HUNTAIL",
       "at": 197,
@@ -3177,6 +4116,7 @@
       "nice_name": "Huntail"
     },
     {
+      "evolutions": [],
       "id": 368,
       "name": "GOREBYSS",
       "at": 211,
@@ -3185,6 +4125,7 @@
       "nice_name": "Gorebyss"
     },
     {
+      "evolutions": [],
       "id": 369,
       "name": "RELICANTH",
       "at": 162,
@@ -3193,6 +4134,7 @@
       "nice_name": "Relicanth"
     },
     {
+      "evolutions": [],
       "id": 370,
       "name": "LUVDISC",
       "at": 81,
@@ -3201,6 +4143,12 @@
       "nice_name": "Luvdisc"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "SHELGON",
+          "candyCost": 25
+        }
+      ],
       "id": 371,
       "name": "BAGON",
       "at": 134,
@@ -3209,6 +4157,12 @@
       "nice_name": "Bagon"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "SALAMENCE",
+          "candyCost": 100
+        }
+      ],
       "id": 372,
       "name": "SHELGON",
       "at": 172,
@@ -3217,6 +4171,7 @@
       "nice_name": "Shelgon"
     },
     {
+      "evolutions": [],
       "id": 373,
       "name": "SALAMENCE",
       "at": 277,
@@ -3225,6 +4180,7 @@
       "nice_name": "Salamence"
     },
     {
+      "evolutions": [],
       "id": 374,
       "name": "BELDUM",
       "at": 96,
@@ -3233,6 +4189,12 @@
       "nice_name": "Beldum"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "METAGROSS",
+          "candyCost": 100
+        }
+      ],
       "id": 375,
       "name": "METANG",
       "at": 138,
@@ -3241,6 +4203,7 @@
       "nice_name": "Metang"
     },
     {
+      "evolutions": [],
       "id": 376,
       "name": "METAGROSS",
       "at": 257,
@@ -3249,6 +4212,7 @@
       "nice_name": "Metagross"
     },
     {
+      "evolutions": [],
       "id": 377,
       "name": "REGIROCK",
       "at": 179,
@@ -3257,6 +4221,7 @@
       "nice_name": "Regirock"
     },
     {
+      "evolutions": [],
       "id": 378,
       "name": "REGICE",
       "at": 179,
@@ -3265,6 +4230,7 @@
       "nice_name": "Regice"
     },
     {
+      "evolutions": [],
       "id": 379,
       "name": "REGISTEEL",
       "at": 143,
@@ -3273,6 +4239,7 @@
       "nice_name": "Registeel"
     },
     {
+      "evolutions": [],
       "id": 380,
       "name": "LATIAS",
       "at": 228,
@@ -3281,6 +4248,7 @@
       "nice_name": "Latias"
     },
     {
+      "evolutions": [],
       "id": 381,
       "name": "LATIOS",
       "at": 268,
@@ -3289,6 +4257,7 @@
       "nice_name": "Latios"
     },
     {
+      "evolutions": [],
       "id": 382,
       "name": "KYOGRE",
       "at": 270,
@@ -3297,6 +4266,7 @@
       "nice_name": "Kyogre"
     },
     {
+      "evolutions": [],
       "id": 383,
       "name": "GROUDON",
       "at": 270,
@@ -3305,6 +4275,7 @@
       "nice_name": "Groudon"
     },
     {
+      "evolutions": [],
       "id": 384,
       "name": "RAYQUAZA",
       "at": 284,
@@ -3313,6 +4284,7 @@
       "nice_name": "Rayquaza"
     },
     {
+      "evolutions": [],
       "id": 385,
       "name": "JIRACHI",
       "at": 210,
@@ -3321,6 +4293,7 @@
       "nice_name": "Jirachi"
     },
     {
+      "evolutions": [],
       "id": 386,
       "name": "DEOXYS",
       "at": 345,
@@ -3329,6 +4302,7 @@
       "nice_name": "Deoxys"
     },
     {
+      "evolutions": [],
       "id": 386,
       "name": "DEOXYS_ATTACK",
       "at": 414,
@@ -3337,6 +4311,7 @@
       "nice_name": "Deoxys Attack"
     },
     {
+      "evolutions": [],
       "id": 386,
       "name": "DEOXYS_DEFENSE",
       "at": 144,
@@ -3345,6 +4320,7 @@
       "nice_name": "Deoxys Defense"
     },
     {
+      "evolutions": [],
       "id": 386,
       "name": "DEOXYS_SPEED",
       "at": 230,
@@ -3353,6 +4329,12 @@
       "nice_name": "Deoxys Speed"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "GROTLE",
+          "candyCost": 25
+        }
+      ],
       "id": 387,
       "name": "TURTWIG",
       "at": 119,
@@ -3361,6 +4343,12 @@
       "nice_name": "Turtwig"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "TORTERRA",
+          "candyCost": 100
+        }
+      ],
       "id": 388,
       "name": "GROTLE",
       "at": 157,
@@ -3369,6 +4357,7 @@
       "nice_name": "Grotle"
     },
     {
+      "evolutions": [],
       "id": 389,
       "name": "TORTERRA",
       "at": 202,
@@ -3377,6 +4366,12 @@
       "nice_name": "Torterra"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "MONFERNO",
+          "candyCost": 25
+        }
+      ],
       "id": 390,
       "name": "CHIMCHAR",
       "at": 113,
@@ -3385,6 +4380,12 @@
       "nice_name": "Chimchar"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "INFERNAPE",
+          "candyCost": 100
+        }
+      ],
       "id": 391,
       "name": "MONFERNO",
       "at": 158,
@@ -3393,6 +4394,7 @@
       "nice_name": "Monferno"
     },
     {
+      "evolutions": [],
       "id": 392,
       "name": "INFERNAPE",
       "at": 222,
@@ -3401,6 +4403,7 @@
       "nice_name": "Infernape"
     },
     {
+      "evolutions": [],
       "id": 393,
       "name": "PIPLUP",
       "at": 112,
@@ -3409,6 +4412,7 @@
       "nice_name": "Piplup"
     },
     {
+      "evolutions": [],
       "id": 394,
       "name": "PRINPLUP",
       "at": 150,
@@ -3417,6 +4421,7 @@
       "nice_name": "Prinplup"
     },
     {
+      "evolutions": [],
       "id": 395,
       "name": "EMPOLEON",
       "at": 210,
@@ -3425,6 +4430,7 @@
       "nice_name": "Empoleon"
     },
     {
+      "evolutions": [],
       "id": 396,
       "name": "STARLY",
       "at": 101,
@@ -3433,6 +4439,7 @@
       "nice_name": "Starly"
     },
     {
+      "evolutions": [],
       "id": 397,
       "name": "STARAVIA",
       "at": 142,
@@ -3441,6 +4448,7 @@
       "nice_name": "Staravia"
     },
     {
+      "evolutions": [],
       "id": 398,
       "name": "STARAPTOR",
       "at": 234,
@@ -3449,6 +4457,7 @@
       "nice_name": "Staraptor"
     },
     {
+      "evolutions": [],
       "id": 399,
       "name": "BIDOOF",
       "at": 80,
@@ -3457,6 +4466,7 @@
       "nice_name": "Bidoof"
     },
     {
+      "evolutions": [],
       "id": 400,
       "name": "BIBAREL",
       "at": 162,
@@ -3465,6 +4475,7 @@
       "nice_name": "Bibarel"
     },
     {
+      "evolutions": [],
       "id": 401,
       "name": "KRICKETOT",
       "at": 45,
@@ -3473,6 +4484,7 @@
       "nice_name": "Kricketot"
     },
     {
+      "evolutions": [],
       "id": 402,
       "name": "KRICKETUNE",
       "at": 160,
@@ -3481,6 +4493,7 @@
       "nice_name": "Kricketune"
     },
     {
+      "evolutions": [],
       "id": 403,
       "name": "SHINX",
       "at": 117,
@@ -3489,6 +4502,7 @@
       "nice_name": "Shinx"
     },
     {
+      "evolutions": [],
       "id": 404,
       "name": "LUXIO",
       "at": 159,
@@ -3497,6 +4511,7 @@
       "nice_name": "Luxio"
     },
     {
+      "evolutions": [],
       "id": 405,
       "name": "LUXRAY",
       "at": 232,
@@ -3505,6 +4520,7 @@
       "nice_name": "Luxray"
     },
     {
+      "evolutions": [],
       "id": 406,
       "name": "BUDEW",
       "at": 91,
@@ -3513,6 +4529,7 @@
       "nice_name": "Budew"
     },
     {
+      "evolutions": [],
       "id": 407,
       "name": "ROSERADE",
       "at": 243,
@@ -3521,6 +4538,7 @@
       "nice_name": "Roserade"
     },
     {
+      "evolutions": [],
       "id": 408,
       "name": "CRANIDOS",
       "at": 218,
@@ -3529,6 +4547,7 @@
       "nice_name": "Cranidos"
     },
     {
+      "evolutions": [],
       "id": 409,
       "name": "RAMPARDOS",
       "at": 295,
@@ -3537,6 +4556,7 @@
       "nice_name": "Rampardos"
     },
     {
+      "evolutions": [],
       "id": 410,
       "name": "SHIELDON",
       "at": 76,
@@ -3545,6 +4565,7 @@
       "nice_name": "Shieldon"
     },
     {
+      "evolutions": [],
       "id": 411,
       "name": "BASTIODON",
       "at": 94,
@@ -3553,6 +4574,13 @@
       "nice_name": "Bastiodon"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "WORMADAM",
+          "candyCost": 50,
+          "genderRequirement": "FEMALE"
+        }
+      ],
       "id": 412,
       "name": "BURMY",
       "at": 53,
@@ -3561,6 +4589,13 @@
       "nice_name": "Burmy"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "WORMADAM",
+          "candyCost": 50,
+          "genderRequirement": "FEMALE"
+        }
+      ],
       "id": 412,
       "name": "BURMY_PLANT",
       "at": 53,
@@ -3569,6 +4604,13 @@
       "nice_name": "Burmy Plant"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "WORMADAM",
+          "candyCost": 50,
+          "genderRequirement": "FEMALE"
+        }
+      ],
       "id": 412,
       "name": "BURMY_SANDY",
       "at": 53,
@@ -3577,6 +4619,13 @@
       "nice_name": "Burmy Sandy"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "WORMADAM",
+          "candyCost": 50,
+          "genderRequirement": "FEMALE"
+        }
+      ],
       "id": 412,
       "name": "BURMY_TRASH",
       "at": 53,
@@ -3585,6 +4634,7 @@
       "nice_name": "Burmy Trash"
     },
     {
+      "evolutions": [],
       "id": 413,
       "name": "WORMADAM",
       "at": 141,
@@ -3593,6 +4643,7 @@
       "nice_name": "Wormadam"
     },
     {
+      "evolutions": [],
       "id": 413,
       "name": "WORMADAM_PLANT",
       "at": 141,
@@ -3601,6 +4652,7 @@
       "nice_name": "Wormadam Plant"
     },
     {
+      "evolutions": [],
       "id": 413,
       "name": "WORMADAM_SANDY",
       "at": 141,
@@ -3609,6 +4661,7 @@
       "nice_name": "Wormadam Sandy"
     },
     {
+      "evolutions": [],
       "id": 413,
       "name": "WORMADAM_TRASH",
       "at": 127,
@@ -3617,6 +4670,7 @@
       "nice_name": "Wormadam Trash"
     },
     {
+      "evolutions": [],
       "id": 414,
       "name": "MOTHIM",
       "at": 185,
@@ -3625,6 +4679,7 @@
       "nice_name": "Mothim"
     },
     {
+      "evolutions": [],
       "id": 415,
       "name": "COMBEE",
       "at": 59,
@@ -3633,6 +4688,7 @@
       "nice_name": "Combee"
     },
     {
+      "evolutions": [],
       "id": 416,
       "name": "VESPIQUEN",
       "at": 149,
@@ -3641,6 +4697,7 @@
       "nice_name": "Vespiquen"
     },
     {
+      "evolutions": [],
       "id": 417,
       "name": "PACHIRISU",
       "at": 94,
@@ -3649,6 +4706,7 @@
       "nice_name": "Pachirisu"
     },
     {
+      "evolutions": [],
       "id": 418,
       "name": "BUIZEL",
       "at": 132,
@@ -3657,6 +4715,7 @@
       "nice_name": "Buizel"
     },
     {
+      "evolutions": [],
       "id": 419,
       "name": "FLOATZEL",
       "at": 221,
@@ -3665,6 +4724,16 @@
       "nice_name": "Floatzel"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "CHERRIM",
+          "candyCost": 50
+        },
+        {
+          "evolution": "CHERRIM",
+          "candyCost": 50
+        }
+      ],
       "id": 420,
       "name": "CHERUBI",
       "at": 108,
@@ -3673,6 +4742,7 @@
       "nice_name": "Cherubi"
     },
     {
+      "evolutions": [],
       "id": 421,
       "name": "CHERRIM",
       "at": 170,
@@ -3681,6 +4751,7 @@
       "nice_name": "Cherrim"
     },
     {
+      "evolutions": [],
       "id": 421,
       "name": "CHERRIM_OVERCAST",
       "at": 170,
@@ -3689,6 +4760,7 @@
       "nice_name": "Cherrim Overcast"
     },
     {
+      "evolutions": [],
       "id": 421,
       "name": "CHERRIM_SUNNY",
       "at": 170,
@@ -3697,6 +4769,12 @@
       "nice_name": "Cherrim Sunny"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "GASTRODON",
+          "candyCost": 50
+        }
+      ],
       "id": 422,
       "name": "SHELLOS",
       "at": 103,
@@ -3705,6 +4783,12 @@
       "nice_name": "Shellos"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "GASTRODON",
+          "candyCost": 50
+        }
+      ],
       "id": 422,
       "name": "SHELLOS_EAST_SEA",
       "at": 103,
@@ -3713,6 +4797,12 @@
       "nice_name": "Shellos East Sea"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "GASTRODON",
+          "candyCost": 50
+        }
+      ],
       "id": 422,
       "name": "SHELLOS_WEST_SEA",
       "at": 103,
@@ -3721,6 +4811,7 @@
       "nice_name": "Shellos West Sea"
     },
     {
+      "evolutions": [],
       "id": 423,
       "name": "GASTRODON",
       "at": 169,
@@ -3729,6 +4820,7 @@
       "nice_name": "Gastrodon"
     },
     {
+      "evolutions": [],
       "id": 423,
       "name": "GASTRODON_EAST_SEA",
       "at": 169,
@@ -3737,6 +4829,7 @@
       "nice_name": "Gastrodon East Sea"
     },
     {
+      "evolutions": [],
       "id": 423,
       "name": "GASTRODON_WEST_SEA",
       "at": 169,
@@ -3745,6 +4838,7 @@
       "nice_name": "Gastrodon West Sea"
     },
     {
+      "evolutions": [],
       "id": 424,
       "name": "AMBIPOM",
       "at": 205,
@@ -3753,6 +4847,7 @@
       "nice_name": "Ambipom"
     },
     {
+      "evolutions": [],
       "id": 425,
       "name": "DRIFLOON",
       "at": 117,
@@ -3761,6 +4856,7 @@
       "nice_name": "Drifloon"
     },
     {
+      "evolutions": [],
       "id": 426,
       "name": "DRIFBLIM",
       "at": 180,
@@ -3769,6 +4865,7 @@
       "nice_name": "Drifblim"
     },
     {
+      "evolutions": [],
       "id": 427,
       "name": "BUNEARY",
       "at": 130,
@@ -3777,6 +4874,7 @@
       "nice_name": "Buneary"
     },
     {
+      "evolutions": [],
       "id": 428,
       "name": "LOPUNNY",
       "at": 156,
@@ -3785,6 +4883,7 @@
       "nice_name": "Lopunny"
     },
     {
+      "evolutions": [],
       "id": 429,
       "name": "MISMAGIUS",
       "at": 211,
@@ -3793,6 +4892,7 @@
       "nice_name": "Mismagius"
     },
     {
+      "evolutions": [],
       "id": 430,
       "name": "HONCHKROW",
       "at": 243,
@@ -3801,6 +4901,7 @@
       "nice_name": "Honchkrow"
     },
     {
+      "evolutions": [],
       "id": 431,
       "name": "GLAMEOW",
       "at": 109,
@@ -3809,6 +4910,7 @@
       "nice_name": "Glameow"
     },
     {
+      "evolutions": [],
       "id": 432,
       "name": "PURUGLY",
       "at": 172,
@@ -3817,6 +4919,7 @@
       "nice_name": "Purugly"
     },
     {
+      "evolutions": [],
       "id": 433,
       "name": "CHINGLING",
       "at": 114,
@@ -3825,6 +4928,12 @@
       "nice_name": "Chingling"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "SKUNTANK",
+          "candyCost": 50
+        }
+      ],
       "id": 434,
       "name": "STUNKY",
       "at": 121,
@@ -3833,6 +4942,7 @@
       "nice_name": "Stunky"
     },
     {
+      "evolutions": [],
       "id": 435,
       "name": "SKUNTANK",
       "at": 184,
@@ -3841,6 +4951,7 @@
       "nice_name": "Skuntank"
     },
     {
+      "evolutions": [],
       "id": 436,
       "name": "BRONZOR",
       "at": 43,
@@ -3849,6 +4960,7 @@
       "nice_name": "Bronzor"
     },
     {
+      "evolutions": [],
       "id": 437,
       "name": "BRONZONG",
       "at": 161,
@@ -3857,6 +4969,7 @@
       "nice_name": "Bronzong"
     },
     {
+      "evolutions": [],
       "id": 438,
       "name": "BONSLY",
       "at": 124,
@@ -3865,6 +4978,7 @@
       "nice_name": "Bonsly"
     },
     {
+      "evolutions": [],
       "id": 439,
       "name": "MIME_JR",
       "at": 125,
@@ -3873,6 +4987,7 @@
       "nice_name": "Mime Jr"
     },
     {
+      "evolutions": [],
       "id": 440,
       "name": "HAPPINY",
       "at": 25,
@@ -3881,6 +4996,7 @@
       "nice_name": "Happiny"
     },
     {
+      "evolutions": [],
       "id": 441,
       "name": "CHATOT",
       "at": 183,
@@ -3889,6 +5005,7 @@
       "nice_name": "Chatot"
     },
     {
+      "evolutions": [],
       "id": 442,
       "name": "SPIRITOMB",
       "at": 169,
@@ -3897,6 +5014,12 @@
       "nice_name": "Spiritomb"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "GABITE",
+          "candyCost": 25
+        }
+      ],
       "id": 443,
       "name": "GIBLE",
       "at": 124,
@@ -3905,6 +5028,12 @@
       "nice_name": "Gible"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "GARCHOMP",
+          "candyCost": 100
+        }
+      ],
       "id": 444,
       "name": "GABITE",
       "at": 172,
@@ -3913,6 +5042,7 @@
       "nice_name": "Gabite"
     },
     {
+      "evolutions": [],
       "id": 445,
       "name": "GARCHOMP",
       "at": 261,
@@ -3921,6 +5051,7 @@
       "nice_name": "Garchomp"
     },
     {
+      "evolutions": [],
       "id": 446,
       "name": "MUNCHLAX",
       "at": 137,
@@ -3929,6 +5060,7 @@
       "nice_name": "Munchlax"
     },
     {
+      "evolutions": [],
       "id": 447,
       "name": "RIOLU",
       "at": 127,
@@ -3937,6 +5069,7 @@
       "nice_name": "Riolu"
     },
     {
+      "evolutions": [],
       "id": 448,
       "name": "LUCARIO",
       "at": 236,
@@ -3945,6 +5078,12 @@
       "nice_name": "Lucario"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "HIPPOWDON",
+          "candyCost": 50
+        }
+      ],
       "id": 449,
       "name": "HIPPOPOTAS",
       "at": 124,
@@ -3953,6 +5092,7 @@
       "nice_name": "Hippopotas"
     },
     {
+      "evolutions": [],
       "id": 450,
       "name": "HIPPOWDON",
       "at": 201,
@@ -3961,6 +5101,7 @@
       "nice_name": "Hippowdon"
     },
     {
+      "evolutions": [],
       "id": 451,
       "name": "SKORUPI",
       "at": 93,
@@ -3969,6 +5110,7 @@
       "nice_name": "Skorupi"
     },
     {
+      "evolutions": [],
       "id": 452,
       "name": "DRAPION",
       "at": 180,
@@ -3977,6 +5119,7 @@
       "nice_name": "Drapion"
     },
     {
+      "evolutions": [],
       "id": 453,
       "name": "CROAGUNK",
       "at": 116,
@@ -3985,6 +5128,7 @@
       "nice_name": "Croagunk"
     },
     {
+      "evolutions": [],
       "id": 454,
       "name": "TOXICROAK",
       "at": 211,
@@ -3993,6 +5137,7 @@
       "nice_name": "Toxicroak"
     },
     {
+      "evolutions": [],
       "id": 455,
       "name": "CARNIVINE",
       "at": 187,
@@ -4001,6 +5146,7 @@
       "nice_name": "Carnivine"
     },
     {
+      "evolutions": [],
       "id": 456,
       "name": "FINNEON",
       "at": 96,
@@ -4009,6 +5155,7 @@
       "nice_name": "Finneon"
     },
     {
+      "evolutions": [],
       "id": 457,
       "name": "LUMINEON",
       "at": 142,
@@ -4017,6 +5164,7 @@
       "nice_name": "Lumineon"
     },
     {
+      "evolutions": [],
       "id": 458,
       "name": "MANTYKE",
       "at": 105,
@@ -4025,6 +5173,12 @@
       "nice_name": "Mantyke"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "ABOMASNOW",
+          "candyCost": 50
+        }
+      ],
       "id": 459,
       "name": "SNOVER",
       "at": 115,
@@ -4033,6 +5187,7 @@
       "nice_name": "Snover"
     },
     {
+      "evolutions": [],
       "id": 460,
       "name": "ABOMASNOW",
       "at": 178,
@@ -4041,6 +5196,7 @@
       "nice_name": "Abomasnow"
     },
     {
+      "evolutions": [],
       "id": 461,
       "name": "WEAVILE",
       "at": 243,
@@ -4049,6 +5205,7 @@
       "nice_name": "Weavile"
     },
     {
+      "evolutions": [],
       "id": 462,
       "name": "MAGNEZONE",
       "at": 238,
@@ -4057,6 +5214,7 @@
       "nice_name": "Magnezone"
     },
     {
+      "evolutions": [],
       "id": 463,
       "name": "LICKILICKY",
       "at": 161,
@@ -4065,6 +5223,7 @@
       "nice_name": "Lickilicky"
     },
     {
+      "evolutions": [],
       "id": 464,
       "name": "RHYPERIOR",
       "at": 241,
@@ -4073,6 +5232,7 @@
       "nice_name": "Rhyperior"
     },
     {
+      "evolutions": [],
       "id": 465,
       "name": "TANGROWTH",
       "at": 207,
@@ -4081,6 +5241,7 @@
       "nice_name": "Tangrowth"
     },
     {
+      "evolutions": [],
       "id": 466,
       "name": "ELECTIVIRE",
       "at": 249,
@@ -4089,6 +5250,7 @@
       "nice_name": "Electivire"
     },
     {
+      "evolutions": [],
       "id": 467,
       "name": "MAGMORTAR",
       "at": 247,
@@ -4097,6 +5259,7 @@
       "nice_name": "Magmortar"
     },
     {
+      "evolutions": [],
       "id": 468,
       "name": "TOGEKISS",
       "at": 225,
@@ -4105,6 +5268,7 @@
       "nice_name": "Togekiss"
     },
     {
+      "evolutions": [],
       "id": 469,
       "name": "YANMEGA",
       "at": 231,
@@ -4113,6 +5277,7 @@
       "nice_name": "Yanmega"
     },
     {
+      "evolutions": [],
       "id": 470,
       "name": "LEAFEON",
       "at": 216,
@@ -4121,6 +5286,7 @@
       "nice_name": "Leafeon"
     },
     {
+      "evolutions": [],
       "id": 471,
       "name": "GLACEON",
       "at": 238,
@@ -4129,6 +5295,7 @@
       "nice_name": "Glaceon"
     },
     {
+      "evolutions": [],
       "id": 472,
       "name": "GLISCOR",
       "at": 185,
@@ -4137,6 +5304,7 @@
       "nice_name": "Gliscor"
     },
     {
+      "evolutions": [],
       "id": 473,
       "name": "MAMOSWINE",
       "at": 247,
@@ -4145,6 +5313,7 @@
       "nice_name": "Mamoswine"
     },
     {
+      "evolutions": [],
       "id": 474,
       "name": "PORYGON_Z",
       "at": 264,
@@ -4153,6 +5322,7 @@
       "nice_name": "Porygon Z"
     },
     {
+      "evolutions": [],
       "id": 475,
       "name": "GALLADE",
       "at": 237,
@@ -4161,6 +5331,7 @@
       "nice_name": "Gallade"
     },
     {
+      "evolutions": [],
       "id": 476,
       "name": "PROBOPASS",
       "at": 135,
@@ -4169,6 +5340,7 @@
       "nice_name": "Probopass"
     },
     {
+      "evolutions": [],
       "id": 477,
       "name": "DUSKNOIR",
       "at": 180,
@@ -4177,6 +5349,7 @@
       "nice_name": "Dusknoir"
     },
     {
+      "evolutions": [],
       "id": 478,
       "name": "FROSLASS",
       "at": 171,
@@ -4185,6 +5358,7 @@
       "nice_name": "Froslass"
     },
     {
+      "evolutions": [],
       "id": 479,
       "name": "ROTOM",
       "at": 185,
@@ -4193,6 +5367,7 @@
       "nice_name": "Rotom"
     },
     {
+      "evolutions": [],
       "id": 479,
       "name": "ROTOM_FAN",
       "at": 204,
@@ -4201,6 +5376,7 @@
       "nice_name": "Rotom Fan"
     },
     {
+      "evolutions": [],
       "id": 479,
       "name": "ROTOM_FROST",
       "at": 204,
@@ -4209,6 +5385,7 @@
       "nice_name": "Rotom Frost"
     },
     {
+      "evolutions": [],
       "id": 479,
       "name": "ROTOM_HEAT",
       "at": 204,
@@ -4217,6 +5394,7 @@
       "nice_name": "Rotom Heat"
     },
     {
+      "evolutions": [],
       "id": 479,
       "name": "ROTOM_MOW",
       "at": 204,
@@ -4225,6 +5403,7 @@
       "nice_name": "Rotom Mow"
     },
     {
+      "evolutions": [],
       "id": 479,
       "name": "ROTOM_WASH",
       "at": 204,
@@ -4233,6 +5412,7 @@
       "nice_name": "Rotom Wash"
     },
     {
+      "evolutions": [],
       "id": 480,
       "name": "UXIE",
       "at": 156,
@@ -4241,6 +5421,7 @@
       "nice_name": "Uxie"
     },
     {
+      "evolutions": [],
       "id": 481,
       "name": "MESPRIT",
       "at": 212,
@@ -4249,6 +5430,7 @@
       "nice_name": "Mesprit"
     },
     {
+      "evolutions": [],
       "id": 482,
       "name": "AZELF",
       "at": 270,
@@ -4257,6 +5439,7 @@
       "nice_name": "Azelf"
     },
     {
+      "evolutions": [],
       "id": 483,
       "name": "DIALGA",
       "at": 275,
@@ -4265,6 +5448,7 @@
       "nice_name": "Dialga"
     },
     {
+      "evolutions": [],
       "id": 484,
       "name": "PALKIA",
       "at": 280,
@@ -4273,6 +5457,7 @@
       "nice_name": "Palkia"
     },
     {
+      "evolutions": [],
       "id": 485,
       "name": "HEATRAN",
       "at": 251,
@@ -4281,6 +5466,7 @@
       "nice_name": "Heatran"
     },
     {
+      "evolutions": [],
       "id": 486,
       "name": "REGIGIGAS",
       "at": 287,
@@ -4289,6 +5475,7 @@
       "nice_name": "Regigigas"
     },
     {
+      "evolutions": [],
       "id": 487,
       "name": "GIRATINA",
       "at": 187,
@@ -4297,6 +5484,7 @@
       "nice_name": "Giratina"
     },
     {
+      "evolutions": [],
       "id": 487,
       "name": "GIRATINA_ALTERED",
       "at": 187,
@@ -4305,6 +5493,7 @@
       "nice_name": "Giratina Altered"
     },
     {
+      "evolutions": [],
       "id": 487,
       "name": "GIRATINA_ORIGIN",
       "at": 225,
@@ -4313,6 +5502,7 @@
       "nice_name": "Giratina Origin"
     },
     {
+      "evolutions": [],
       "id": 488,
       "name": "CRESSELIA",
       "at": 152,
@@ -4321,6 +5511,7 @@
       "nice_name": "Cresselia"
     },
     {
+      "evolutions": [],
       "id": 489,
       "name": "PHIONE",
       "at": 162,
@@ -4329,6 +5520,7 @@
       "nice_name": "Phione"
     },
     {
+      "evolutions": [],
       "id": 490,
       "name": "MANAPHY",
       "at": 210,
@@ -4337,6 +5529,7 @@
       "nice_name": "Manaphy"
     },
     {
+      "evolutions": [],
       "id": 491,
       "name": "DARKRAI",
       "at": 285,
@@ -4345,6 +5538,7 @@
       "nice_name": "Darkrai"
     },
     {
+      "evolutions": [],
       "id": 492,
       "name": "SHAYMIN",
       "at": 210,
@@ -4353,6 +5547,7 @@
       "nice_name": "Shaymin"
     },
     {
+      "evolutions": [],
       "id": 492,
       "name": "SHAYMIN_LAND",
       "at": 210,
@@ -4361,6 +5556,7 @@
       "nice_name": "Shaymin Land"
     },
     {
+      "evolutions": [],
       "id": 492,
       "name": "SHAYMIN_SKY",
       "at": 261,
@@ -4369,6 +5565,7 @@
       "nice_name": "Shaymin Sky"
     },
     {
+      "evolutions": [],
       "id": 493,
       "name": "ARCEUS",
       "at": 238,
@@ -4377,6 +5574,7 @@
       "nice_name": "Arceus"
     },
     {
+      "evolutions": [],
       "id": 493,
       "name": "ARCEUS_BUG",
       "at": 238,
@@ -4385,6 +5583,7 @@
       "nice_name": "Arceus Bug"
     },
     {
+      "evolutions": [],
       "id": 493,
       "name": "ARCEUS_DARK",
       "at": 238,
@@ -4393,6 +5592,7 @@
       "nice_name": "Arceus Dark"
     },
     {
+      "evolutions": [],
       "id": 493,
       "name": "ARCEUS_DRAGON",
       "at": 238,
@@ -4401,6 +5601,7 @@
       "nice_name": "Arceus Dragon"
     },
     {
+      "evolutions": [],
       "id": 493,
       "name": "ARCEUS_ELECTRIC",
       "at": 238,
@@ -4409,6 +5610,7 @@
       "nice_name": "Arceus Electric"
     },
     {
+      "evolutions": [],
       "id": 493,
       "name": "ARCEUS_FAIRY",
       "at": 238,
@@ -4417,6 +5619,7 @@
       "nice_name": "Arceus Fairy"
     },
     {
+      "evolutions": [],
       "id": 493,
       "name": "ARCEUS_FIGHTING",
       "at": 238,
@@ -4425,6 +5628,7 @@
       "nice_name": "Arceus Fighting"
     },
     {
+      "evolutions": [],
       "id": 493,
       "name": "ARCEUS_FIRE",
       "at": 238,
@@ -4433,6 +5637,7 @@
       "nice_name": "Arceus Fire"
     },
     {
+      "evolutions": [],
       "id": 493,
       "name": "ARCEUS_FLYING",
       "at": 238,
@@ -4441,6 +5646,7 @@
       "nice_name": "Arceus Flying"
     },
     {
+      "evolutions": [],
       "id": 493,
       "name": "ARCEUS_GHOST",
       "at": 238,
@@ -4449,6 +5655,7 @@
       "nice_name": "Arceus Ghost"
     },
     {
+      "evolutions": [],
       "id": 493,
       "name": "ARCEUS_GRASS",
       "at": 238,
@@ -4457,6 +5664,7 @@
       "nice_name": "Arceus Grass"
     },
     {
+      "evolutions": [],
       "id": 493,
       "name": "ARCEUS_GROUND",
       "at": 238,
@@ -4465,6 +5673,7 @@
       "nice_name": "Arceus Ground"
     },
     {
+      "evolutions": [],
       "id": 493,
       "name": "ARCEUS_ICE",
       "at": 238,
@@ -4473,6 +5682,7 @@
       "nice_name": "Arceus Ice"
     },
     {
+      "evolutions": [],
       "id": 493,
       "name": "ARCEUS_POISON",
       "at": 238,
@@ -4481,6 +5691,7 @@
       "nice_name": "Arceus Poison"
     },
     {
+      "evolutions": [],
       "id": 493,
       "name": "ARCEUS_PSYCHIC",
       "at": 238,
@@ -4489,6 +5700,7 @@
       "nice_name": "Arceus Psychic"
     },
     {
+      "evolutions": [],
       "id": 493,
       "name": "ARCEUS_ROCK",
       "at": 238,
@@ -4497,6 +5709,7 @@
       "nice_name": "Arceus Rock"
     },
     {
+      "evolutions": [],
       "id": 493,
       "name": "ARCEUS_STEEL",
       "at": 238,
@@ -4505,6 +5718,7 @@
       "nice_name": "Arceus Steel"
     },
     {
+      "evolutions": [],
       "id": 493,
       "name": "ARCEUS_WATER",
       "at": 238,
@@ -4513,6 +5727,7 @@
       "nice_name": "Arceus Water"
     },
     {
+      "evolutions": [],
       "id": 494,
       "name": "VICTINI",
       "at": 210,
@@ -4521,6 +5736,7 @@
       "nice_name": "Victini"
     },
     {
+      "evolutions": [],
       "id": 495,
       "name": "SNIVY",
       "at": 88,
@@ -4529,6 +5745,7 @@
       "nice_name": "Snivy"
     },
     {
+      "evolutions": [],
       "id": 496,
       "name": "SERVINE",
       "at": 122,
@@ -4537,6 +5754,7 @@
       "nice_name": "Servine"
     },
     {
+      "evolutions": [],
       "id": 497,
       "name": "SERPERIOR",
       "at": 161,
@@ -4545,6 +5763,7 @@
       "nice_name": "Serperior"
     },
     {
+      "evolutions": [],
       "id": 498,
       "name": "TEPIG",
       "at": 115,
@@ -4553,6 +5772,7 @@
       "nice_name": "Tepig"
     },
     {
+      "evolutions": [],
       "id": 499,
       "name": "PIGNITE",
       "at": 173,
@@ -4561,6 +5781,7 @@
       "nice_name": "Pignite"
     },
     {
+      "evolutions": [],
       "id": 500,
       "name": "EMBOAR",
       "at": 235,
@@ -4569,6 +5790,7 @@
       "nice_name": "Emboar"
     },
     {
+      "evolutions": [],
       "id": 501,
       "name": "OSHAWOTT",
       "at": 117,
@@ -4577,6 +5799,7 @@
       "nice_name": "Oshawott"
     },
     {
+      "evolutions": [],
       "id": 502,
       "name": "DEWOTT",
       "at": 159,
@@ -4585,6 +5808,7 @@
       "nice_name": "Dewott"
     },
     {
+      "evolutions": [],
       "id": 503,
       "name": "SAMUROTT",
       "at": 212,
@@ -4593,6 +5817,7 @@
       "nice_name": "Samurott"
     },
     {
+      "evolutions": [],
       "id": 504,
       "name": "PATRAT",
       "at": 98,
@@ -4601,6 +5826,7 @@
       "nice_name": "Patrat"
     },
     {
+      "evolutions": [],
       "id": 505,
       "name": "WATCHOG",
       "at": 165,
@@ -4609,6 +5835,7 @@
       "nice_name": "Watchog"
     },
     {
+      "evolutions": [],
       "id": 506,
       "name": "LILLIPUP",
       "at": 107,
@@ -4617,6 +5844,7 @@
       "nice_name": "Lillipup"
     },
     {
+      "evolutions": [],
       "id": 507,
       "name": "HERDIER",
       "at": 145,
@@ -4625,6 +5853,7 @@
       "nice_name": "Herdier"
     },
     {
+      "evolutions": [],
       "id": 508,
       "name": "STOUTLAND",
       "at": 206,
@@ -4633,6 +5862,7 @@
       "nice_name": "Stoutland"
     },
     {
+      "evolutions": [],
       "id": 509,
       "name": "PURRLOIN",
       "at": 98,
@@ -4641,6 +5871,7 @@
       "nice_name": "Purrloin"
     },
     {
+      "evolutions": [],
       "id": 510,
       "name": "LIEPARD",
       "at": 187,
@@ -4649,6 +5880,7 @@
       "nice_name": "Liepard"
     },
     {
+      "evolutions": [],
       "id": 511,
       "name": "PANSAGE",
       "at": 104,
@@ -4657,6 +5889,7 @@
       "nice_name": "Pansage"
     },
     {
+      "evolutions": [],
       "id": 512,
       "name": "SIMISAGE",
       "at": 206,
@@ -4665,6 +5898,7 @@
       "nice_name": "Simisage"
     },
     {
+      "evolutions": [],
       "id": 513,
       "name": "PANSEAR",
       "at": 104,
@@ -4673,6 +5907,7 @@
       "nice_name": "Pansear"
     },
     {
+      "evolutions": [],
       "id": 514,
       "name": "SIMISEAR",
       "at": 206,
@@ -4681,6 +5916,7 @@
       "nice_name": "Simisear"
     },
     {
+      "evolutions": [],
       "id": 515,
       "name": "PANPOUR",
       "at": 104,
@@ -4689,6 +5925,7 @@
       "nice_name": "Panpour"
     },
     {
+      "evolutions": [],
       "id": 516,
       "name": "SIMIPOUR",
       "at": 206,
@@ -4697,6 +5934,7 @@
       "nice_name": "Simipour"
     },
     {
+      "evolutions": [],
       "id": 517,
       "name": "MUNNA",
       "at": 111,
@@ -4705,6 +5943,7 @@
       "nice_name": "Munna"
     },
     {
+      "evolutions": [],
       "id": 518,
       "name": "MUSHARNA",
       "at": 183,
@@ -4713,6 +5952,7 @@
       "nice_name": "Musharna"
     },
     {
+      "evolutions": [],
       "id": 519,
       "name": "PIDOVE",
       "at": 98,
@@ -4721,6 +5961,7 @@
       "nice_name": "Pidove"
     },
     {
+      "evolutions": [],
       "id": 520,
       "name": "TRANQUILL",
       "at": 144,
@@ -4729,6 +5970,7 @@
       "nice_name": "Tranquill"
     },
     {
+      "evolutions": [],
       "id": 521,
       "name": "UNFEZANT",
       "at": 226,
@@ -4737,6 +5979,7 @@
       "nice_name": "Unfezant"
     },
     {
+      "evolutions": [],
       "id": 522,
       "name": "BLITZLE",
       "at": 118,
@@ -4745,6 +5988,7 @@
       "nice_name": "Blitzle"
     },
     {
+      "evolutions": [],
       "id": 523,
       "name": "ZEBSTRIKA",
       "at": 211,
@@ -4753,6 +5997,7 @@
       "nice_name": "Zebstrika"
     },
     {
+      "evolutions": [],
       "id": 524,
       "name": "ROGGENROLA",
       "at": 121,
@@ -4761,6 +6006,7 @@
       "nice_name": "Roggenrola"
     },
     {
+      "evolutions": [],
       "id": 525,
       "name": "BOLDORE",
       "at": 174,
@@ -4769,6 +6015,7 @@
       "nice_name": "Boldore"
     },
     {
+      "evolutions": [],
       "id": 526,
       "name": "GIGALITH",
       "at": 226,
@@ -4777,6 +6024,7 @@
       "nice_name": "Gigalith"
     },
     {
+      "evolutions": [],
       "id": 527,
       "name": "WOOBAT",
       "at": 107,
@@ -4785,6 +6033,7 @@
       "nice_name": "Woobat"
     },
     {
+      "evolutions": [],
       "id": 528,
       "name": "SWOOBAT",
       "at": 161,
@@ -4793,6 +6042,7 @@
       "nice_name": "Swoobat"
     },
     {
+      "evolutions": [],
       "id": 529,
       "name": "DRILBUR",
       "at": 154,
@@ -4801,6 +6051,7 @@
       "nice_name": "Drilbur"
     },
     {
+      "evolutions": [],
       "id": 530,
       "name": "EXCADRILL",
       "at": 255,
@@ -4809,6 +6060,7 @@
       "nice_name": "Excadrill"
     },
     {
+      "evolutions": [],
       "id": 531,
       "name": "AUDINO",
       "at": 114,
@@ -4817,6 +6069,7 @@
       "nice_name": "Audino"
     },
     {
+      "evolutions": [],
       "id": 532,
       "name": "TIMBURR",
       "at": 134,
@@ -4825,6 +6078,7 @@
       "nice_name": "Timburr"
     },
     {
+      "evolutions": [],
       "id": 533,
       "name": "GURDURR",
       "at": 180,
@@ -4833,6 +6087,7 @@
       "nice_name": "Gurdurr"
     },
     {
+      "evolutions": [],
       "id": 534,
       "name": "CONKELDURR",
       "at": 243,
@@ -4841,6 +6096,7 @@
       "nice_name": "Conkeldurr"
     },
     {
+      "evolutions": [],
       "id": 535,
       "name": "TYMPOLE",
       "at": 98,
@@ -4849,6 +6105,7 @@
       "nice_name": "Tympole"
     },
     {
+      "evolutions": [],
       "id": 536,
       "name": "PALPITOAD",
       "at": 128,
@@ -4857,6 +6114,7 @@
       "nice_name": "Palpitoad"
     },
     {
+      "evolutions": [],
       "id": 537,
       "name": "SEISMITOAD",
       "at": 188,
@@ -4865,6 +6123,7 @@
       "nice_name": "Seismitoad"
     },
     {
+      "evolutions": [],
       "id": 538,
       "name": "THROH",
       "at": 172,
@@ -4873,6 +6132,7 @@
       "nice_name": "Throh"
     },
     {
+      "evolutions": [],
       "id": 539,
       "name": "SAWK",
       "at": 231,
@@ -4881,6 +6141,7 @@
       "nice_name": "Sawk"
     },
     {
+      "evolutions": [],
       "id": 540,
       "name": "SEWADDLE",
       "at": 96,
@@ -4889,6 +6150,7 @@
       "nice_name": "Sewaddle"
     },
     {
+      "evolutions": [],
       "id": 541,
       "name": "SWADLOON",
       "at": 115,
@@ -4897,6 +6159,7 @@
       "nice_name": "Swadloon"
     },
     {
+      "evolutions": [],
       "id": 542,
       "name": "LEAVANNY",
       "at": 205,
@@ -4905,6 +6168,7 @@
       "nice_name": "Leavanny"
     },
     {
+      "evolutions": [],
       "id": 543,
       "name": "VENIPEDE",
       "at": 83,
@@ -4913,6 +6177,7 @@
       "nice_name": "Venipede"
     },
     {
+      "evolutions": [],
       "id": 544,
       "name": "WHIRLIPEDE",
       "at": 100,
@@ -4921,6 +6186,7 @@
       "nice_name": "Whirlipede"
     },
     {
+      "evolutions": [],
       "id": 545,
       "name": "SCOLIPEDE",
       "at": 203,
@@ -4929,6 +6195,7 @@
       "nice_name": "Scolipede"
     },
     {
+      "evolutions": [],
       "id": 546,
       "name": "COTTONEE",
       "at": 71,
@@ -4937,6 +6204,7 @@
       "nice_name": "Cottonee"
     },
     {
+      "evolutions": [],
       "id": 547,
       "name": "WHIMSICOTT",
       "at": 164,
@@ -4945,6 +6213,7 @@
       "nice_name": "Whimsicott"
     },
     {
+      "evolutions": [],
       "id": 548,
       "name": "PETILIL",
       "at": 119,
@@ -4953,6 +6222,7 @@
       "nice_name": "Petilil"
     },
     {
+      "evolutions": [],
       "id": 549,
       "name": "LILLIGANT",
       "at": 214,
@@ -4961,6 +6231,7 @@
       "nice_name": "Lilligant"
     },
     {
+      "evolutions": [],
       "id": 550,
       "name": "BASCULIN",
       "at": 189,
@@ -4969,6 +6240,7 @@
       "nice_name": "Basculin"
     },
     {
+      "evolutions": [],
       "id": 550,
       "name": "BASCULIN_BLUE_STRIPED",
       "at": 189,
@@ -4977,6 +6249,7 @@
       "nice_name": "Basculin Blue Striped"
     },
     {
+      "evolutions": [],
       "id": 550,
       "name": "BASCULIN_RED_STRIPED",
       "at": 189,
@@ -4985,6 +6258,7 @@
       "nice_name": "Basculin Red Striped"
     },
     {
+      "evolutions": [],
       "id": 551,
       "name": "SANDILE",
       "at": 132,
@@ -4993,6 +6267,7 @@
       "nice_name": "Sandile"
     },
     {
+      "evolutions": [],
       "id": 552,
       "name": "KROKOROK",
       "at": 155,
@@ -5001,6 +6276,7 @@
       "nice_name": "Krokorok"
     },
     {
+      "evolutions": [],
       "id": 553,
       "name": "KROOKODILE",
       "at": 229,
@@ -5009,6 +6285,12 @@
       "nice_name": "Krookodile"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "DARMANITAN",
+          "candyCost": 50
+        }
+      ],
       "id": 554,
       "name": "DARUMAKA",
       "at": 153,
@@ -5017,6 +6299,12 @@
       "nice_name": "Darumaka"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "DARMANITAN",
+          "candyCost": 50
+        }
+      ],
       "id": 554,
       "name": "DARUMAKA_GALARIAN",
       "at": 153,
@@ -5025,6 +6313,7 @@
       "nice_name": "Darumaka Galarian"
     },
     {
+      "evolutions": [],
       "id": 555,
       "name": "DARMANITAN",
       "at": 263,
@@ -5033,6 +6322,7 @@
       "nice_name": "Darmanitan"
     },
     {
+      "evolutions": [],
       "id": 555,
       "name": "DARMANITAN_GALARIAN_STANDARD",
       "at": 263,
@@ -5041,6 +6331,7 @@
       "nice_name": "Darmanitan Galarian Standard"
     },
     {
+      "evolutions": [],
       "id": 555,
       "name": "DARMANITAN_GALARIAN_ZEN",
       "at": 323,
@@ -5049,6 +6340,7 @@
       "nice_name": "Darmanitan Galarian Zen"
     },
     {
+      "evolutions": [],
       "id": 555,
       "name": "DARMANITAN_STANDARD",
       "at": 263,
@@ -5057,6 +6349,7 @@
       "nice_name": "Darmanitan Standard"
     },
     {
+      "evolutions": [],
       "id": 555,
       "name": "DARMANITAN_ZEN",
       "at": 243,
@@ -5065,6 +6358,7 @@
       "nice_name": "Darmanitan Zen"
     },
     {
+      "evolutions": [],
       "id": 556,
       "name": "MARACTUS",
       "at": 201,
@@ -5073,6 +6367,7 @@
       "nice_name": "Maractus"
     },
     {
+      "evolutions": [],
       "id": 557,
       "name": "DWEBBLE",
       "at": 118,
@@ -5081,6 +6376,7 @@
       "nice_name": "Dwebble"
     },
     {
+      "evolutions": [],
       "id": 558,
       "name": "CRUSTLE",
       "at": 188,
@@ -5089,6 +6385,7 @@
       "nice_name": "Crustle"
     },
     {
+      "evolutions": [],
       "id": 559,
       "name": "SCRAGGY",
       "at": 132,
@@ -5097,6 +6394,7 @@
       "nice_name": "Scraggy"
     },
     {
+      "evolutions": [],
       "id": 560,
       "name": "SCRAFTY",
       "at": 163,
@@ -5105,6 +6403,7 @@
       "nice_name": "Scrafty"
     },
     {
+      "evolutions": [],
       "id": 561,
       "name": "SIGILYPH",
       "at": 204,
@@ -5113,6 +6412,12 @@
       "nice_name": "Sigilyph"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "COFAGRIGUS",
+          "candyCost": 50
+        }
+      ],
       "id": 562,
       "name": "YAMASK",
       "at": 95,
@@ -5121,6 +6426,17 @@
       "nice_name": "Yamask"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "RUNERIGUS",
+          "candyCost": 50,
+          "questDisplay": [
+            {
+              "questRequirementTemplateId": "RUNERIGUS_EVOLUTION_QUEST"
+            }
+          ]
+        }
+      ],
       "id": 562,
       "name": "YAMASK_GALARIAN",
       "at": 95,
@@ -5129,6 +6445,7 @@
       "nice_name": "Yamask Galarian"
     },
     {
+      "evolutions": [],
       "id": 563,
       "name": "COFAGRIGUS",
       "at": 163,
@@ -5137,6 +6454,7 @@
       "nice_name": "Cofagrigus"
     },
     {
+      "evolutions": [],
       "id": 564,
       "name": "TIRTOUGA",
       "at": 134,
@@ -5145,6 +6463,7 @@
       "nice_name": "Tirtouga"
     },
     {
+      "evolutions": [],
       "id": 565,
       "name": "CARRACOSTA",
       "at": 192,
@@ -5153,6 +6472,7 @@
       "nice_name": "Carracosta"
     },
     {
+      "evolutions": [],
       "id": 566,
       "name": "ARCHEN",
       "at": 213,
@@ -5161,6 +6481,7 @@
       "nice_name": "Archen"
     },
     {
+      "evolutions": [],
       "id": 567,
       "name": "ARCHEOPS",
       "at": 292,
@@ -5169,6 +6490,7 @@
       "nice_name": "Archeops"
     },
     {
+      "evolutions": [],
       "id": 568,
       "name": "TRUBBISH",
       "at": 96,
@@ -5177,6 +6499,7 @@
       "nice_name": "Trubbish"
     },
     {
+      "evolutions": [],
       "id": 569,
       "name": "GARBODOR",
       "at": 181,
@@ -5185,6 +6508,7 @@
       "nice_name": "Garbodor"
     },
     {
+      "evolutions": [],
       "id": 570,
       "name": "ZORUA",
       "at": 153,
@@ -5193,6 +6517,7 @@
       "nice_name": "Zorua"
     },
     {
+      "evolutions": [],
       "id": 571,
       "name": "ZOROARK",
       "at": 250,
@@ -5201,6 +6526,7 @@
       "nice_name": "Zoroark"
     },
     {
+      "evolutions": [],
       "id": 572,
       "name": "MINCCINO",
       "at": 98,
@@ -5209,6 +6535,7 @@
       "nice_name": "Minccino"
     },
     {
+      "evolutions": [],
       "id": 573,
       "name": "CINCCINO",
       "at": 198,
@@ -5217,6 +6544,7 @@
       "nice_name": "Cinccino"
     },
     {
+      "evolutions": [],
       "id": 574,
       "name": "GOTHITA",
       "at": 98,
@@ -5225,6 +6553,7 @@
       "nice_name": "Gothita"
     },
     {
+      "evolutions": [],
       "id": 575,
       "name": "GOTHORITA",
       "at": 137,
@@ -5233,6 +6562,7 @@
       "nice_name": "Gothorita"
     },
     {
+      "evolutions": [],
       "id": 576,
       "name": "GOTHITELLE",
       "at": 176,
@@ -5241,6 +6571,7 @@
       "nice_name": "Gothitelle"
     },
     {
+      "evolutions": [],
       "id": 577,
       "name": "SOLOSIS",
       "at": 170,
@@ -5249,6 +6580,7 @@
       "nice_name": "Solosis"
     },
     {
+      "evolutions": [],
       "id": 578,
       "name": "DUOSION",
       "at": 208,
@@ -5257,6 +6589,7 @@
       "nice_name": "Duosion"
     },
     {
+      "evolutions": [],
       "id": 579,
       "name": "REUNICLUS",
       "at": 214,
@@ -5265,6 +6598,7 @@
       "nice_name": "Reuniclus"
     },
     {
+      "evolutions": [],
       "id": 580,
       "name": "DUCKLETT",
       "at": 84,
@@ -5273,6 +6607,7 @@
       "nice_name": "Ducklett"
     },
     {
+      "evolutions": [],
       "id": 581,
       "name": "SWANNA",
       "at": 182,
@@ -5281,6 +6616,7 @@
       "nice_name": "Swanna"
     },
     {
+      "evolutions": [],
       "id": 582,
       "name": "VANILLITE",
       "at": 118,
@@ -5289,6 +6625,7 @@
       "nice_name": "Vanillite"
     },
     {
+      "evolutions": [],
       "id": 583,
       "name": "VANILLISH",
       "at": 151,
@@ -5297,6 +6634,7 @@
       "nice_name": "Vanillish"
     },
     {
+      "evolutions": [],
       "id": 584,
       "name": "VANILLUXE",
       "at": 218,
@@ -5305,6 +6643,7 @@
       "nice_name": "Vanilluxe"
     },
     {
+      "evolutions": [],
       "id": 585,
       "name": "DEERLING",
       "at": 115,
@@ -5313,6 +6652,12 @@
       "nice_name": "Deerling"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "SAWSBUCK",
+          "candyCost": 50
+        }
+      ],
       "id": 585,
       "name": "DEERLING_AUTUMN",
       "at": 115,
@@ -5321,6 +6666,12 @@
       "nice_name": "Deerling Autumn"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "SAWSBUCK",
+          "candyCost": 50
+        }
+      ],
       "id": 585,
       "name": "DEERLING_SPRING",
       "at": 115,
@@ -5329,6 +6680,12 @@
       "nice_name": "Deerling Spring"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "SAWSBUCK",
+          "candyCost": 50
+        }
+      ],
       "id": 585,
       "name": "DEERLING_SUMMER",
       "at": 115,
@@ -5337,6 +6694,12 @@
       "nice_name": "Deerling Summer"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "SAWSBUCK",
+          "candyCost": 50
+        }
+      ],
       "id": 585,
       "name": "DEERLING_WINTER",
       "at": 115,
@@ -5345,6 +6708,7 @@
       "nice_name": "Deerling Winter"
     },
     {
+      "evolutions": [],
       "id": 586,
       "name": "SAWSBUCK",
       "at": 198,
@@ -5353,6 +6717,7 @@
       "nice_name": "Sawsbuck"
     },
     {
+      "evolutions": [],
       "id": 586,
       "name": "SAWSBUCK_AUTUMN",
       "at": 198,
@@ -5361,6 +6726,7 @@
       "nice_name": "Sawsbuck Autumn"
     },
     {
+      "evolutions": [],
       "id": 586,
       "name": "SAWSBUCK_SPRING",
       "at": 198,
@@ -5369,6 +6735,7 @@
       "nice_name": "Sawsbuck Spring"
     },
     {
+      "evolutions": [],
       "id": 586,
       "name": "SAWSBUCK_SUMMER",
       "at": 198,
@@ -5377,6 +6744,7 @@
       "nice_name": "Sawsbuck Summer"
     },
     {
+      "evolutions": [],
       "id": 586,
       "name": "SAWSBUCK_WINTER",
       "at": 198,
@@ -5385,6 +6753,7 @@
       "nice_name": "Sawsbuck Winter"
     },
     {
+      "evolutions": [],
       "id": 587,
       "name": "EMOLGA",
       "at": 158,
@@ -5393,6 +6762,7 @@
       "nice_name": "Emolga"
     },
     {
+      "evolutions": [],
       "id": 588,
       "name": "KARRABLAST",
       "at": 137,
@@ -5401,6 +6771,7 @@
       "nice_name": "Karrablast"
     },
     {
+      "evolutions": [],
       "id": 589,
       "name": "ESCAVALIER",
       "at": 223,
@@ -5409,6 +6780,7 @@
       "nice_name": "Escavalier"
     },
     {
+      "evolutions": [],
       "id": 590,
       "name": "FOONGUS",
       "at": 97,
@@ -5417,6 +6789,7 @@
       "nice_name": "Foongus"
     },
     {
+      "evolutions": [],
       "id": 591,
       "name": "AMOONGUSS",
       "at": 155,
@@ -5425,6 +6798,7 @@
       "nice_name": "Amoonguss"
     },
     {
+      "evolutions": [],
       "id": 592,
       "name": "FRILLISH",
       "at": 115,
@@ -5433,6 +6807,12 @@
       "nice_name": "Frillish"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "JELLICENT",
+          "candyCost": 50
+        }
+      ],
       "id": 592,
       "name": "FRILLISH_FEMALE",
       "at": 115,
@@ -5441,6 +6821,7 @@
       "nice_name": "Frillish Female"
     },
     {
+      "evolutions": [],
       "id": 593,
       "name": "JELLICENT",
       "at": 159,
@@ -5449,6 +6830,7 @@
       "nice_name": "Jellicent"
     },
     {
+      "evolutions": [],
       "id": 593,
       "name": "JELLICENT_FEMALE",
       "at": 159,
@@ -5457,6 +6839,7 @@
       "nice_name": "Jellicent Female"
     },
     {
+      "evolutions": [],
       "id": 594,
       "name": "ALOMOMOLA",
       "at": 138,
@@ -5465,6 +6848,7 @@
       "nice_name": "Alomomola"
     },
     {
+      "evolutions": [],
       "id": 595,
       "name": "JOLTIK",
       "at": 110,
@@ -5473,6 +6857,7 @@
       "nice_name": "Joltik"
     },
     {
+      "evolutions": [],
       "id": 596,
       "name": "GALVANTULA",
       "at": 201,
@@ -5481,6 +6866,7 @@
       "nice_name": "Galvantula"
     },
     {
+      "evolutions": [],
       "id": 597,
       "name": "FERROSEED",
       "at": 82,
@@ -5489,6 +6875,7 @@
       "nice_name": "Ferroseed"
     },
     {
+      "evolutions": [],
       "id": 598,
       "name": "FERROTHORN",
       "at": 158,
@@ -5497,6 +6884,7 @@
       "nice_name": "Ferrothorn"
     },
     {
+      "evolutions": [],
       "id": 599,
       "name": "KLINK",
       "at": 98,
@@ -5505,6 +6893,7 @@
       "nice_name": "Klink"
     },
     {
+      "evolutions": [],
       "id": 600,
       "name": "KLANG",
       "at": 150,
@@ -5513,6 +6902,7 @@
       "nice_name": "Klang"
     },
     {
+      "evolutions": [],
       "id": 601,
       "name": "KLINKLANG",
       "at": 199,
@@ -5521,6 +6911,7 @@
       "nice_name": "Klinklang"
     },
     {
+      "evolutions": [],
       "id": 602,
       "name": "TYNAMO",
       "at": 105,
@@ -5529,6 +6920,7 @@
       "nice_name": "Tynamo"
     },
     {
+      "evolutions": [],
       "id": 603,
       "name": "EELEKTRIK",
       "at": 156,
@@ -5537,6 +6929,7 @@
       "nice_name": "Eelektrik"
     },
     {
+      "evolutions": [],
       "id": 604,
       "name": "EELEKTROSS",
       "at": 217,
@@ -5545,6 +6938,7 @@
       "nice_name": "Eelektross"
     },
     {
+      "evolutions": [],
       "id": 605,
       "name": "ELGYEM",
       "at": 148,
@@ -5553,6 +6947,7 @@
       "nice_name": "Elgyem"
     },
     {
+      "evolutions": [],
       "id": 606,
       "name": "BEHEEYEM",
       "at": 221,
@@ -5561,6 +6956,7 @@
       "nice_name": "Beheeyem"
     },
     {
+      "evolutions": [],
       "id": 607,
       "name": "LITWICK",
       "at": 108,
@@ -5569,6 +6965,7 @@
       "nice_name": "Litwick"
     },
     {
+      "evolutions": [],
       "id": 608,
       "name": "LAMPENT",
       "at": 169,
@@ -5577,6 +6974,7 @@
       "nice_name": "Lampent"
     },
     {
+      "evolutions": [],
       "id": 609,
       "name": "CHANDELURE",
       "at": 271,
@@ -5585,6 +6983,7 @@
       "nice_name": "Chandelure"
     },
     {
+      "evolutions": [],
       "id": 610,
       "name": "AXEW",
       "at": 154,
@@ -5593,6 +6992,7 @@
       "nice_name": "Axew"
     },
     {
+      "evolutions": [],
       "id": 611,
       "name": "FRAXURE",
       "at": 212,
@@ -5601,6 +7001,7 @@
       "nice_name": "Fraxure"
     },
     {
+      "evolutions": [],
       "id": 612,
       "name": "HAXORUS",
       "at": 284,
@@ -5609,6 +7010,7 @@
       "nice_name": "Haxorus"
     },
     {
+      "evolutions": [],
       "id": 613,
       "name": "CUBCHOO",
       "at": 128,
@@ -5617,6 +7019,7 @@
       "nice_name": "Cubchoo"
     },
     {
+      "evolutions": [],
       "id": 614,
       "name": "BEARTIC",
       "at": 233,
@@ -5625,6 +7028,7 @@
       "nice_name": "Beartic"
     },
     {
+      "evolutions": [],
       "id": 615,
       "name": "CRYOGONAL",
       "at": 190,
@@ -5633,6 +7037,7 @@
       "nice_name": "Cryogonal"
     },
     {
+      "evolutions": [],
       "id": 616,
       "name": "SHELMET",
       "at": 72,
@@ -5641,6 +7046,7 @@
       "nice_name": "Shelmet"
     },
     {
+      "evolutions": [],
       "id": 617,
       "name": "ACCELGOR",
       "at": 220,
@@ -5649,6 +7055,7 @@
       "nice_name": "Accelgor"
     },
     {
+      "evolutions": [],
       "id": 618,
       "name": "STUNFISK",
       "at": 144,
@@ -5657,6 +7064,7 @@
       "nice_name": "Stunfisk"
     },
     {
+      "evolutions": [],
       "id": 618,
       "name": "STUNFISK_GALARIAN",
       "at": 144,
@@ -5665,6 +7073,7 @@
       "nice_name": "Stunfisk Galarian"
     },
     {
+      "evolutions": [],
       "id": 619,
       "name": "MIENFOO",
       "at": 160,
@@ -5673,6 +7082,7 @@
       "nice_name": "Mienfoo"
     },
     {
+      "evolutions": [],
       "id": 620,
       "name": "MIENSHAO",
       "at": 258,
@@ -5681,6 +7091,7 @@
       "nice_name": "Mienshao"
     },
     {
+      "evolutions": [],
       "id": 621,
       "name": "DRUDDIGON",
       "at": 213,
@@ -5689,6 +7100,7 @@
       "nice_name": "Druddigon"
     },
     {
+      "evolutions": [],
       "id": 622,
       "name": "GOLETT",
       "at": 127,
@@ -5697,6 +7109,7 @@
       "nice_name": "Golett"
     },
     {
+      "evolutions": [],
       "id": 623,
       "name": "GOLURK",
       "at": 222,
@@ -5705,6 +7118,7 @@
       "nice_name": "Golurk"
     },
     {
+      "evolutions": [],
       "id": 624,
       "name": "PAWNIARD",
       "at": 154,
@@ -5713,6 +7127,7 @@
       "nice_name": "Pawniard"
     },
     {
+      "evolutions": [],
       "id": 625,
       "name": "BISHARP",
       "at": 232,
@@ -5721,6 +7136,7 @@
       "nice_name": "Bisharp"
     },
     {
+      "evolutions": [],
       "id": 626,
       "name": "BOUFFALANT",
       "at": 195,
@@ -5729,6 +7145,7 @@
       "nice_name": "Bouffalant"
     },
     {
+      "evolutions": [],
       "id": 627,
       "name": "RUFFLET",
       "at": 150,
@@ -5737,6 +7154,7 @@
       "nice_name": "Rufflet"
     },
     {
+      "evolutions": [],
       "id": 628,
       "name": "BRAVIARY",
       "at": 232,
@@ -5745,6 +7163,7 @@
       "nice_name": "Braviary"
     },
     {
+      "evolutions": [],
       "id": 629,
       "name": "VULLABY",
       "at": 105,
@@ -5753,6 +7172,7 @@
       "nice_name": "Vullaby"
     },
     {
+      "evolutions": [],
       "id": 630,
       "name": "MANDIBUZZ",
       "at": 129,
@@ -5761,6 +7181,7 @@
       "nice_name": "Mandibuzz"
     },
     {
+      "evolutions": [],
       "id": 631,
       "name": "HEATMOR",
       "at": 204,
@@ -5769,6 +7190,7 @@
       "nice_name": "Heatmor"
     },
     {
+      "evolutions": [],
       "id": 632,
       "name": "DURANT",
       "at": 217,
@@ -5777,6 +7199,7 @@
       "nice_name": "Durant"
     },
     {
+      "evolutions": [],
       "id": 633,
       "name": "DEINO",
       "at": 116,
@@ -5785,6 +7208,7 @@
       "nice_name": "Deino"
     },
     {
+      "evolutions": [],
       "id": 634,
       "name": "ZWEILOUS",
       "at": 159,
@@ -5793,6 +7217,7 @@
       "nice_name": "Zweilous"
     },
     {
+      "evolutions": [],
       "id": 635,
       "name": "HYDREIGON",
       "at": 256,
@@ -5801,6 +7226,7 @@
       "nice_name": "Hydreigon"
     },
     {
+      "evolutions": [],
       "id": 636,
       "name": "LARVESTA",
       "at": 156,
@@ -5809,6 +7235,7 @@
       "nice_name": "Larvesta"
     },
     {
+      "evolutions": [],
       "id": 637,
       "name": "VOLCARONA",
       "at": 264,
@@ -5817,6 +7244,7 @@
       "nice_name": "Volcarona"
     },
     {
+      "evolutions": [],
       "id": 638,
       "name": "COBALION",
       "at": 192,
@@ -5825,6 +7253,7 @@
       "nice_name": "Cobalion"
     },
     {
+      "evolutions": [],
       "id": 639,
       "name": "TERRAKION",
       "at": 260,
@@ -5833,6 +7262,7 @@
       "nice_name": "Terrakion"
     },
     {
+      "evolutions": [],
       "id": 640,
       "name": "VIRIZION",
       "at": 192,
@@ -5841,6 +7271,7 @@
       "nice_name": "Virizion"
     },
     {
+      "evolutions": [],
       "id": 641,
       "name": "TORNADUS",
       "at": 266,
@@ -5849,6 +7280,7 @@
       "nice_name": "Tornadus"
     },
     {
+      "evolutions": [],
       "id": 641,
       "name": "TORNADUS_INCARNATE",
       "at": 266,
@@ -5857,6 +7289,7 @@
       "nice_name": "Tornadus Incarnate"
     },
     {
+      "evolutions": [],
       "id": 641,
       "name": "TORNADUS_THERIAN",
       "at": 238,
@@ -5865,6 +7298,7 @@
       "nice_name": "Tornadus Therian"
     },
     {
+      "evolutions": [],
       "id": 642,
       "name": "THUNDURUS",
       "at": 266,
@@ -5873,6 +7307,7 @@
       "nice_name": "Thundurus"
     },
     {
+      "evolutions": [],
       "id": 642,
       "name": "THUNDURUS_INCARNATE",
       "at": 266,
@@ -5881,6 +7316,7 @@
       "nice_name": "Thundurus Incarnate"
     },
     {
+      "evolutions": [],
       "id": 642,
       "name": "THUNDURUS_THERIAN",
       "at": 295,
@@ -5889,6 +7325,7 @@
       "nice_name": "Thundurus Therian"
     },
     {
+      "evolutions": [],
       "id": 643,
       "name": "RESHIRAM",
       "at": 275,
@@ -5897,6 +7334,7 @@
       "nice_name": "Reshiram"
     },
     {
+      "evolutions": [],
       "id": 644,
       "name": "ZEKROM",
       "at": 275,
@@ -5905,6 +7343,7 @@
       "nice_name": "Zekrom"
     },
     {
+      "evolutions": [],
       "id": 645,
       "name": "LANDORUS",
       "at": 261,
@@ -5913,6 +7352,7 @@
       "nice_name": "Landorus"
     },
     {
+      "evolutions": [],
       "id": 645,
       "name": "LANDORUS_INCARNATE",
       "at": 261,
@@ -5921,6 +7361,7 @@
       "nice_name": "Landorus Incarnate"
     },
     {
+      "evolutions": [],
       "id": 645,
       "name": "LANDORUS_THERIAN",
       "at": 289,
@@ -5929,6 +7370,7 @@
       "nice_name": "Landorus Therian"
     },
     {
+      "evolutions": [],
       "id": 646,
       "name": "KYUREM",
       "at": 246,
@@ -5937,6 +7379,7 @@
       "nice_name": "Kyurem"
     },
     {
+      "evolutions": [],
       "id": 646,
       "name": "KYUREM_BLACK",
       "at": 310,
@@ -5945,6 +7388,7 @@
       "nice_name": "Kyurem Black"
     },
     {
+      "evolutions": [],
       "id": 646,
       "name": "KYUREM_WHITE",
       "at": 310,
@@ -5953,6 +7397,7 @@
       "nice_name": "Kyurem White"
     },
     {
+      "evolutions": [],
       "id": 647,
       "name": "KELDEO",
       "at": 260,
@@ -5961,6 +7406,7 @@
       "nice_name": "Keldeo"
     },
     {
+      "evolutions": [],
       "id": 647,
       "name": "KELDEO_ORDINARY",
       "at": 260,
@@ -5969,6 +7415,7 @@
       "nice_name": "Keldeo Ordinary"
     },
     {
+      "evolutions": [],
       "id": 647,
       "name": "KELDEO_RESOLUTE",
       "at": 260,
@@ -5977,6 +7424,7 @@
       "nice_name": "Keldeo Resolute"
     },
     {
+      "evolutions": [],
       "id": 648,
       "name": "MELOETTA",
       "at": 250,
@@ -5985,6 +7433,7 @@
       "nice_name": "Meloetta"
     },
     {
+      "evolutions": [],
       "id": 648,
       "name": "MELOETTA_ARIA",
       "at": 250,
@@ -5993,6 +7442,7 @@
       "nice_name": "Meloetta Aria"
     },
     {
+      "evolutions": [],
       "id": 648,
       "name": "MELOETTA_PIROUETTE",
       "at": 269,
@@ -6001,6 +7451,7 @@
       "nice_name": "Meloetta Pirouette"
     },
     {
+      "evolutions": [],
       "id": 649,
       "name": "GENESECT",
       "at": 252,
@@ -6009,6 +7460,7 @@
       "nice_name": "Genesect"
     },
     {
+      "evolutions": [],
       "id": 649,
       "name": "GENESECT_BURN",
       "at": 252,
@@ -6017,6 +7469,7 @@
       "nice_name": "Genesect Burn"
     },
     {
+      "evolutions": [],
       "id": 649,
       "name": "GENESECT_CHILL",
       "at": 252,
@@ -6025,6 +7478,7 @@
       "nice_name": "Genesect Chill"
     },
     {
+      "evolutions": [],
       "id": 649,
       "name": "GENESECT_DOUSE",
       "at": 252,
@@ -6033,6 +7487,7 @@
       "nice_name": "Genesect Douse"
     },
     {
+      "evolutions": [],
       "id": 649,
       "name": "GENESECT_SHOCK",
       "at": 252,
@@ -6041,6 +7496,7 @@
       "nice_name": "Genesect Shock"
     },
     {
+      "evolutions": [],
       "id": 650,
       "name": "CHESPIN",
       "at": 110,
@@ -6049,6 +7505,7 @@
       "nice_name": "Chespin"
     },
     {
+      "evolutions": [],
       "id": 651,
       "name": "QUILLADIN",
       "at": 146,
@@ -6057,6 +7514,7 @@
       "nice_name": "Quilladin"
     },
     {
+      "evolutions": [],
       "id": 652,
       "name": "CHESNAUGHT",
       "at": 201,
@@ -6065,6 +7523,7 @@
       "nice_name": "Chesnaught"
     },
     {
+      "evolutions": [],
       "id": 653,
       "name": "FENNEKIN",
       "at": 116,
@@ -6073,6 +7532,7 @@
       "nice_name": "Fennekin"
     },
     {
+      "evolutions": [],
       "id": 654,
       "name": "BRAIXEN",
       "at": 171,
@@ -6081,6 +7541,7 @@
       "nice_name": "Braixen"
     },
     {
+      "evolutions": [],
       "id": 655,
       "name": "DELPHOX",
       "at": 230,
@@ -6089,6 +7550,7 @@
       "nice_name": "Delphox"
     },
     {
+      "evolutions": [],
       "id": 656,
       "name": "FROAKIE",
       "at": 122,
@@ -6097,6 +7559,7 @@
       "nice_name": "Froakie"
     },
     {
+      "evolutions": [],
       "id": 657,
       "name": "FROGADIER",
       "at": 168,
@@ -6105,6 +7568,7 @@
       "nice_name": "Frogadier"
     },
     {
+      "evolutions": [],
       "id": 658,
       "name": "GRENINJA",
       "at": 223,
@@ -6113,6 +7577,7 @@
       "nice_name": "Greninja"
     },
     {
+      "evolutions": [],
       "id": 659,
       "name": "BUNNELBY",
       "at": 68,
@@ -6121,6 +7586,7 @@
       "nice_name": "Bunnelby"
     },
     {
+      "evolutions": [],
       "id": 660,
       "name": "DIGGERSBY",
       "at": 112,
@@ -6129,6 +7595,7 @@
       "nice_name": "Diggersby"
     },
     {
+      "evolutions": [],
       "id": 661,
       "name": "FLETCHLING",
       "at": 95,
@@ -6137,6 +7604,7 @@
       "nice_name": "Fletchling"
     },
     {
+      "evolutions": [],
       "id": 662,
       "name": "FLETCHINDER",
       "at": 145,
@@ -6145,6 +7613,7 @@
       "nice_name": "Fletchinder"
     },
     {
+      "evolutions": [],
       "id": 663,
       "name": "TALONFLAME",
       "at": 176,
@@ -6153,6 +7622,7 @@
       "nice_name": "Talonflame"
     },
     {
+      "evolutions": [],
       "id": 664,
       "name": "SCATTERBUG",
       "at": 63,
@@ -6161,6 +7631,7 @@
       "nice_name": "Scatterbug"
     },
     {
+      "evolutions": [],
       "id": 665,
       "name": "SPEWPA",
       "at": 48,
@@ -6169,6 +7640,7 @@
       "nice_name": "Spewpa"
     },
     {
+      "evolutions": [],
       "id": 666,
       "name": "VIVILLON",
       "at": 176,
@@ -6177,6 +7649,18 @@
       "nice_name": "Vivillon"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "PYROAR",
+          "candyCost": 50,
+          "genderRequirement": "MALE"
+        },
+        {
+          "evolution": "PYROAR",
+          "candyCost": 50,
+          "genderRequirement": "FEMALE"
+        }
+      ],
       "id": 667,
       "name": "LITLEO",
       "at": 139,
@@ -6185,6 +7669,7 @@
       "nice_name": "Litleo"
     },
     {
+      "evolutions": [],
       "id": 668,
       "name": "PYROAR",
       "at": 221,
@@ -6193,6 +7678,7 @@
       "nice_name": "Pyroar"
     },
     {
+      "evolutions": [],
       "id": 668,
       "name": "PYROAR_FEMALE",
       "at": 221,
@@ -6201,6 +7687,7 @@
       "nice_name": "Pyroar Female"
     },
     {
+      "evolutions": [],
       "id": 669,
       "name": "FLABEBE",
       "at": 108,
@@ -6209,6 +7696,7 @@
       "nice_name": "Flabebe"
     },
     {
+      "evolutions": [],
       "id": 670,
       "name": "FLOETTE",
       "at": 136,
@@ -6217,6 +7705,7 @@
       "nice_name": "Floette"
     },
     {
+      "evolutions": [],
       "id": 671,
       "name": "FLORGES",
       "at": 212,
@@ -6225,6 +7714,7 @@
       "nice_name": "Florges"
     },
     {
+      "evolutions": [],
       "id": 672,
       "name": "SKIDDO",
       "at": 123,
@@ -6233,6 +7723,7 @@
       "nice_name": "Skiddo"
     },
     {
+      "evolutions": [],
       "id": 673,
       "name": "GOGOAT",
       "at": 196,
@@ -6241,6 +7732,7 @@
       "nice_name": "Gogoat"
     },
     {
+      "evolutions": [],
       "id": 674,
       "name": "PANCHAM",
       "at": 145,
@@ -6249,6 +7741,7 @@
       "nice_name": "Pancham"
     },
     {
+      "evolutions": [],
       "id": 675,
       "name": "PANGORO",
       "at": 226,
@@ -6257,6 +7750,7 @@
       "nice_name": "Pangoro"
     },
     {
+      "evolutions": [],
       "id": 676,
       "name": "FURFROU",
       "at": 164,
@@ -6265,6 +7759,18 @@
       "nice_name": "Furfrou"
     },
     {
+      "evolutions": [
+        {
+          "evolution": "MEOWSTIC",
+          "candyCost": 50,
+          "genderRequirement": "MALE"
+        },
+        {
+          "evolution": "MEOWSTIC",
+          "candyCost": 50,
+          "genderRequirement": "FEMALE"
+        }
+      ],
       "id": 677,
       "name": "ESPURR",
       "at": 120,
@@ -6273,6 +7779,7 @@
       "nice_name": "Espurr"
     },
     {
+      "evolutions": [],
       "id": 678,
       "name": "MEOWSTIC",
       "at": 166,
@@ -6281,6 +7788,7 @@
       "nice_name": "Meowstic"
     },
     {
+      "evolutions": [],
       "id": 678,
       "name": "MEOWSTIC_FEMALE",
       "at": 166,
@@ -6289,6 +7797,7 @@
       "nice_name": "Meowstic Female"
     },
     {
+      "evolutions": [],
       "id": 682,
       "name": "SPRITZEE",
       "at": 110,
@@ -6297,6 +7806,7 @@
       "nice_name": "Spritzee"
     },
     {
+      "evolutions": [],
       "id": 683,
       "name": "AROMATISSE",
       "at": 173,
@@ -6305,6 +7815,7 @@
       "nice_name": "Aromatisse"
     },
     {
+      "evolutions": [],
       "id": 684,
       "name": "SWIRLIX",
       "at": 109,
@@ -6313,6 +7824,7 @@
       "nice_name": "Swirlix"
     },
     {
+      "evolutions": [],
       "id": 685,
       "name": "SLURPUFF",
       "at": 168,
@@ -6321,6 +7833,7 @@
       "nice_name": "Slurpuff"
     },
     {
+      "evolutions": [],
       "id": 686,
       "name": "INKAY",
       "at": 98,
@@ -6329,6 +7842,7 @@
       "nice_name": "Inkay"
     },
     {
+      "evolutions": [],
       "id": 687,
       "name": "MALAMAR",
       "at": 177,
@@ -6337,6 +7851,7 @@
       "nice_name": "Malamar"
     },
     {
+      "evolutions": [],
       "id": 688,
       "name": "BINACLE",
       "at": 96,
@@ -6345,6 +7860,7 @@
       "nice_name": "Binacle"
     },
     {
+      "evolutions": [],
       "id": 689,
       "name": "BARBARACLE",
       "at": 194,
@@ -6353,6 +7869,7 @@
       "nice_name": "Barbaracle"
     },
     {
+      "evolutions": [],
       "id": 690,
       "name": "SKRELP",
       "at": 109,
@@ -6361,6 +7878,7 @@
       "nice_name": "Skrelp"
     },
     {
+      "evolutions": [],
       "id": 691,
       "name": "DRAGALGE",
       "at": 177,
@@ -6369,6 +7887,7 @@
       "nice_name": "Dragalge"
     },
     {
+      "evolutions": [],
       "id": 692,
       "name": "CLAUNCHER",
       "at": 108,
@@ -6377,6 +7896,7 @@
       "nice_name": "Clauncher"
     },
     {
+      "evolutions": [],
       "id": 693,
       "name": "CLAWITZER",
       "at": 221,
@@ -6385,6 +7905,7 @@
       "nice_name": "Clawitzer"
     },
     {
+      "evolutions": [],
       "id": 694,
       "name": "HELIOPTILE",
       "at": 115,
@@ -6393,6 +7914,7 @@
       "nice_name": "Helioptile"
     },
     {
+      "evolutions": [],
       "id": 695,
       "name": "HELIOLISK",
       "at": 219,
@@ -6401,6 +7923,7 @@
       "nice_name": "Heliolisk"
     },
     {
+      "evolutions": [],
       "id": 696,
       "name": "TYRUNT",
       "at": 158,
@@ -6409,6 +7932,7 @@
       "nice_name": "Tyrunt"
     },
     {
+      "evolutions": [],
       "id": 697,
       "name": "TYRANTRUM",
       "at": 227,
@@ -6417,6 +7941,7 @@
       "nice_name": "Tyrantrum"
     },
     {
+      "evolutions": [],
       "id": 698,
       "name": "AMAURA",
       "at": 124,
@@ -6425,6 +7950,7 @@
       "nice_name": "Amaura"
     },
     {
+      "evolutions": [],
       "id": 699,
       "name": "AURORUS",
       "at": 186,
@@ -6433,6 +7959,7 @@
       "nice_name": "Aurorus"
     },
     {
+      "evolutions": [],
       "id": 700,
       "name": "SYLVEON",
       "at": 203,
@@ -6441,6 +7968,7 @@
       "nice_name": "Sylveon"
     },
     {
+      "evolutions": [],
       "id": 701,
       "name": "HAWLUCHA",
       "at": 195,
@@ -6449,6 +7977,7 @@
       "nice_name": "Hawlucha"
     },
     {
+      "evolutions": [],
       "id": 702,
       "name": "DEDENNE",
       "at": 164,
@@ -6457,6 +7986,7 @@
       "nice_name": "Dedenne"
     },
     {
+      "evolutions": [],
       "id": 703,
       "name": "CARBINK",
       "at": 95,
@@ -6465,6 +7995,7 @@
       "nice_name": "Carbink"
     },
     {
+      "evolutions": [],
       "id": 704,
       "name": "GOOMY",
       "at": 101,
@@ -6473,6 +8004,7 @@
       "nice_name": "Goomy"
     },
     {
+      "evolutions": [],
       "id": 705,
       "name": "SLIGGOO",
       "at": 159,
@@ -6481,6 +8013,7 @@
       "nice_name": "Sliggoo"
     },
     {
+      "evolutions": [],
       "id": 706,
       "name": "GOODRA",
       "at": 220,
@@ -6489,6 +8022,7 @@
       "nice_name": "Goodra"
     },
     {
+      "evolutions": [],
       "id": 707,
       "name": "KLEFKI",
       "at": 160,
@@ -6497,6 +8031,7 @@
       "nice_name": "Klefki"
     },
     {
+      "evolutions": [],
       "id": 708,
       "name": "PHANTUMP",
       "at": 125,
@@ -6505,6 +8040,7 @@
       "nice_name": "Phantump"
     },
     {
+      "evolutions": [],
       "id": 709,
       "name": "TREVENANT",
       "at": 201,
@@ -6513,6 +8049,7 @@
       "nice_name": "Trevenant"
     },
     {
+      "evolutions": [],
       "id": 712,
       "name": "BERGMITE",
       "at": 117,
@@ -6521,6 +8058,7 @@
       "nice_name": "Bergmite"
     },
     {
+      "evolutions": [],
       "id": 713,
       "name": "AVALUGG",
       "at": 196,
@@ -6529,6 +8067,7 @@
       "nice_name": "Avalugg"
     },
     {
+      "evolutions": [],
       "id": 714,
       "name": "NOIBAT",
       "at": 83,
@@ -6537,6 +8076,7 @@
       "nice_name": "Noibat"
     },
     {
+      "evolutions": [],
       "id": 715,
       "name": "NOIVERN",
       "at": 205,
@@ -6545,6 +8085,7 @@
       "nice_name": "Noivern"
     },
     {
+      "evolutions": [],
       "id": 716,
       "name": "XERNEAS",
       "at": 275,
@@ -6553,6 +8094,7 @@
       "nice_name": "Xerneas"
     },
     {
+      "evolutions": [],
       "id": 717,
       "name": "YVELTAL",
       "at": 275,
@@ -6561,6 +8103,7 @@
       "nice_name": "Yveltal"
     },
     {
+      "evolutions": [],
       "id": 808,
       "name": "MELTAN",
       "at": 118,
@@ -6569,6 +8112,7 @@
       "nice_name": "Meltan"
     },
     {
+      "evolutions": [],
       "id": 809,
       "name": "MELMETAL",
       "at": 226,
@@ -6577,6 +8121,7 @@
       "nice_name": "Melmetal"
     },
     {
+      "evolutions": [],
       "id": 862,
       "name": "OBSTAGOON",
       "at": 180,
@@ -6585,6 +8130,7 @@
       "nice_name": "Obstagoon"
     },
     {
+      "evolutions": [],
       "id": 863,
       "name": "PERRSERKER",
       "at": 195,
@@ -6593,6 +8139,7 @@
       "nice_name": "Perrserker"
     },
     {
+      "evolutions": [],
       "id": 865,
       "name": "SIRFETCHD",
       "at": 248,
@@ -6601,6 +8148,7 @@
       "nice_name": "Sirfetchd"
     },
     {
+      "evolutions": [],
       "id": 866,
       "name": "MR_RIME",
       "at": 212,
@@ -6609,6 +8157,7 @@
       "nice_name": "Mr Rime"
     },
     {
+      "evolutions": [],
       "id": 867,
       "name": "RUNERIGUS",
       "at": 163,
