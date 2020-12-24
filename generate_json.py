@@ -107,9 +107,28 @@ class GenerateJSON:
         # Sort the result by id and name
         return sorted(list(pokemons), key=lambda x: (x.id, x.name))
 
+    def _get_settings(self):
+        info = {}
+
+        for entry in self.gamemaster['template']:
+            if entry['templateId'] == 'PLAYER_LEVEL_SETTINGS':
+                info['player'] = entry['data']['playerLevel']
+            elif entry['templateId'] == 'WEATHER_BONUS_SETTINGS':
+                info['weather'] = entry['data']['weatherBonusSettings']
+
+        return info
+
     def run(self):
         pokemons = self._get_all_info()
-        self.output.write_text(json.dumps(pokemons, indent=2, cls=PokemonEncoder))
+        settings = self._get_settings()
+        self.output.write_text(
+            json.dumps(
+                {'pms': pokemons, 'settings': settings},
+                indent=2,
+                cls=PokemonEncoder
+            )
+        )
+
 
 if __name__ == '__main__':
     GenerateJSON(
