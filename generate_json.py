@@ -29,12 +29,13 @@ class Pokemon:
     df = Integer()
     st = Integer()
 
+    def __init__(self):
+        self.evolutions = []
+
     def __repr__(self):
         return f'Pokemon({vars(self)})'
 
     def __eq__(self, other):
-        print(vars(self))
-        print(vars(other))
         return (
             type(self) == type(other)
             and vars(self) == vars(other)
@@ -102,14 +103,42 @@ class GenerateJSON:
 
             pm.nice_name = pm.name.title().replace('_', ' ')
 
+            try:
+                for tmp in entry['data']['pokemon']['evolutionBranch']:
+                    tmp = tmp.copy()
+                    del tmp['form']
+
+                    pm.evolutions.append(tmp)
+            except KeyError:
+                pass
+
             pokemons.add(pm)
 
         # Sort the result by id and name
         return sorted(list(pokemons), key=lambda x: (x.id, x.name))
 
+    def _get_settings(self):
+        info = {}
+
+        for entry in self.gamemaster['template']:
+            if entry['templateId'] == 'PLAYER_LEVEL_SETTINGS':
+                info['player'] = entry['data']['playerLevel']
+            elif entry['templateId'] == 'WEATHER_BONUS_SETTINGS':
+                info['weather'] = entry['data']['weatherBonusSettings']
+
+        return info
+
     def run(self):
         pokemons = self._get_all_info()
-        self.output.write_text(json.dumps(pokemons, indent=2, cls=PokemonEncoder))
+        settings = self._get_settings()
+        self.output.write_text(
+            json.dumps(
+                {'pms': pokemons, 'settings': settings},
+                indent=2,
+                cls=PokemonEncoder
+            )
+        )
+
 
 if __name__ == '__main__':
     GenerateJSON(
