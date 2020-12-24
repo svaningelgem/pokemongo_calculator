@@ -32,11 +32,8 @@
         <div class="container">
           <h2 class="text-center">IV Calculator</h2>
           <div class="form-group">
-            <label for="IV_Pokemon">Pokémon :</label>
+            <label for="IV_Pokemon">Pokemon :</label>
             <select class="form-control" name="IV_Pokemon" id="IV_Pokemon">
-              <option value="pokemon0">pokemon0</option>
-              <option value="pokemon1">pokemon1</option>
-              <option value="pokemon2">pokemon2</option>
             </select>
           </div>
           <div class="form-group">
@@ -60,16 +57,16 @@
           <div class="form-group">
             <label for="IV_Stardust">Stardust:</label>
             <select class="form-control" name="IV_Stardust" id="IV_Stardust">
-              <option value="v200">200</option>
-              <option value="v400">400</option>
-              <option value="v600">600</option>
-              <option value="v800">800</option>
-              <option value="v1000">1000</option>
-              <option value="v1300">1300</option>
-              <option value="v1600">1600</option>
-              <option value="v1900">1900</option>
-              <option value="v2200">2200</option>
-              <option value="v2500">2500</option>
+              <option value="200">200</option>
+              <option value="400">400</option>
+              <option value="600">600</option>
+              <option value="800">800</option>
+              <option value="1000">1000</option>
+              <option value="1300">1300</option>
+              <option value="1600">1600</option>
+              <option value="1900">1900</option>
+              <option value="2200">2200</option>
+              <option value="2500">2500</option>
             </select>
           </div>
           <div class="form-group">
@@ -101,6 +98,36 @@
               onclick="IVSubmit()"
             />
           </div>
+          <table class="table table-hover" id="IV_table">
+            <thead>
+              <tr>
+                <th>CP</th>
+                <th>AT</th>
+                <th>DF</th>
+                <th>ST</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2953</td>
+                <td>163</td>
+                <td>149</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>2953</td>
+                <td>69</td>
+                <td>19</td>
+                <td>175</td>
+              </tr>
+              <tr>
+                <td>2953</td>
+                <td>233</td>
+                <td>26</td>
+                <td>94</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <!----------- IV Calculator End ----------->
@@ -109,11 +136,8 @@
         <div class="container">
           <h2 class="text-center">CP Calculator</h2>
           <div class="form-group">
-            <label for="CP_Pokemon">Pokémon :</label>
+            <label for="CP_Pokemon">Pokemon :</label>
             <select class="form-control" name="CP_Pokemon" id="CP_Pokemon">
-              <option value="pokemon0">pokemon0</option>
-              <option value="pokemon1">pokemon1</option>
-              <option value="pokemon2">pokemon2</option>
             </select>
           </div>
           <div class="form-group">
@@ -184,12 +208,43 @@
           </div>
           <div class="form-group">
             <input
-              type="submit"
+              type="button"
               class="form-control btn-success"
               id="CP_Submit"
               value="Calculate"
+              onclick="CPSubmit()"
             />
           </div>
+          <table class="table table-hover" id="CP_table">
+            <thead>
+              <tr>
+                <th>CP</th>
+                <th>AT</th>
+                <th>DF</th>
+                <th>ST</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2953</td>
+                <td>163</td>
+                <td>149</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>2953</td>
+                <td>69</td>
+                <td>19</td>
+                <td>175</td>
+              </tr>
+              <tr>
+                <td>2953</td>
+                <td>233</td>
+                <td>26</td>
+                <td>94</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <!----------- CP Calculator End ----------->
@@ -198,11 +253,8 @@
         <div class="container">
           <h2 class="text-center">Raid IV Calculator</h2>
           <div class="form-group">
-            <label for="Raid_Pokemon">Pokémon :</label>
+            <label for="Raid_Pokemon">Pokemon :</label>
             <select class="form-control" name="Raid_Pokemon" id="Raid_Pokemon">
-              <option value="pokemon0">pokemon0</option>
-              <option value="pokemon1">pokemon1</option>
-              <option value="pokemon2">pokemon2</option>
             </select>
           </div>
           <div class="form-group">
@@ -259,12 +311,44 @@
           </div>
           <div class="form-group">
             <input
-              type="submit"
+              type="button"
               class="form-control btn-success"
               id="Raid_Submit"
               value="Calculate"
+              onclick="RaidSubmit()"
             />
           </div>
+          <table class="table table-hover" id="Raid_table">
+            <thead>
+              <tr>
+                <th>CP</th>
+                <th>AT</th>
+                <th>DF</th>
+                <th>ST</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2953</td>
+                <td>163</td>
+                <td>149</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>2953</td>
+                <td>69</td>
+                <td>19</td>
+                <td>175</td>
+              </tr>
+              <tr>
+                <td>2953</td>
+                <td>233</td>
+                <td>26</td>
+                <td>94</td>
+              </tr>
+              
+            </tbody>
+          </table>
         </div>
       </div>
       <!----------- Raid IV Calculator End ----------->
@@ -273,15 +357,12 @@
         <div class="container">
           <h2 class="text-center">Catch Rate Calculator</h2>
           <div class="form-group">
-            <label for="Catch_Pokemon">Pokémon :</label>
+            <label for="Catch_Pokemon">Pokemon :</label>
             <select
               class="form-control"
               name="Catch_Pokemon"
               id="Catch_Pokemon"
             >
-              <option value="pokemon0">pokemon0</option>
-              <option value="pokemon1">pokemon1</option>
-              <option value="pokemon2">pokemon2</option>
             </select>
           </div>
           <div class="form-group">
@@ -339,6 +420,45 @@
               <option value="excellent">Excellent</option>
             </select>
           </div>
+          <div class="form-group">
+            <input
+              type="button"
+              class="form-control btn-success"
+              id="Raid_Submit"
+              value="Calculate"
+              onclick="CatchSubmit()"
+            />
+          </div>
+          <table class="table table-hover" id="Catch_table">
+            <thead>
+              <tr>
+                <th>CP</th>
+                <th>AT</th>
+                <th>DF</th>
+                <th>ST</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2953</td>
+                <td>163</td>
+                <td>149</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>2953</td>
+                <td>69</td>
+                <td>19</td>
+                <td>175</td>
+              </tr>
+              <tr>
+                <td>2953</td>
+                <td>233</td>
+                <td>26</td>
+                <td>94</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <!----------- Catch Rate Calculator End ----------->
