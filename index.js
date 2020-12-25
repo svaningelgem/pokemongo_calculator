@@ -63,6 +63,18 @@ function find_pokemon(name) {
   return null;
 }
 
+function find_pokemon2(name) {
+  // Searches by 'name' and returns a full list
+  let result = [];
+  for (let pm of pokemon_information["pms"]) {
+    if (pm.name === name) {
+      result.push(pm);
+    }
+  }
+
+  return result;
+}
+
 function IVSubmit() {
   // $("#IV_Pokemon")[0].value
   // $("#IV_CP")[0].value
@@ -123,6 +135,29 @@ function sort_by_iv_hp_etc(a, b) {
 
 function sort_desc_by_iv_hp_etc(a, b) {
   return -1 * sort_by_iv_hp_etc(a, b);
+}
+
+function get_possible_evolutions(name) {
+  let pm = find_pokemon(name);
+  if (!pm) {
+    return [];
+  }
+
+  let evolutions = [];
+  let to_process = [pm];
+  while (to_process.length > 0) {
+    let to_check = to_process.shift();
+    evolutions.push(to_check);
+
+    for (let ev of to_check.evolutions) {
+      let pm2 = find_pokemon2(ev.evolution);
+      to_process.push(...pm2);
+    }
+  }
+
+  // Remove the first element (pm)... Because it's not an evolution of itself.
+  evolutions.splice(0, 1);
+  return evolutions;
 }
 
 function RaidSubmit() {
