@@ -32,6 +32,10 @@ body {
   display: none;
 }
 
+.topnav .header-title {
+  display: none;
+}
+
 .form-control:focus {
   border-color: #ff80ff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset,
@@ -43,12 +47,19 @@ body {
     0px 0px 8px rgba(36, 15, 158, 0.5);
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
     display: none;
   }
   .topnav a.icon {
     float: right;
+    display: block;
+  }
+  .topnav a.header-title {
     display: block;
   }
 }
@@ -61,6 +72,9 @@ body {
     position: absolute;
     right: 0;
     top: 0;
+  }
+  .topnav.responsive .header-title {
+    display: none;
   }
   .topnav.responsive a {
     float: none;

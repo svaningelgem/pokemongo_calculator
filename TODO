@@ -1,4 +1,4 @@
-- 1 calculation method is finished: RaidSubmit. This generates an array with records. Each record looks like this:
+- ✔️ 1 calculation method is finished: RaidSubmit. This generates an array with records. Each record looks like this:
     * at: Attack
     * df: Defense
     * st: Stamina
@@ -7,26 +7,26 @@
     * pct: percentage
   ==> This needs to be displayed in the table.
 
-- Watch out for handling Error()'s. I throw them when something goes wrong. Maybe this is not the correct JavaScript way? But these should be shown with the message in them.
+- ✔️ Watch out for handling Error()'s. I throw them when something goes wrong. Maybe this is not the correct JavaScript way? But these should be shown with the message in them.
 
 
-- When you go to a different tab, the URL should change (for example change the anchor to #iv, #cp, ...). This is important as I want every "tab" to be able to be bookmarked.
-- Linked to this previous point is that if you go for example to raid calculation & press refresh. It should come back to raid calculation. (ie: bookmarkable)
+- ✔️ When you go to a different tab, the URL should change (for example change the anchor to #iv, #cp, ...). This is important as I want every "tab" to be able to be bookmarked.
+- ✔️ Linked to this previous point is that if you go for example to raid calculation & press refresh. It should come back to raid calculation. (ie: bookmarkable)
 
 
-- The values should be saved. So for example I was testing the Raid with "Terrakion" and CP 2593 with the "Raid" button checked. This should be saved.
+- ✔️ The values should be saved. So for example I was testing the Raid with "Terrakion" and CP 2593 with the "Raid" button checked. This should be saved.
 
 
-- When you are in the mobile browser and open the app:
+- ✔️ When you are in the mobile browser and open the app:
   When you click on the menu it shows all (good).
   When you click one entry, the menu doesn't disappear. What I prefer is that that menu item becomes the "header" in the gray block, and the others disappear.
 
 
-- Dropdown box for Pokemons:
-  * Sort by name
-  * I was looking if it's possible to have a similar entry field as on gamepress: so you can type stuff (for example "ter"), and it would show all entries where "ter" is in the name.
+- ✔️ Dropdown box for Pokemons:
+  ✔️ * Sort by name
+  ✔️ * I was looking if it's possible to have a similar entry field as on gamepress: so you can type stuff (for example "ter"), and it would show all entries where "ter" is in the name.
     ==> Couldn't immediately find a plugin for that but it would surprise me if there isn't one. Could you add this behaviour?
 
 
-- CP Calculator:
+- ✔️ CP Calculator:
   Add a dropdown box "Evolve into". By default this should be empty, but upon change of "Pokemon" dropdown it should change into the nice_name's from "get_possible_evolutions(<nice_name>)"
