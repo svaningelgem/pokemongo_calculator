@@ -17,11 +17,23 @@
 
   <body>
     <div class="topnav" id="myTopnav">
-      <a data-toggle="tab" href="#IV">IV Calculator</a>
-      <a data-toggle="tab" href="#CP">CP Calculator</a>
-      <a data-toggle="tab" href="#Raid">Raid IV Calculator</a>
-      <a data-toggle="tab" href="#Catch">Catch Rate Calculator</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="javascript:void(0);" class="header-title">IV Calculator</a>
+      <a data-toggle="tab" href="#IV" onclick="clickTab('IV Calculator', '#IV')"
+        >IV Calculator</a
+      >
+      <a data-toggle="tab" href="#CP" onclick="clickTab('CP Calculator', '#CP')"
+        >CP Calculator</a
+      >
+      <a data-toggle="tab" href="#Raid" onclick="clickTab('Raid IV Calculator', '#Raid')"
+        >Raid IV Calculator</a
+      >
+      <a
+        data-toggle="tab"
+        href="#Catch"
+        onclick="clickTab('Catch Rate Calculator', '#Catch')"
+        >Catch Rate Calculator</a
+      >
+      <a href="javascript:void(0);" class="icon" onclick="responsiveTopbar()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
@@ -33,8 +45,13 @@
           <h2 class="text-center">IV Calculator</h2>
           <div class="form-group">
             <label for="IV_Pokemon">Pokemon :</label>
-            <select class="form-control" name="IV_Pokemon" id="IV_Pokemon">
-            </select>
+            <input class="form-control"
+            list="IV_Pokemons"
+            name="IV_Pokemon"
+            id="IV_Pokemon"
+            onchange="change_IV_Pokemon()"/>
+            <datalist id="IV_Pokemons">
+            </datalist>
           </div>
           <div class="form-group">
             <label for="IV_CP">CP:</label>
@@ -137,11 +154,27 @@
           <h2 class="text-center">CP Calculator</h2>
           <div class="form-group">
             <label for="CP_Pokemon">Pokemon :</label>
-            <select class="form-control" name="CP_Pokemon" id="CP_Pokemon">
+            <input class="form-control"
+            list="CP_Pokemons"
+            name="CP_Pokemon"
+            id="CP_Pokemon"
+            onchange="change_CP_Pokemon()"/>
+            <datalist id="CP_Pokemons">
+            </datalist>
+            </select>
+          </div>
+          <div class="form-group" id="CP_Evolve_Group">
+            <label for="CP_Evolve">Evolve into :</label>
+            <select
+              class="form-control"
+              name="CP_Evolve"
+              id="CP_Evolve"
+              onchange="change_CP_Evolve()"
+            >
             </select>
           </div>
           <div class="form-group">
-            <label for="CP_Level">Pokemon Level:</label>
+            <label for="CP_Level">Original Level:</label>
             <input
               type="number"
               class="form-control"
@@ -254,60 +287,62 @@
           <h2 class="text-center">Raid IV Calculator</h2>
           <div class="form-group">
             <label for="Raid_Pokemon">Pokemon :</label>
-            <select class="form-control" name="Raid_Pokemon" id="Raid_Pokemon">
-            </select>
+            <input class="form-control"
+            list="Raid_Pokemons"
+            name="Raid_Pokemon"
+            id="Raid_Pokemon"
+            onchange="change_Raid_Pokemon()"/>
+            <datalist id="Raid_Pokemons">
+            </datalist>
           </div>
           <div class="form-group">
             <label for="Raid_CP">CP:</label>
             <input
               type="number"
               class="form-control"
+              name="Raid_CP"
               id="Raid_CP"
               placeholder="CP"
+              onkeyup="change_Raid_CP()"
             />
           </div>
           <div class="form-check">
             <input
               class="form-check-input"
               type="radio"
-              name="Raid_op"
-              id="Raid_op1"
-              value="Raid_OP1"
-              checked
+              name="Raid_type"
+              id="raid"
+              value="raid"
+              onclick="change_Raid_Type('raid')"
             />
-            <label class="form-check-label" for="Raid_op1">
-              Weather Boosted
-            </label>
+            <label class="form-check-label" for="raid"> Raid </label>
           </div>
           <div class="form-check">
             <input
               class="form-check-input"
               type="radio"
-              name="Raid_op"
-              id="Raid_op2"
-              value="Raid_OP2"
+              name="Raid_type"
+              id="egg"
+              value="egg"
+              onclick="change_Raid_Type('egg')"
             />
-            <label class="form-check-label" for="Raid_op2"> Raid </label>
+            <label class="form-check-label" for="egg"> Hatched </label>
           </div>
           <div class="form-check">
             <input
               class="form-check-input"
               type="radio"
-              name="Raid_op"
-              id="Raid_op3"
-              value="Raid_OP3"
+              name="Raid_type"
+              id="quest"
+              value="quest"
+              onclick="change_Raid_Type('quest')"
             />
-            <label class="form-check-label" for="Raid_op3"> Hatched </label>
+            <label class="form-check-label" for="quest"> Field research </label>
           </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="Raid_op"
-              id="Raid_op4"
-              value="Raid_OP4"
-            />
-            <label class="form-check-label" for="Raid_op4"> Research </label>
+          <div class="form-group pull-right">
+            <a onclick="refresh_Raid()">
+              <span class="glyphicon glyphicon-refresh"></span>
+            </a>
           </div>
           <div class="form-group">
             <input
@@ -325,29 +360,12 @@
                 <th>AT</th>
                 <th>DF</th>
                 <th>ST</th>
+                <th>HP</th>
+                <th>IV</th>
+                <th>PCT</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>2953</td>
-                <td>163</td>
-                <td>149</td>
-                <td>75</td>
-              </tr>
-              <tr>
-                <td>2953</td>
-                <td>69</td>
-                <td>19</td>
-                <td>175</td>
-              </tr>
-              <tr>
-                <td>2953</td>
-                <td>233</td>
-                <td>26</td>
-                <td>94</td>
-              </tr>
-              
-            </tbody>
+            <tbody id="Raid_table_body"></tbody>
           </table>
         </div>
       </div>
@@ -358,12 +376,13 @@
           <h2 class="text-center">Catch Rate Calculator</h2>
           <div class="form-group">
             <label for="Catch_Pokemon">Pokemon :</label>
-            <select
-              class="form-control"
-              name="Catch_Pokemon"
-              id="Catch_Pokemon"
-            >
-            </select>
+            <input class="form-control"
+            list="Catch_Pokemons"
+            name="Catch_Pokemon"
+            id="Catch_Pokemon"
+            onchange="change_Catch_Pokemon()"/>
+            <datalist id="Catch_Pokemons">
+            </datalist>
           </div>
           <div class="form-group">
             <label for="Catch_Level">Pokemon Level:</label>
@@ -464,6 +483,8 @@
       <!----------- Catch Rate Calculator End ----------->
     </div>
 
+    .
+    <script src="notify.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
