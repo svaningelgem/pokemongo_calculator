@@ -125,6 +125,8 @@ class GenerateJSON:
                 info['player'] = entry['data']['playerLevel']
             elif entry['templateId'] == 'WEATHER_BONUS_SETTINGS':
                 info['weather'] = entry['data']['weatherBonusSettings']
+            elif entry['templateId'] == 'POKEMON_UPGRADE_SETTINGS':
+                info['upgrades'] = entry['data']['pokemonUpgrades']
 
         return info
 
