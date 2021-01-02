@@ -1,490 +1,499 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </head>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- autocomplete -->
+  <link
+          rel="stylesheet"
+          href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+  />
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
 
-  <body>
-    <div class="topnav" id="myTopnav">
-      <a href="javascript:void(0);" class="header-title">IV Calculator</a>
-      <a data-toggle="tab" href="#IV" onclick="clickTab('IV Calculator', '#IV')"
-        >IV Calculator</a
-      >
-      <a data-toggle="tab" href="#CP" onclick="clickTab('CP Calculator', '#CP')"
-        >CP Calculator</a
-      >
-      <a data-toggle="tab" href="#Raid" onclick="clickTab('Raid IV Calculator', '#Raid')"
-        >Raid IV Calculator</a
-      >
-      <a
-        data-toggle="tab"
-        href="#Catch"
-        onclick="clickTab('Catch Rate Calculator', '#Catch')"
-        >Catch Rate Calculator</a
-      >
-      <a href="javascript:void(0);" class="icon" onclick="responsiveTopbar()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="javascript:void(0);" class="header-title">IV Calculator</a>
+  <a data-toggle="tab" href="#IV" onclick="clickTab('IV Calculator', '#IV')"
+  >IV Calculator</a
+  >
+  <a data-toggle="tab" href="#CP" onclick="clickTab('CP Calculator', '#CP')"
+  >CP Calculator</a
+  >
+  <a
+          data-toggle="tab"
+          href="#Raid"
+          onclick="clickTab('Raid IV Calculator', '#Raid')"
+  >Raid IV Calculator</a
+  >
+  <a
+          data-toggle="tab"
+          href="#Catch"
+          onclick="clickTab('Catch Rate Calculator', '#Catch')"
+  >Catch Rate Calculator</a
+  >
+  <a href="javascript:void(0);" class="icon" onclick="responsiveTopbar()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
-    <div class="tab-content">
-      <!----------- IV Calculator Start ----------->
-      <div id="IV" class="tab-pane fade in active">
-        <div class="container">
-          <h2 class="text-center">IV Calculator</h2>
-          <div class="form-group">
-            <label for="IV_Pokemon">Pokemon :</label>
-            <input class="form-control"
-            list="IV_Pokemons"
-            name="IV_Pokemon"
-            id="IV_Pokemon"
-            onchange="change_IV_Pokemon()"/>
-            <datalist id="IV_Pokemons">
-            </datalist>
-          </div>
-          <div class="form-group">
-            <label for="IV_CP">CP:</label>
-            <input
-              type="number"
-              class="form-control"
-              id="IV_CP"
-              placeholder="CP"
-            />
-          </div>
-          <div class="form-group">
-            <label for="IV_HP">HP:</label>
-            <input
-              type="number"
-              class="form-control"
-              id="IV_HP"
-              placeholder="HP"
-            />
-          </div>
-          <div class="form-group">
-            <label for="IV_Stardust">Stardust:</label>
-            <select class="form-control" name="IV_Stardust" id="IV_Stardust">
-              <option value="200">200</option>
-              <option value="400">400</option>
-              <option value="600">600</option>
-              <option value="800">800</option>
-              <option value="1000">1000</option>
-              <option value="1300">1300</option>
-              <option value="1600">1600</option>
-              <option value="1900">1900</option>
-              <option value="2200">2200</option>
-              <option value="2500">2500</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <div class="form-check form-check-inline col-sm-6">
-              <label class="form-check-label" for="IV_Hatched">Hatched?</label>
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="IV_Hatched"
-                value="IV_hatched"
-              />
-            </div>
-            <div class="form-check form-check-inline col-sm-6">
-              <label class="form-check-label" for="IV_Lucky">Lucky?</label>
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="IV_Lucky"
-                value="IV_lucky"
-              />
-            </div>
-          </div>
-          <div class="form-group">
-            <input
-              type="button"
-              class="form-control btn-success"
-              id="IV_Submit"
-              value="Calculate"
-              onclick="IVSubmit()"
-            />
-          </div>
-          <table class="table table-hover" id="IV_table">
-            <thead>
-              <tr>
-                <th>CP</th>
-                <th>AT</th>
-                <th>DF</th>
-                <th>ST</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>2953</td>
-                <td>163</td>
-                <td>149</td>
-                <td>75</td>
-              </tr>
-              <tr>
-                <td>2953</td>
-                <td>69</td>
-                <td>19</td>
-                <td>175</td>
-              </tr>
-              <tr>
-                <td>2953</td>
-                <td>233</td>
-                <td>26</td>
-                <td>94</td>
-              </tr>
-            </tbody>
-          </table>
+<div class="tab-content">
+  <!----------- IV Calculator Start ----------->
+  <div id="IV" class="tab-pane fade in active">
+    <div class="container">
+      <h2 class="text-center">IV Calculator</h2>
+      <div class="ui-widget form-group">
+        <label for="IV_Pokemon">Pokemon :</label>
+        <input
+                id="IV_Pokemons"
+                class="form-control"
+                id="IV_Pokemon"
+                name="IV_Pokemon"
+                onchange="change_IV_Pokemon(this)"
+        />
+      </div>
+      <div class="form-group">
+        <label for="IV_CP">CP:</label>
+        <input
+                type="number"
+                class="form-control"
+                id="IV_CP"
+                name="IV_CP"
+                placeholder="CP"
+        />
+      </div>
+      <div class="form-group">
+        <label for="IV_HP">HP:</label>
+        <input
+                type="number"
+                class="form-control"
+                id="IV_HP"
+                name="IV_HP"
+                placeholder="HP"
+        />
+      </div>
+      <div class="form-group">
+        <label for="IV_Stardust">Stardust:</label>
+        <select class="form-control" name="IV_Stardust" id="IV_Stardust">
+          <option value="200">200</option>
+          <option value="400">400</option>
+          <option value="600">600</option>
+          <option value="800">800</option>
+          <option value="1000">1000</option>
+          <option value="1300">1300</option>
+          <option value="1600">1600</option>
+          <option value="1900">1900</option>
+          <option value="2200">2200</option>
+          <option value="2500">2500</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <div class="form-check form-check-inline col-sm-6">
+          <label class="form-check-label" for="IV_Hatched">Hatched?</label>
+          <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="IV_Hatched"
+                  name="IV_Hatched"
+                  value="true"
+          />
+        </div>
+        <div class="form-check form-check-inline col-sm-6">
+          <label class="form-check-label" for="IV_Lucky">Lucky?</label>
+          <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="IV_Lucky"
+                  name="IV_Lucky"
+                  value="true"
+          />
         </div>
       </div>
-      <!----------- IV Calculator End ----------->
-      <!----------- CP Calculator Start ----------->
-      <div id="CP" class="tab-pane fade">
-        <div class="container">
-          <h2 class="text-center">CP Calculator</h2>
-          <div class="form-group">
-            <label for="CP_Pokemon">Pokemon :</label>
-            <input class="form-control"
-            list="CP_Pokemons"
-            name="CP_Pokemon"
-            id="CP_Pokemon"
-            onchange="change_CP_Pokemon()"/>
-            <datalist id="CP_Pokemons">
-            </datalist>
-            </select>
-          </div>
-          <div class="form-group" id="CP_Evolve_Group">
-            <label for="CP_Evolve">Evolve into :</label>
-            <select
-              class="form-control"
-              name="CP_Evolve"
-              id="CP_Evolve"
-              onchange="change_CP_Evolve()"
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button
+                  type="submit"
+                  class="form-control btn-default btn-success"
+                  id="IV_Submit"
+          >
+            Calculate
+          </button>
+        </div>
+        <div class="col-sm-2">
+          <button
+                  type="button"
+                  class="form-control btn-warning"
+                  id="IV_Reset"
+                  onclick="refresh_tab('#IV')"
+          >
+            <span class="glyphicon glyphicon-refresh"></span> Reset
+          </button>
+        </div>
+      </div>
+      <table class="table table-hover" id="IV_table">
+        <thead>
+        <tr>
+          <th>CP</th>
+          <th>AT</th>
+          <th>DF</th>
+          <th>ST</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <!----------- IV Calculator End ----------->
+  <!----------- CP Calculator Start ----------->
+  <div id="CP" class="tab-pane fade">
+    <div class="container">
+      <h2 class="text-center">CP Calculator</h2>
+      <div class="ui-widget form-group">
+        <label for="CP_Pokemon">Pokemon :</label>
+        <input
+                id="CP_Pokemons"
+                class="form-control"
+                id="CP_Pokemon"
+                name="CP_Pokemon"
+                onchange="change_CP_Pokemon(this)"
+        />
+      </div>
+      <div class="form-group" id="CP_Evolve_Group">
+        <label for="CP_Evolve">Evolve into :</label>
+        <select class="form-control" name="CP_Evolve" id="CP_Evolve">
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="CP_Level">Original Level:</label>
+        <input
+                type="number"
+                class="form-control"
+                name="CP_Level"
+                id="CP_Level"
+                placeholder="Pokemon Level"
+        />
+      </div>
+      <div class="form-group col-sm-4">
+        <label for="CP_Attack">ATK IV:</label>
+        <input
+                type="number"
+                class="form-control"
+                id="CP_Attack"
+                name="CP_Attack"
+                placeholder="Attack IVs"
+        />
+      </div>
+      <div class="form-group col-sm-4">
+        <label for="CP_Defense">DEF IV:</label>
+        <input
+                type="number"
+                class="form-control"
+                id="CP_Defense"
+                name="CP_Defense"
+                placeholder="Defense IVs"
+        />
+      </div>
+      <div class="form-group col-sm-4">
+        <label for="CP_HP">HP IV:</label>
+        <input
+                type="number"
+                class="form-control"
+                id="CP_HP"
+                name="CP_HP"
+                placeholder="HP IVs"
+        />
+      </div>
+      <div class="form-group">
+        <label for="CP_Target">Target Level:</label>
+        <input
+                type="number"
+                class="form-control"
+                id="CP_Target"
+                name="CP_Target"
+                placeholder="Target Level"
+        />
+      </div>
+
+      <div class="form-group">
+        <div class="form-check form-check-inline col-sm-6">
+          <label class="form-check-label" for="CP_Hatched">Hatched?</label>
+          <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="CP_Hatched"
+                  name="CP_Hatched"
+                  value="true"
+          />
+        </div>
+        <div class="form-check form-check-inline col-sm-6">
+          <label class="form-check-label" for="CP_Lucky">Lucky?</label>
+          <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="CP_Lucky"
+                  name="CP_Lucky"
+                  value="true"
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button
+                  type="submit"
+                  class="form-control btn-default btn-success"
+                  id="CP_Submit"
+          >
+            Calculate
+          </button>
+        </div>
+        <div class="col-sm-2">
+          <button
+                  type="button"
+                  class="form-control btn-warning"
+                  id="CP_Reset"
+                  onclick="refresh_tab('#CP')"
+          >
+            <span class="glyphicon glyphicon-refresh"></span> Reset
+          </button>
+        </div>
+      </div>
+      <table class="table table-hover" id="CP_table">
+        <thead>
+        <tr>
+          <th>CP</th>
+          <th>AT</th>
+          <th>DF</th>
+          <th>ST</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <!----------- CP Calculator End ----------->
+  <!----------- Raid IV Calculator Start ----------->
+  <div id="Raid" class="tab-pane fade">
+    <form onsubmit="return RaidSubmit(this)">
+      <div class="container">
+        <h2 class="text-center">Raid IV Calculator</h2>
+        <div class="ui-widget form-group">
+          <label for="Raid_Pokemon">Pokemon :</label>
+          <input
+                  id="Raid_Pokemons"
+                  class="form-control"
+                  id="Raid_Pokemon"
+                  name="Raid_Pokemon"
+          />
+        </div>
+        <div class="form-group">
+          <label for="Raid_CP">CP:</label>
+          <input
+                  type="number"
+                  class="form-control"
+                  name="Raid_CP"
+                  id="Raid_CP"
+                  placeholder="CP"
+          />
+        </div>
+        <div class="form-check">
+          <input
+                  class="form-check-input"
+                  type="radio"
+                  name="Raid_type"
+                  id="raid"
+                  value="raid"
+          />
+          <label class="form-check-label" for="raid"> Raid </label>
+        </div>
+        <div class="form-check">
+          <input
+                  class="form-check-input"
+                  type="radio"
+                  name="Raid_type"
+                  id="egg"
+                  value="egg"
+          />
+          <label class="form-check-label" for="egg"> Hatched </label>
+        </div>
+        <div class="form-check">
+          <input
+                  class="form-check-input"
+                  type="radio"
+                  name="Raid_type"
+                  id="quest"
+                  value="quest"
+          />
+          <label class="form-check-label" for="quest">
+            Field research
+          </label>
+        </div>
+        <!--
+      <div class="form-group pull-right">
+        <a onclick="refresh_tab('#Raid')">
+          <span class="glyphicon glyphicon-refresh"></span>
+        </a>
+      </div>
+    -->
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button
+                    type="submit"
+                    class="form-control btn-default btn-success"
+                    id="Raid_Submit"
             >
-            </select>
+              Calculate
+            </button>
           </div>
-          <div class="form-group">
-            <label for="CP_Level">Original Level:</label>
-            <input
-              type="number"
-              class="form-control"
-              id="CP_Level"
-              placeholder="Pokemon Level"
-            />
+          <div class="col-sm-2">
+            <button
+                    type="button"
+                    class="form-control btn-warning"
+                    id="Raid_Reset"
+                    onclick="refresh_tab('#Raid')"
+            >
+              <span class="glyphicon glyphicon-refresh"></span> Reset
+            </button>
           </div>
-          <div class="form-group col-sm-4">
-            <label for="CP_Attack">ATK IV:</label>
-            <input
-              type="number"
-              class="form-control"
-              id="CP_Attack"
-              placeholder="Attack IVs"
-            />
-          </div>
-          <div class="form-group col-sm-4">
-            <label for="CP_Defense">DEF IV:</label>
-            <input
-              type="number"
-              class="form-control"
-              id="CP_Defense"
-              placeholder="Defense IVs"
-            />
-          </div>
-          <div class="form-group col-sm-4">
-            <label for="CP_HP">HP IV:</label>
-            <input
-              type="number"
-              class="form-control"
-              id="CP_HP"
-              placeholder="HP IVs"
-            />
-          </div>
-          <div class="form-group">
-            <label for="CP_Target">Target Level:</label>
-            <input
-              type="number"
-              class="form-control"
-              id="CP_Target"
-              placeholder="Target Level"
-            />
-          </div>
-
-          <div class="form-group">
-            <div class="form-check form-check-inline col-sm-6">
-              <label class="form-check-label" for="CP_Hatched">Hatched?</label>
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="CP_Hatched"
-                value="CP_hatched"
-              />
-            </div>
-            <div class="form-check form-check-inline col-sm-6">
-              <label class="form-check-label" for="CP_Lucky">Lucky?</label>
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="CP_Lucky"
-                value="CP_lucky"
-              />
-            </div>
-          </div>
-          <div class="form-group">
-            <input
-              type="button"
-              class="form-control btn-success"
-              id="CP_Submit"
-              value="Calculate"
-              onclick="CPSubmit()"
-            />
-          </div>
-          <table class="table table-hover" id="CP_table">
-            <thead>
-              <tr>
-                <th>CP</th>
-                <th>AT</th>
-                <th>DF</th>
-                <th>ST</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>2953</td>
-                <td>163</td>
-                <td>149</td>
-                <td>75</td>
-              </tr>
-              <tr>
-                <td>2953</td>
-                <td>69</td>
-                <td>19</td>
-                <td>175</td>
-              </tr>
-              <tr>
-                <td>2953</td>
-                <td>233</td>
-                <td>26</td>
-                <td>94</td>
-              </tr>
-            </tbody>
-          </table>
+        </div>
+        <table class="table table-hover" id="Raid_table">
+          <thead>
+          <tr>
+            <th>CP</th>
+            <th>AT</th>
+            <th>DF</th>
+            <th>ST</th>
+            <th>HP</th>
+            <th>IV</th>
+          </tr>
+          </thead>
+          <tbody id="Raid_table_body"></tbody>
+        </table>
+      </div>
+    </form>
+  </div>
+  <!----------- Raid IV Calculator End ----------->
+  <!----------- Catch Rate Calculator Start ----------->
+  <div id="Catch" class="tab-pane fade">
+    <div class="container">
+      <h2 class="text-center">Catch Rate Calculator</h2>
+      <div class="ui-widget form-group">
+        <label for="Catch_Pokemon">Pokemon :</label>
+        <input
+                id="Catch_Pokemons"
+                class="form-control"
+                id="Catch_Pokemon"
+                name="Catch_Pokemon"
+                onchange="change_Catch_Pokemon(this)"
+        />
+      </div>
+      <div class="form-group">
+        <label for="Catch_Level">Pokemon Level:</label>
+        <input
+                type="number"
+                class="form-control"
+                id="Catch_Level"
+                name="Catch_Level"
+                placeholder="Pokemon Level"
+        />
+      </div>
+      <div class="form-group">
+        <label for="Catch_Ball">Ball Type :</label>
+        <select class="form-control" name="Catch_Ball" id="Catch_Ball">
+          <option value="Red">Red</option>
+          <option value="Blue">Blue</option>
+          <option value="Ultra">Ultra</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <div class="form-check form-check-inline">
+          <label class="form-check-label" for="Catch_Curve">Curve?</label>
+          <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="Catch_Curve"
+                  name="Catch_Curve"
+                  value="true"
+          />
         </div>
       </div>
-      <!----------- CP Calculator End ----------->
-      <!----------- Raid IV Calculator Start ----------->
-      <div id="Raid" class="tab-pane fade">
-        <div class="container">
-          <h2 class="text-center">Raid IV Calculator</h2>
-          <div class="form-group">
-            <label for="Raid_Pokemon">Pokemon :</label>
-            <input class="form-control"
-            list="Raid_Pokemons"
-            name="Raid_Pokemon"
-            id="Raid_Pokemon"
-            onchange="change_Raid_Pokemon()"/>
-            <datalist id="Raid_Pokemons">
-            </datalist>
-          </div>
-          <div class="form-group">
-            <label for="Raid_CP">CP:</label>
-            <input
-              type="number"
-              class="form-control"
-              name="Raid_CP"
-              id="Raid_CP"
-              placeholder="CP"
-              onkeyup="change_Raid_CP()"
-            />
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="Raid_type"
-              id="raid"
-              value="raid"
-              onclick="change_Raid_Type('raid')"
-            />
-            <label class="form-check-label" for="raid"> Raid </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="Raid_type"
-              id="egg"
-              value="egg"
-              onclick="change_Raid_Type('egg')"
-            />
-            <label class="form-check-label" for="egg"> Hatched </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="Raid_type"
-              id="quest"
-              value="quest"
-              onclick="change_Raid_Type('quest')"
-            />
-            <label class="form-check-label" for="quest"> Field research </label>
-          </div>
-          <div class="form-group pull-right">
-            <a onclick="refresh_Raid()">
-              <span class="glyphicon glyphicon-refresh"></span>
-            </a>
-          </div>
-          <div class="form-group">
-            <input
-              type="button"
-              class="form-control btn-success"
-              id="Raid_Submit"
-              value="Calculate"
-              onclick="RaidSubmit()"
-            />
-          </div>
-          <table class="table table-hover" id="Raid_table">
-            <thead>
-              <tr>
-                <th>CP</th>
-                <th>AT</th>
-                <th>DF</th>
-                <th>ST</th>
-                <th>HP</th>
-                <th>IV</th>
-                <th>PCT</th>
-              </tr>
-            </thead>
-            <tbody id="Raid_table_body"></tbody>
-          </table>
+      <div class="form-group">
+        <label for="Catch_Berry">Berry :</label>
+        <select class="form-control" name="Catch_Berry" id="Catch_Berry">
+          <option value="normal">Normal</option>
+          <option value="silver">Silver</option>
+          <option value="golden">Golden</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="Catch_Medal">Medal :</label>
+        <select class="form-control" name="Catch_Medal" id="Catch_Medal">
+          <option value="none">None</option>
+          <option value="bronze">Bronze</option>
+          <option value="silver">Silver</option>
+          <option value="golden">Golden</option>
+          <option value="platinum">Platinum</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="Catch_Radius">Radius :</label>
+        <select class="form-control" name="Catch_Radius" id="Catch_Radius">
+          <option value="none">None</option>
+          <option value="nice">Nice</option>
+          <option value="great">Great</option>
+          <option value="excellent">Excellent</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button
+                  type="submit"
+                  class="form-control btn-default btn-success"
+                  id="Catch_Submit"
+          >
+            Calculate
+          </button>
+        </div>
+        <div class="col-sm-2">
+          <button
+                  type="button"
+                  class="form-control btn-warning"
+                  id="Catch_Reset"
+                  onclick="refresh_tab('#Catch')"
+          >
+            <span class="glyphicon glyphicon-refresh"></span> Reset
+          </button>
         </div>
       </div>
-      <!----------- Raid IV Calculator End ----------->
-      <!----------- Catch Rate Calculator Start ----------->
-      <div id="Catch" class="tab-pane fade">
-        <div class="container">
-          <h2 class="text-center">Catch Rate Calculator</h2>
-          <div class="form-group">
-            <label for="Catch_Pokemon">Pokemon :</label>
-            <input class="form-control"
-            list="Catch_Pokemons"
-            name="Catch_Pokemon"
-            id="Catch_Pokemon"
-            onchange="change_Catch_Pokemon()"/>
-            <datalist id="Catch_Pokemons">
-            </datalist>
-          </div>
-          <div class="form-group">
-            <label for="Catch_Level">Pokemon Level:</label>
-            <input
-              type="number"
-              class="form-control"
-              id="Catch_Level"
-              placeholder="Pokemon Level"
-            />
-          </div>
-          <div class="form-group">
-            <label for="Catch_Ball">Ball Type :</label>
-            <select class="form-control" name="Catch_Ball" id="Catch_Ball">
-              <option value="red">Red</option>
-              <option value="blue">Blue</option>
-              <option value="ultra">Ultra</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <div class="form-check form-check-inline">
-              <label class="form-check-label" for="Catch_Curve">Curve?</label>
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="Catch_Curve"
-                value="Catch_Curve"
-              />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="Catch_Berry">Berry :</label>
-            <select class="form-control" name="Catch_Berry" id="Catch_Berry">
-              <option value="normal">Normal</option>
-              <option value="silver">Silver</option>
-              <option value="golden">Golden</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="Catch_Medal">Medal :</label>
-            <select class="form-control" name="Catch_Medal" id="Catch_Medal">
-              <option value="none">None</option>
-              <option value="bronze">Bronze</option>
-              <option value="silver">Silver</option>
-              <option value="golden">Golden</option>
-              <option value="platinum">Platinum</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="Catch_Radius">Radius :</label>
-            <select class="form-control" name="Catch_Radius" id="Catch_Radius">
-              <option value="none">None</option>
-              <option value="nice">Nice</option>
-              <option value="great">Great</option>
-              <option value="excellent">Excellent</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <input
-              type="button"
-              class="form-control btn-success"
-              id="Raid_Submit"
-              value="Calculate"
-              onclick="CatchSubmit()"
-            />
-          </div>
-          <table class="table table-hover" id="Catch_table">
-            <thead>
-              <tr>
-                <th>CP</th>
-                <th>AT</th>
-                <th>DF</th>
-                <th>ST</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>2953</td>
-                <td>163</td>
-                <td>149</td>
-                <td>75</td>
-              </tr>
-              <tr>
-                <td>2953</td>
-                <td>69</td>
-                <td>19</td>
-                <td>175</td>
-              </tr>
-              <tr>
-                <td>2953</td>
-                <td>233</td>
-                <td>26</td>
-                <td>94</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <!----------- Catch Rate Calculator End ----------->
+      <table class="table table-hover" id="Catch_table">
+        <thead>
+        <tr>
+          <th>CP</th>
+          <th>AT</th>
+          <th>DF</th>
+          <th>ST</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </div>
+  </div>
+  <!----------- Catch Rate Calculator End ----------->
+</div>
 
-    .
-    <script src="notify.min.js"></script>
-    <script src="index.js"></script>
-  </body>
+.
+<script src="notify.min.js"></script>
+<script src="index.js"></script>
+</body>
 </html>

@@ -27,9 +27,20 @@ if (hash) {
   }
 }
 
+$("input,select").on("change", function (self) {
+  save_to_localStorage(self.target);
+});
+$("input,select").on("keyup", function (self) {
+  save_to_localStorage(self.target);
+});
+
+$("input[type=radio]").on("click", function (self) {
+  save_to_localStorage(self.target);
+});
+
 function clickTab(title, hash) {
   responsiveTopbar();
-  $(".header-title")[0].innerHTML = title;
+  $(".header-title").html(title);
 
   window.location.hash = hash;
 }
@@ -40,52 +51,59 @@ $.getJSON("pokemon_information.json", function (data) {
   pokemon_information = data;
 
   data["pms"].sort(sort_by_name);
-  let innerHTML = "";
+
+  var pokemonData = [];
   $.each(data["pms"], function (key, val) {
-    innerHTML += "<option value='" + val.nice_name + "'>";
+    pokemonData.push(val.nice_name);
   });
-  $("#IV_Pokemons")[0].innerHTML = innerHTML;
-  $("#CP_Pokemons")[0].innerHTML = innerHTML;
-  $("#Raid_Pokemons")[0].innerHTML = innerHTML;
-  $("#Catch_Pokemons")[0].innerHTML = innerHTML;
+  $("#IV_Pokemons").autocomplete({ source: pokemonData, delay: 100 });
+  $("#CP_Pokemons").autocomplete({ source: pokemonData, delay: 100 });
+  $("#Raid_Pokemons").autocomplete({ source: pokemonData, delay: 100 });
+  $("#Catch_Pokemons").autocomplete({ source: pokemonData, delay: 100 });
 
   restoreData();
 });
 
 function restoreData() {
-  $("#IV_Pokemon").val(localStorage.getItem("IV_Pokemon"));
-  $("#CP_Pokemon").val(localStorage.getItem("CP_Pokemon"));
-  $("#Raid_Pokemon").val(localStorage.getItem("Raid_Pokemon"));
-  $("#Catch_Pokemon").val(localStorage.getItem("Catch_Pokemon"));
+  for (let el of $("input,select")) {
+    el = $(el);
+    let value = localStorage.getItem(el.attr("name"));
 
-  $("#Raid_CP").val(localStorage.getItem("Raid_CP"));
+    if (el.is(":checkbox")) {
+      el.prop("checked", value === "true");
+    } else if (el.is(":radio")) {
+      el.prop("checked", value === el.val());
+    } else {
+      el.val(value);
+    }
+  }
 
-  switch (localStorage.getItem("Raid_Type")) {
-    case "egg":
-      $("#raid").prop("checked", false);
-      $("#egg").prop("checked", true);
-      $("#quest").prop("checked", false);
-      break;
-    case "quest":
-      $("#raid").prop("checked", false);
-      $("#egg").prop("checked", false);
-      $("#quest").prop("checked", true);
-      break;
+  // Render the evolution box
+  renderEvolve(localStorage.getItem("CP_Pokemon"));
 
-    default:
-      $("#raid").prop("checked", true);
-      $("#egg").prop("checked", false);
-      $("#quest").prop("checked", false);
-      break;
+  // Checkboxes are unchecked by default
+  // --> Nothing to do here
+
+  // Radio groups first item should be checked
+  let all_radio_buttons = $("input[type=radio]");
+  for (let el of all_radio_buttons) {
+    el = $(el);
+    let this_radio_group = all_radio_buttons.filter(
+        "[name=" + el.attr("name") + "]"
+    );
+    if (this_radio_group.filter(":checked").length === 0) {
+      // None checked... Check the current element
+      el.prop("checked", true);
+    }
   }
 }
 
 function calc_cp(pm, cp_multiplier, at, df, st) {
   // And the main calculation
   return Math.floor(
-    ((pm.at + at) *
-      Math.sqrt((pm.df + df) * (pm.st + st)) *
-      cp_multiplier ** 2) /
+      ((pm.at + at) *
+          Math.sqrt((pm.df + df) * (pm.st + st)) *
+          cp_multiplier ** 2) /
       10
   );
 }
@@ -191,6 +209,10 @@ function sort_desc_by_iv_hp_etc(a, b) {
   return -1 * sort_by_iv_hp_etc(a, b);
 }
 
+function get_unique_stardust_amounts() {
+  return [...new Set(pokemon_information["upgrades"]["stardustCost"])].sort();
+}
+
 function get_possible_evolutions(name) {
   let pm = find_pokemon(name);
   if (!pm) {
@@ -224,9 +246,9 @@ function RaidSubmit() {
     levels = [
       pokemon_information["settings"]["player"]["maxEggPlayerLevel"], // normal
       pokemon_information["settings"]["player"]["maxEggPlayerLevel"] + // weather boosted
-        pokemon_information["settings"]["weather"][
+      pokemon_information["settings"]["weather"][
           "raidEncounterCpBaseLevelBonus"
-        ]
+          ]
     ];
   } else if (type === "egg") {
     levels = [pokemon_information["settings"]["player"]["maxEggPlayerLevel"]];
@@ -272,67 +294,69 @@ function RaidSubmit() {
   let innerHTML = "";
   $.each(result, function (key, val) {
     innerHTML +=
-      "<tr><td>" +
-      cp +
-      "</td>" +
-      "<td>" +
-      val.at +
-      "</td>" +
-      "<td>" +
-      val.df +
-      "</td>" +
-      "<td>" +
-      val.st +
-      "</td>" +
-      "<td>" +
-      val.hp +
-      "</td>" +
-      "<td>" +
-      val.iv +
-      "</td>" +
-      "<td>" +
-      (Math.round(val.pct * 100) / 100).toFixed(2) +
-      "</td></tr>";
+        "<tr><td>" +
+        cp +
+        "</td><td>" +
+        val.at +
+        "</td><td>" +
+        val.df +
+        "</td><td>" +
+        val.st +
+        "</td><td>" +
+        val.hp +
+        "</td><td>" +
+        val.iv +
+        " / 45 (" +
+        (Math.round(val.pct * 100) / 100).toFixed(2) +
+        "%)</td></tr>";
   });
-  $("#Raid_table_body")[0].innerHTML = innerHTML;
-  $("#Raid_table").show(500);
+  let table = $("#Raid_table");
+  table.find("tbody").html(innerHTML);
+  table.show(500);
+
+  return false;
 }
 function CatchSubmit() {
   $("#Catch_table").show(500);
 }
 
-function change_IV_Pokemon() {
-  localStorage.setItem("IV_Pokemon", $("#IV_Pokemon").val());
+function change_CP_Pokemon(self) {
+  save_to_localStorage(self);
+  renderEvolve($(self).val());
 }
-function change_CP_Pokemon() {
-  localStorage.setItem("CP_Pokemon", $("#CP_Pokemon").val());
-  let innerHTML = "";
-  $.each(get_possible_evolutions($("#CP_Pokemon").val()), function (key, val) {
-    innerHTML += "<option value='" + val.name + "'>" + val.name + "</option>";
+
+function renderEvolve(PokemonName) {
+  let innerHTML = "<option value='null'></option>";
+  $.each(get_possible_evolutions(PokemonName), function (key, val) {
+    innerHTML +=
+        "<option value='" + val.nice_name + "'>" + val.nice_name + "</option>";
   });
-  $("#CP_Evolve")[0].innerHTML = innerHTML;
+
+  $("#CP_Evolve").html(innerHTML);
   $("#CP_Evolve_Group").show();
 }
-function change_Raid_Pokemon() {
-  localStorage.setItem("Raid_Pokemon", $("#Raid_Pokemon").val());
-}
-function change_Catch_Pokemon() {
-  localStorage.setItem("Catch_Pokemon", $("#Catch_Pokemon").val());
+
+function save_to_localStorage(self) {
+  self = $(self);
+  let value = self.val();
+  if (self.is(":checkbox")) {
+    value = self.is(":checked") ? "true" : "false";
+  }
+  localStorage.setItem(self.attr("name"), value);
 }
 
-function change_Raid_CP() {
-  localStorage.setItem("Raid_CP", $("#Raid_CP").val());
-}
+function refresh_tab(self) {
+  self = $(self);
+  let inputs = self.find("input,select");
 
-function change_Raid_Type(element) {
-  localStorage.setItem("Raid_Type", element);
-}
+  // Hide the table (assume it has the "table" class)
+  let table = self.find("table.table");
+  table.hide();
+  table.find("tbody").html("");
 
-function refresh_Raid() {
-  $("#Raid_table").hide();
-  localStorage.removeItem("Raid_Pokemon");
-  localStorage.removeItem("Raid_CP");
-  localStorage.removeItem("Raid_Type");
-  $("#Raid_table_body")[0].innerHTML = "";
+  // Remove our entries from localStorage.
+  for (let el of inputs) {
+    localStorage.removeItem(el.name);
+  }
   restoreData();
 }
