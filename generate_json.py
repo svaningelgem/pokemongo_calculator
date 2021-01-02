@@ -151,6 +151,9 @@ class GenerateJSON:
 
 
 if __name__ == '__main__':
+    # git submodule init
+    # git submodule update --recursive --remote
+    
     GenerateJSON(
         __root / 'pokeminers_gamemaster/latest/latest.json',
         __root / 'pokeminers_pogoassets/Texts/Latest APK/JSON/i18n_english.json',
