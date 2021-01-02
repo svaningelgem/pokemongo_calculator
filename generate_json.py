@@ -66,13 +66,15 @@ class GenerateJSON:
         re.compile('_PURIFIED$'),
         re.compile('_NORMAL$'),
         re.compile('_SHADOW$'),
+        re.compile('_HOME_FORM_REVERSION$'),
+        re.compile('HOME_REVERSION$'),
         re.compile(r'_\d+$'),
     ]
 
     def __init__(self, gamemaster: Path, i18n: Path, output: Path):
         self.gamemaster = json.loads(gamemaster.read_text())
 
-        i18n = json.loads(i18n.read_text())['data']
+        i18n = json.loads(i18n.read_text(encoding='utf8'))['data']
         self.i18n = {k: v for k, v in zip(i18n[::2], i18n[1::2])}
 
         self.output = output
@@ -80,7 +82,7 @@ class GenerateJSON:
     def _get_all_info(self):
         # Find all the pokemons:
         pokemons = set()
-        for entry in self.gamemaster['template']:
+        for entry in self.gamemaster:
             match = self.GAMEMASTER_POKEMON.match(entry['templateId'])
             if not match:
                 continue
@@ -94,9 +96,15 @@ class GenerateJSON:
                 continue
 
             try:
-                pm.at = int(entry['data']['pokemon']['stats']['baseAttack'])
-                pm.df = int(entry['data']['pokemon']['stats']['baseDefense'])
-                pm.st = int(entry['data']['pokemon']['stats']['baseStamina'])
+                json_data = entry['data']['pokemonSettings']
+            except KeyError:
+                logger.error(f'{pm.name} has no "pokemonSettings" ??')
+                continue
+
+            try:
+                pm.at = int(json_data['stats']['baseAttack'])
+                pm.df = int(json_data['stats']['baseDefense'])
+                pm.st = int(json_data['stats']['baseStamina'])
             except KeyError:
                 logger.debug(f'key missing: {pm}')
                 continue
@@ -104,7 +112,7 @@ class GenerateJSON:
             pm.nice_name = pm.name.title().replace('_', ' ')
 
             try:
-                for tmp in entry['data']['pokemon']['evolutionBranch']:
+                for tmp in json_data['evolutionBranch']:
                     tmp = tmp.copy()
                     del tmp['form']
 
@@ -120,7 +128,7 @@ class GenerateJSON:
     def _get_settings(self):
         info = {}
 
-        for entry in self.gamemaster['template']:
+        for entry in self.gamemaster:
             if entry['templateId'] == 'PLAYER_LEVEL_SETTINGS':
                 info['player'] = entry['data']['playerLevel']
             elif entry['templateId'] == 'WEATHER_BONUS_SETTINGS':
@@ -144,7 +152,7 @@ class GenerateJSON:
 
 if __name__ == '__main__':
     GenerateJSON(
-        __root / 'pokemongo-game-master/versions/latest/V2_GAME_MASTER.json',
-        __root / 'PogoAssets/static_assets/txt/i18n_english.json',
+        __root / 'pokeminers_gamemaster/latest/latest.json',
+        __root / 'pokeminers_pogoassets/Texts/Latest APK/JSON/i18n_english.json',
         __root / 'pokemon_information.json',
     ).run()

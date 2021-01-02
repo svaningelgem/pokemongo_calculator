@@ -1,6 +1,6 @@
-[submodule "PogoAssets"]
-	path = PogoAssets
-	url = https://github.com/ZeChrales/PogoAssets
-[submodule "pokemongo-game-master"]
-	path = pokemongo-game-master
-	url = https://github.com/pokemongo-dev-contrib/pokemongo-game-master
+[submodule "src/main/python/pokeminers_pogoassets"]
+	path = pokeminers_pogoassets
+	url = https://github.com/PokeMiners/pogo_assets.git
+[submodule "src/main/python/pokeminers_gamemaster"]
+	path = pokeminers_gamemaster
+	url = https://github.com/PokeMiners/game_masters.git
