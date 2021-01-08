@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta charset="UTF-8" />
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
@@ -17,12 +19,11 @@
 
 <body>
 <div class="topnav" id="myTopnav">
-    <a class="header-title" href="javascript:void(0);">IV Calculator</a>
-    <a data-toggle="tab" href="#IV" onclick="clickTab('IV Calculator', '#IV')">IV Calculator</a>
-    <a data-toggle="tab" href="#CP" onclick="clickTab('CP Calculator', '#CP')">CP Calculator</a>
-    <a data-toggle="tab" href="#Raid" onclick="clickTab('Raid IV Calculator', '#Raid')">Raid IV Calculator</a>
-    <a data-toggle="tab" href="#Catch" onclick="clickTab('Catch Rate Calculator', '#Catch')">Catch Rate Calculator</a>
-    <a class="icon" href="javascript:void(0);" onclick="responsiveTopbar()">
+    <a class="header-title" href="#">IV Calculator</a>
+    <a data-toggle="tab" href="#IV">IV Calculator</a>
+<!--    <a data-toggle="tab" href="#CP">CP Calculator</a>-->
+<!--    <a data-toggle="tab" href="#Catch">Catch Rate Calculator</a>-->
+    <a class="icon" href="#">
         <i class="fa fa-bars"></i>
     </a>
 </div>
@@ -30,45 +31,48 @@
 <div class="tab-content">
     <!----------- IV Calculator Start ----------->
     <div class="tab-pane fade in active" id="IV">
+        <form onsubmit="return IVCalcSubmit(this)">
         <div class="container">
             <h2 class="text-center">IV Calculator</h2>
             <div class="ui-widget form-group">
-                <label for="IV_Pokemon">Pokemon :</label>
-                <input class="form-control" id="IV_Pokemon" name="IV_Pokemon" />
+                <label for="IV_Pokemon">Pokemon (required):</label>
+                <input class="form-control pokemon_selection" id="IV_Pokemon" name="IV_Pokemon" />
             </div>
             <div class="form-group">
-                <label for="IV_CP">CP:</label>
-                <input class="form-control" id="IV_CP" name="IV_CP" placeholder="CP" type="number" />
+                <label for="IV_CP">CP (required):</label>
+                <input class="form-control cp" id="IV_CP" name="IV_CP" placeholder="CP" type="number" />
             </div>
             <div class="form-group">
-                <label for="IV_HP">HP:</label>
-                <input class="form-control" id="IV_HP" name="IV_HP" placeholder="HP" type="number" />
+                <label for="IV_HP"><i>HP:</i></label>
+                <input class="form-control hp" id="IV_HP" name="IV_HP" placeholder="HP" type="number" />
             </div>
             <div class="form-group">
-                <label for="IV_Stardust">Stardust:</label>
-                <select class="form-control" id="IV_Stardust" name="IV_Stardust">
-                    <option value="200">200</option>
-                    <option value="400">400</option>
-                    <option value="600">600</option>
-                    <option value="800">800</option>
-                    <option value="1000">1000</option>
-                    <option value="1300">1300</option>
-                    <option value="1600">1600</option>
-                    <option value="1900">1900</option>
-                    <option value="2200">2200</option>
-                    <option value="2500">2500</option>
+                <label for="IV_Stardust"><i>Stardust:</i></label>
+                <select class="form-control stardust" id="IV_Stardust" name="IV_Stardust">
                 </select>
             </div>
-            <div class="form-group">
-                <div class="form-check form-check-inline col-sm-6">
-                    <label class="form-check-label" for="IV_Hatched">Hatched?</label>
-                    <input class="form-check-input" id="IV_Hatched" name="IV_Hatched" type="checkbox" value="true" />
-                </div>
-                <div class="form-check form-check-inline col-sm-6">
-                    <label class="form-check-label" for="IV_Lucky">Lucky?</label>
-                    <input class="form-check-input" id="IV_Lucky" name="IV_Lucky" type="checkbox" value="true" />
-                </div>
+
+            <div class="form-check">
+                <input class="form-check-input" id="raid_check" name="IV_type" type="radio" value="raid" />
+                <label class="form-check-label" for="raid_check"> Raid </label>
             </div>
+            <div class="form-check">
+                <input class="form-check-input" id="egg_check" name="IV_type" type="radio" value="egg" />
+                <label class="form-check-label" for="egg_check"> Hatched </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="quest_check" name="IV_type" type="radio" value="quest" />
+                <label class="form-check-label" for="quest_check">
+                    Field research
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="wild_check" name="IV_type" type="radio" value="wild" />
+                <label class="form-check-label" for="wild_check">
+                    Anything else
+                </label>
+            </div>
+
             <div class="form-group row">
                 <div class="col-sm-10">
                     <button class="form-control btn-default btn-success" id="IV_Submit" type="submit">
@@ -83,23 +87,26 @@
                 <thead>
                 <tr>
                     <th>CP</th>
-                    <th>AT</th>
-                    <th>DF</th>
-                    <th>ST</th>
+                    <th>AT/DF/ST</th>
+                    <th>Level</th>
+                    <th>HP</th>
+                    <th>IV</th>
                 </tr>
                 </thead>
                 <tbody></tbody>
             </table>
         </div>
+        </form>
     </div>
     <!----------- IV Calculator End ----------->
     <!----------- CP Calculator Start ----------->
     <div class="tab-pane fade" id="CP">
+        <form onsubmit="return CPCalcSubmit(this)">
         <div class="container">
             <h2 class="text-center">CP Calculator</h2>
             <div class="ui-widget form-group">
                 <label for="CP_Pokemon">Pokemon :</label>
-                <input class="form-control" id="CP_Pokemon" name="CP_Pokemon" onchange="change_CP_Pokemon(this)" />
+                <input class="form-control pokemon_selection" id="CP_Pokemon" name="CP_Pokemon" onchange="change_CP_Pokemon(this)" />
             </div>
             <div class="form-group" id="CP_Evolve_Group">
                 <label for="CP_Evolve">Evolve into :</label>
@@ -158,76 +165,17 @@
                 <tbody></tbody>
             </table>
         </div>
-    </div>
-    <!----------- CP Calculator End ----------->
-    <!----------- Raid IV Calculator Start ----------->
-    <div class="tab-pane fade" id="Raid">
-        <form onsubmit="return RaidSubmit(this)">
-            <div class="container">
-                <h2 class="text-center">Raid IV Calculator</h2>
-                <div class="ui-widget form-group">
-                    <label for="Raid_Pokemon">Pokemon :</label>
-                    <input class="form-control" id="Raid_Pokemon" name="Raid_Pokemon" />
-                </div>
-                <div class="form-group">
-                    <label for="Raid_CP">CP:</label>
-                    <input class="form-control" id="Raid_CP" name="Raid_CP" placeholder="CP" type="number" />
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" id="raid" name="Raid_type" type="radio" value="raid" />
-                    <label class="form-check-label" for="raid"> Raid </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" id="egg" name="Raid_type" type="radio" value="egg" />
-                    <label class="form-check-label" for="egg"> Hatched </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" id="quest" name="Raid_type" type="radio" value="quest" />
-                    <label class="form-check-label" for="quest">
-                        Field research
-                    </label>
-                </div>
-                <!--
-      <div class="form-group pull-right">
-        <a onclick="refresh_tab('#Raid')">
-          <span class="glyphicon glyphicon-refresh"></span>
-        </a>
-      </div>
-    -->
-                <div class="form-group row">
-                    <div class="col-sm-10">
-                        <button class="form-control btn-default btn-success" id="Raid_Submit" type="submit">
-                            Calculate
-                        </button>
-                    </div>
-                    <div class="col-sm-2">
-                        <button class="form-control btn-warning" id="Raid_Reset" onclick="refresh_tab('#Raid')" type="button"><span class="glyphicon glyphicon-refresh"></span> Reset</button>
-                    </div>
-                </div>
-                <table class="table table-hover" id="Raid_table">
-                    <thead>
-                    <tr>
-                        <th>CP</th>
-                        <th>AT</th>
-                        <th>DF</th>
-                        <th>ST</th>
-                        <th>HP</th>
-                        <th>IV</th>
-                    </tr>
-                    </thead>
-                    <tbody id="Raid_table_body"></tbody>
-                </table>
-            </div>
         </form>
     </div>
-    <!----------- Raid IV Calculator End ----------->
+    <!----------- CP Calculator End ----------->
     <!----------- Catch Rate Calculator Start ----------->
     <div class="tab-pane fade" id="Catch">
+        <form onsubmit="return CatchSubmit()">
         <div class="container">
             <h2 class="text-center">Catch Rate Calculator</h2>
             <div class="ui-widget form-group">
                 <label for="Catch_Pokemon">Pokemon :</label>
-                <input class="form-control" id="Catch_Pokemon" name="Catch_Pokemon" />
+                <input class="form-control pokemon_selection" id="Catch_Pokemon" name="Catch_Pokemon" />
             </div>
             <div class="form-group">
                 <label for="Catch_Level">Pokemon Level:</label>
@@ -296,6 +244,7 @@
                 <tbody></tbody>
             </table>
         </div>
+        </form>
     </div>
     <!----------- Catch Rate Calculator End ----------->
 </div>
