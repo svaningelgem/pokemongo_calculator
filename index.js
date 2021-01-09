@@ -27,13 +27,9 @@ if (hash) {
   }
 }
 
-$("input,select").on("change", function (self) {
+$("input,select").on("change keyup", function (self) {
   save_to_localStorage(self.target);
 });
-$("input,select").on("keyup", function (self) {
-  save_to_localStorage(self.target);
-});
-
 $("input[type=radio]").on("click", function (self) {
   save_to_localStorage(self.target);
 });
@@ -122,8 +118,9 @@ function find_multiplier(lvl) {
 }
 
 function find_pokemon(name) {
+  name = name.toLowerCase();
   for (let pm of pokemon_information["pms"]) {
-    if (pm.nice_name === name) {
+    if (pm.nice_name.toLowerCase() === name) {
       return pm;
     }
   }
@@ -133,9 +130,11 @@ function find_pokemon(name) {
 
 function find_pokemon2(name) {
   // Searches by 'name' and returns a full list
+  name = name.toLowerCase();
+
   let result = [];
   for (let pm of pokemon_information["pms"]) {
-    if (pm.name === name) {
+    if (pm.name.toLowerCase() === name) {
       result.push(pm);
     }
   }
@@ -143,70 +142,22 @@ function find_pokemon2(name) {
   return result;
 }
 
-function IVSubmit() {
-  // $("#IV_Pokemon")[0].value
-  // $("#IV_CP")[0].value
-  // $("#IV_HP")[0].value
-  // $("#IV_Stardust")[0].value
-  // $("#IV_Hatched")[0].checked
-  // $("#IV_Lucky")[0].checked
-  $("#IV_table").show(500);
-}
-
-function CPSubmit() {
-  $("#CP_table").show(500);
-}
-
 function sort_by_name(a, b) {
   return (a.nice_name > b.nice_name) - (a.nice_name < b.nice_name);
 }
 
 function sort_by_iv_hp_etc(a, b) {
-  // First by IV
-  if (a.iv < b.iv) {
-    return -1;
-  }
-  if (a.iv > b.iv) {
-    return 1;
-  }
-
-  // Then by HP
-  if (a.hp < b.hp) {
-    return -1;
-  }
-  if (a.hp > b.hp) {
-    return 1;
-  }
-
-  // Then by at
-  if (a.at < b.at) {
-    return -1;
-  }
-  if (a.at > b.at) {
-    return 1;
-  }
-
-  // Then by df
-  if (a.df < b.df) {
-    return -1;
-  }
-  if (a.df > b.df) {
-    return 1;
-  }
-
-  // Then by st
-  if (a.st < b.st) {
-    return -1;
-  }
-  if (a.st > b.st) {
-    return 1;
+  let sort_by = ['iv', 'cp', 'at', 'df', 'st', 'hp'];
+  for ( let sorting of sort_by ) {
+    if (a[sorting] < b[sorting]) {
+      return -1;
+    }
+    if (a[sorting] > b[sorting]) {
+      return 1;
+    }
   }
 
   return 0;
-}
-
-function sort_desc_by_iv_hp_etc(a, b) {
-  return -1 * sort_by_iv_hp_etc(a, b);
 }
 
 function get_unique_stardust_amounts() {
@@ -236,19 +187,23 @@ function get_possible_evolutions(name) {
   return evolutions;
 }
 
-function RaidSubmit() {
-  let name = $("#Raid_Pokemon").val();
-  let cp = parseInt($("#Raid_CP").val(), 10);
-  let type = $("input[name=Raid_type]:checked").val();
+function IVCalcSubmit(frm) {
+  frm = $(frm);
+  let name = frm.find("input.pokemon_selection").val();
+  let cp = parseInt(frm.find("input.cp").val(), 10);
+  let hp = parseInt(frm.find("input.hp").val(), 10);
+  let stardust = parseInt(frm.find("input.stardust").val(), 10);
+  let type = frm.find("input.type:checked").val();
 
   let levels = [];
+  let min_at = 10,
+      min_df = 10,
+      min_st = 10;
+  let weatherBonus = pokemon_information["settings"]["weather"]["raidEncounterCpBaseLevelBonus"];
   if (type === "raid") {
     levels = [
       pokemon_information["settings"]["player"]["maxEggPlayerLevel"], // normal
-      pokemon_information["settings"]["player"]["maxEggPlayerLevel"] + // weather boosted
-      pokemon_information["settings"]["weather"][
-          "raidEncounterCpBaseLevelBonus"
-          ]
+      pokemon_information["settings"]["player"]["maxEggPlayerLevel"] + weatherBonus
     ];
   } else if (type === "egg") {
     levels = [pokemon_information["settings"]["player"]["maxEggPlayerLevel"]];
@@ -256,6 +211,28 @@ function RaidSubmit() {
     levels = [
       pokemon_information["settings"]["player"]["maxQuestEncounterPlayerLevel"]
     ];
+  } else if (type === "wild") {
+    min_at = min_df = min_st = 0;
+
+    let maxLevels = pokemon_information["settings"]["player"]["maxEncounterPlayerLevel"] + weatherBonus;
+    levels = [];
+    if (stardust) {
+      let stardustCost = pokemon_information["settings"]["upgrades"]["stardustCost"];
+      for ( let level of Array(maxLevels).keys() ) {
+        if ( stardust === stardustCost[level] ) {
+          levels.push(level + 1);
+          levels.push(level + 1.5);
+        }
+      }
+    }
+    else { // It can be anything!
+      let upgradesPerLevel = pokemon_information["settings"]["player"]["upgradesPerLevel"];
+      levels = Array.from(Array(maxLevels * upgradesPerLevel - 1),
+          function (x) {
+            return 1 + x / upgradesPerLevel;
+          }
+      );
+    }
   } else {
     $.notify("Unknown type!", "error");
     throw new Error("Unknown type.");
@@ -271,16 +248,29 @@ function RaidSubmit() {
   let result = [];
   for (let lvl of levels) {
     let cp_multiplier = find_multiplier(lvl - 1); // Because we get levels 1-based, but the array is 0-based.
+    let min_cp = calc_cp(pm, cp_multiplier, 0, 0, 0);
+    if ( cp < min_cp ) continue;
 
-    for (let at = 10; at <= 15; at++) {
-      for (let df = 10; df <= 15; df++) {
-        for (let st = 10; st <= 15; st++) {
-          if (calc_cp(pm, cp_multiplier, at, df, st) === cp) {
+    let max_cp = calc_cp(pm, cp_multiplier, 15, 15, 15);
+    if ( cp > max_cp ) continue;
+
+    for (let at = min_at; at <= 15; at++) {
+      for (let df = min_df; df <= 15; df++) {
+        for (let st = min_st; st <= 15; st++) {
+          calculated_cp = calc_cp(pm, cp_multiplier, at, df, st);
+
+          if (calculated_cp === cp) {
+            calculated_hp = Math.floor(cp_multiplier * (pm.st + st));
+
+            if ( hp && calculated_hp !== hp ) continue;
+
             result.push({
               at: at,
               df: df,
               st: st,
-              hp: Math.floor(cp_multiplier * (pm.st + st)),
+              lvl: lvl,
+              cp: calculated_cp,
+              hp: calculated_hp,
               iv: at + df + st,
               pct: (at + df + st) / 0.45
             });
@@ -290,18 +280,16 @@ function RaidSubmit() {
     }
   }
   // sort by iv desc, hp desc, at desc, df desc, st desc
-  result.sort(sort_desc_by_iv_hp_etc);
+  result.sort(sort_by_iv_hp_etc).reverse();
   let innerHTML = "";
   $.each(result, function (key, val) {
     innerHTML +=
         "<tr><td>" +
         cp +
         "</td><td>" +
-        val.at +
+        val.at + "/" + val.df + "/" + val.st +
         "</td><td>" +
-        val.df +
-        "</td><td>" +
-        val.st +
+        val.lvl +
         "</td><td>" +
         val.hp +
         "</td><td>" +
@@ -310,7 +298,7 @@ function RaidSubmit() {
         (Math.round(val.pct * 100) / 100).toFixed(2) +
         "%)</td></tr>";
   });
-  let table = $("#Raid_table");
+  let table = frm.find('table');
   table.find("tbody").html(innerHTML);
   table.show(500);
 
@@ -326,10 +314,12 @@ function change_CP_Pokemon(self) {
 }
 
 function renderEvolve(PokemonName) {
+  if (!PokemonName) return;
+
   let innerHTML = "<option value='null'></option>";
   $.each(get_possible_evolutions(PokemonName), function (key, val) {
     innerHTML +=
-        "<option value='" + val.nice_name + "'>" + val.nice_name + "</option>";
+        "<option value='" + encodeURIComponent(val.nice_name) + "'>" + val.nice_name + "</option>";
   });
 
   $("#CP_Evolve").html(innerHTML);
