@@ -52,7 +52,7 @@ $.getJSON("pokemon_information.json", function (data) {
   $.each(data["pms"], function (key, val) {
     pokemonData.push(val.nice_name);
   });
-  $("#IV_Pokemons").autocomplete({ source: pokemonData, delay: 100 });
+  $("#IV_Pokemon").autocomplete({ source: pokemonData, delay: 100 });
   $("#CP_Pokemons").autocomplete({ source: pokemonData, delay: 100 });
   $("#Raid_Pokemons").autocomplete({ source: pokemonData, delay: 100 });
   $("#Catch_Pokemons").autocomplete({ source: pokemonData, delay: 100 });
