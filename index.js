@@ -226,10 +226,10 @@ function IVCalcSubmit(frm) {
       }
     }
     else { // It can be anything!
-      let upgradesPerLevel = pokemon_information["settings"]["player"]["upgradesPerLevel"];
+      let upgradesPerLevel = pokemon_information["settings"]["upgrades"]["upgradesPerLevel"];
       levels = Array.from(Array(maxLevels * upgradesPerLevel - 1),
-          function (x) {
-            return 1 + x / upgradesPerLevel;
+          function (v, k) {
+            return 1 + k / upgradesPerLevel;
           }
       );
     }
