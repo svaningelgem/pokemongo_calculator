@@ -96,12 +96,12 @@ function restoreData() {
 
 function calc_cp(pm, cp_multiplier, at, df, st) {
   // And the main calculation
-  return Math.floor(
+  return Math.max(10, Math.floor(
       ((pm.at + at) *
           Math.sqrt((pm.df + df) * (pm.st + st)) *
           cp_multiplier ** 2) /
       10
-  );
+  ));
 }
 
 function find_multiplier(lvl) {

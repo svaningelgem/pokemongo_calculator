@@ -1,12 +1,15 @@
 import json
+import logging
+import os
 import re
-from logging import getLogger
+import subprocess
 from pathlib import Path
 from typing import Any
 
 __root = Path(__file__).parent
 
-logger = getLogger(__name__)
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
 
 
 class Integer:
@@ -71,8 +74,9 @@ class GenerateJSON:
         re.compile(r'_\d+$'),
     ]
 
-    def __init__(self, gamemaster: Path, i18n: Path, output: Path):
+    def __init__(self, gamemaster: Path, i18n: Path, images: Path, output: Path):
         self.gamemaster = json.loads(gamemaster.read_text())
+        self.images = images
 
         i18n = json.loads(i18n.read_text(encoding='utf8'))['data']
         self.i18n = {k: v for k, v in zip(i18n[::2], i18n[1::2])}
@@ -139,8 +143,11 @@ class GenerateJSON:
         return info
 
     def run(self):
+        logging.info('Getting all info')
         pokemons = self._get_all_info()
+        logging.info('Getting all settings')
         settings = self._get_settings()
+        logging.info('Writing out all text')
         self.output.write_text(
             json.dumps(
                 {'pms': pokemons, 'settings': settings},
@@ -148,14 +155,38 @@ class GenerateJSON:
                 cls=PokemonEncoder
             )
         )
+        logging.info('Converting images')
+        self._convert_images()
+
+    def _convert_images(self):
+        output_dir = self.output.parent / 'images'
+
+        old_files = set(x.relative_to(output_dir) for x in output_dir.rglob('*.png'))
+
+        for img in self.images.rglob('*.png'):
+            relative_path = img.relative_to(self.images)
+            if relative_path in old_files:
+                continue
+
+            new_path = output_dir / relative_path
+            new_path.parent.mkdir(exist_ok=True, parents=True)
+
+            logger.info('Converting %s', img.absolute())
+            subprocess.run(["convert", str(img.absolute()), '-resize', '128x128', '-background', 'none', '-gravity', 'center', '-extent', '128x128x4', new_path])
 
 
 if __name__ == '__main__':
     # git submodule init
     # git submodule update --recursive --remote
-    
+   
+    os.chdir(__root)
+    logging.info('Updating submodules from git')
+    os.system('git submodule update --recursive --remote')
+
     GenerateJSON(
         __root / 'pokeminers_gamemaster/latest/latest.json',
         __root / 'pokeminers_pogoassets/Texts/Latest APK/JSON/i18n_english.json',
+        __root / 'pokeminers_pogoassets/Images/Pokemon',
         __root / 'pokemon_information.json',
     ).run()
+    logging.info('All done')
