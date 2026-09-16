@@ -45,7 +45,11 @@ class Pokemon:
         return hash("|".join(f"{k}_{v}" for k, v in vars(self).items()))
 
     def __json__(self):
-        return {k.removeprefix("_"): v for k, v in vars(self).items() if not k.startswith("__")}
+        return {
+            k.removeprefix("_"): v
+            for k, v in vars(self).items()
+            if not k.startswith("__")
+        }
 
 
 class PokemonEncoder(json.JSONEncoder):
@@ -141,7 +145,11 @@ class GenerateJSON:
         logging.info("Getting all settings")
         settings = self._get_settings()
         logging.info("Writing out all text")
-        self.output.write_text(json.dumps({"pms": pokemons, "settings": settings}, indent=2, cls=PokemonEncoder))
+        self.output.write_text(
+            json.dumps(
+                {"pms": pokemons, "settings": settings}, indent=2, cls=PokemonEncoder
+            )
+        )
         logging.info("Converting images")
         self._convert_images()
 
